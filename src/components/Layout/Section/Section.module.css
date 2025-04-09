@@ -1,0 +1,17 @@
+.sectionWrapper {
+    padding: 100px 0;
+    position: relative;
+  }
+  
+  @media (max-width: 1199px) {
+    .sectionWrapper {
+      padding: 50px 0;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .sectionWrapper {
+      padding: 30px 0;
+    }
+  }
+  

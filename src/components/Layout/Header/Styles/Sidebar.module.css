@@ -1,0 +1,84 @@
+/* Sidebar.module.css */
+.offcanvas {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -390px;
+    width: 90%;
+    padding-top: 60px;
+    overflow-y: scroll;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background: var(--white);
+  }
+  
+  .offcanvas.opened {
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+    background-color: #0a1019;
+  }
+  
+  .offcanvasWrapper {
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    overflow: auto;
+  }
+  
+  .bodyOverlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+  }
+  
+  .bodyOverlay.opened {
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+  }
+  
+  .offcanvasClose {
+    position: fixed;
+    top: 7px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    line-height: 20px;
+    background-color: var(--dark-color);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+  }
+  
+  .offcanvasClose:hover {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .offcanvasBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px;
+    gap: 15px;
+    border-top: solid 1px var(--main-color-light);
+  }
+  
+  .offcanvasBottomText {
+    /* Add any styles if necessary */
+  }
+  

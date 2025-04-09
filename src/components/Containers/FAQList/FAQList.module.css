@@ -1,0 +1,125 @@
+/* FAQList.module.css */
+.faqCol {
+    margin-bottom: 20px;
+  }
+  .faqCol:hover {
+    background: var(--main-color-light);
+    border-radius: 8px;
+  }
+  .faqCol:hover h3 {
+    color: var(--main-color);
+  }
+  .faqCol.active {
+    background-color: var(--main-color-light);
+    border-radius: 8px;
+    color: var(--text-color);
+    margin-top: -1px;
+  }
+  
+  .faqQuestion {
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    padding: 35px 35px 0 35px;
+  }
+  
+  .faqQuestion div {
+    padding-bottom: 35px;
+    border-bottom: solid 1px var(--main-color-light);
+  }
+  
+  .faqQuestion span {
+    position: relative;
+    padding-bottom: 3px;
+  }
+  
+  .faqQuestion span::after {
+    content: "";
+    height: 3px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .faqQuestion.active div {
+    padding-bottom: 20px;
+    color: var(--main-color);
+  }
+  
+  .faqQuestion.active span::after,
+  .faqQuestion:hover span::after {
+    display: none;
+  }
+  
+  .faqQuestion div::after {
+    content: '+';
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    font-size: 40px;
+    color: var(--main-color);
+  }
+  
+  .faqQuestion.active div::after {
+    content: '-';
+  }
+  
+  .faqQuestion.active:hover {
+    text-decoration: none;
+  }
+  
+  @media (max-width: 1025px) {
+    .faqQuestion {
+      padding: 25px 25px 0 25px;
+    }
+    .faqQuestion div {
+      padding-bottom: 25px;
+    }
+    .faqQuestion div::after {
+      right: 5px;
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .faqQuestion {
+      padding: 15px 15px 0 15px;
+    }
+    .faqQuestion div {
+      padding-bottom: 15px;
+    }
+  }
+  
+  .faqAnswer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding: 0 35px;
+    padding-top: 0;
+    font-size: 20px;
+  }
+  
+  .answerItemProp {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .answerItemProp ul,
+  .answerItemProp ol {
+    margin-left: 30px;
+    list-style: disc;
+  }
+  
+  .answerItemProp ul li,
+  .answerItemProp ol li {
+    margin-bottom: 10px;
+  }
+  
+  .answerItemProp ol {
+    list-style: number;
+  }
+  

@@ -1,0 +1,69 @@
+.switchWrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 55555;
+    top: auto;
+    transform: none;
+}
+.switchWrapper .switch {
+  display: inline-block;
+  height: 46px;
+  width: 46px;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+    .darkmodeswitch {
+        order: -1;
+    }
+    .switchWrapper .switch {
+      width: 40px;
+      height: 40px;
+    }
+  }
+.switchWrapper .switch input {
+  display: none
+}
+
+.switchWrapper .slider {
+  background-color: #fff;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+  border: 1px solid #e2e2e2;
+  border-radius: 50px;
+  box-shadow: 10px 0 10px 0 rgb(0 0 0 / 15%);
+}
+
+.switchWrapper .slider:before {
+  content: "";
+  height: 36px;
+  width: 36px;
+  border-radius: 50px;
+  position: absolute;
+  left: 4px;
+  bottom: 4px;
+  transition: .4s;
+  background: url(/images/icons/sun.svg) center center no-repeat #ffc400;
+}
+
+@media (max-width: 767px) {
+    .switchWrapper .slider:before {
+      width: 30px;
+      height: 30px;
+    }
+  }
+.switchWrapper input:checked+.slider {
+  background-color: #242424;
+  border: 1px solid;
+}
+
+.switchWrapper input:checked+.slider:before {
+  content: "";
+  background: url(/images/icons/moon.svg) center center no-repeat #2196f3;
+}

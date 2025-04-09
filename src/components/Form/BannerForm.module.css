@@ -1,0 +1,50 @@
+/* BannerForm.module.css */
+.formCol {
+    position: relative;
+  }
+  
+  .inputfield {
+    background-color: white;
+    display: block;
+    height: 50px;
+    padding: 15px 10px 10px 10px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    border: 2px solid white;
+    appearance: none;
+    color: black;
+    outline: none;
+  }
+  
+  textarea.inputfield {
+    height: 150px;
+  }
+  
+  .labelfield {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 14px;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+    transform-origin: 0;
+    background-color: white;
+    z-index: 10;
+  }
+  
+  .errorMessage {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+    
+  .inputfield:focus + .labelfield,
+  .inputfield:not(:placeholder-shown) + .labelfield {
+    transform: translateY(-20px) scale(0.75);
+    color: var(--purple-color);
+  }
+  

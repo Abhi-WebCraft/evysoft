@@ -1,0 +1,41 @@
+.bannerslider :global(.swiper-button-next),
+.bannerslider :global(.swiper-button-prev) {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: #dfbc7236;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+  }
+  
+  .bannerslider :global(.swiper-button-next:after), 
+  .bannerslider :global(.swiper-button-prev:after) {
+    font-size: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .bannerslider :global(.swiper-button-next),
+    .bannerslider :global(.swiper-button-prev) {
+      display: none;
+    }
+  }
+  
+  .bannerslider {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .bannerslider::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3); /* Black overlay with 50% opacity */
+    z-index: 1;
+  }
+  

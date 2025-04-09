@@ -1,0 +1,44 @@
+.servicesection{
+    padding: 100px 0px;
+}
+.serviceCard {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+  }
+  .serviceCard:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .serviceImage::before,
+.serviceImage::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+}
+
+/* Initially hide the ::after pseudo-element */
+.serviceImage::after {
+  width: 200%;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  background-color: hsla(0, 0%, 100%, .3);
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* Show before and after pseudo-elements on hover of the card */
+.serviceCard:hover .serviceImage::before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(16, 12, 8, .3);
+  border-radius: 5px;
+}
+
+.serviceCard:hover .serviceImage::after {
+  height: 180%; /* Adjust the height to display the effect */
+}

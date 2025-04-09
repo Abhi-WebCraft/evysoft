@@ -1,0 +1,42 @@
+/* PhoneCta.module.css */
+.heroCta {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  
+  @media (max-width: 767px) {
+    .heroCta {
+      margin-top: 15px;
+    }
+  }
+  
+  .heroCtaImg {
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+  
+  .heroCtaNumber {
+    white-space: nowrap;
+    display: block;
+  }
+  
+  .heroCtaNumber span {
+    display: block;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  
+  .heroCtaNumber span.number {
+    font-size: 40px;
+    font-weight: 800;
+    font-family: var(--mont);
+  }
+  
+  @media (max-width: 767px) {
+    .heroCtaNumber span.number {
+      font-size: 30px;
+    }
+  }
+  

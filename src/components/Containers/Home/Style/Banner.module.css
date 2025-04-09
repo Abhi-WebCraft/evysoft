@@ -1,0 +1,77 @@
+/* Banner.module.css */
+.bannersection {
+    background: #FAF9F5;
+    position: relative;
+    z-index: 30;
+  }
+  .BannerSlider {
+
+  }
+  @media (min-width:1024px) {
+    .BannerGrid {
+      display: grid;
+      align-items: center;
+      justify-content: space-between;
+      grid-template-columns: repeat(12, 1fr);
+    }
+    .BannerGridLeft {
+      grid-column: span 8 / span 8;
+    }
+    .BannerGridRight {
+      grid-column: span 4 / span 4;
+    }
+  }
+  .BannerSlide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .bannercontent {
+    padding-top: 250px;
+    padding-bottom: 180px;
+    margin: auto;
+    position: relative;
+    z-index: 11;
+    text-align: right;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .BannerContentCol {
+  }
+  @media (max-width:767px) {
+    .bannercontent {
+      text-align: center;
+    }
+  }
+
+  
+  .bigheading {
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: var(--yellow-color);
+  }
+  .SliderContent {
+    font-size: 30px;
+    color: var(--white);
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  
+  
+
+  /* Responsive Styles */
+  @media (max-width: 767px) {
+    .bannercontent {
+      height: 50vh;
+      padding-top: 150px;
+      padding-bottom: 100px;
+    }
+    .bigheading {
+      font-size: 24px;
+      letter-spacing:normal;
+    }
+    .SliderContent {
+      font-size: 18px;
+    }
+  }
+  

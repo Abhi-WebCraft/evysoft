@@ -1,0 +1,51 @@
+/* PageContent.module.css */
+.pageContentCol {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .pageContentCol ul {
+    margin-left: 30px;
+    list-style: disc;
+  }
+  
+  .pageContentCol ul li {
+    margin-bottom: 10px;
+  }
+  
+  .pageContentCol a {
+    color: var(--main-color);
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .pageContentCol a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: var(--main-color);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .pageContentCol a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  
+  @media (max-width: 1450px) {
+    /* Add any specific styles for this breakpoint if needed */
+  }
+  
+  @media (max-width: 767px) {
+    .pageContentCol {
+      line-height: 30px;
+    }
+  }
+  

@@ -1,0 +1,59 @@
+/* MobileMenus.module.css */
+.mobileNav {
+  width: 650px;
+}
+
+.navUL {
+  font-size: 14px;
+}
+
+.navLI {
+  border-top: solid 1px var(--main-color-light);
+}
+
+.menuLink {
+  display: flex;
+  padding: 8px 25px;
+  font-weight: 600;
+  justify-content: space-between;
+  align-items: center;
+  color: #f3c257;
+}
+
+.menuLink::after {
+  content: "";
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+  border-color: var(--main-color);
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.subMenu {
+}
+
+.subMenuLi {
+  border-top: solid 1px var(--main-color-light);
+}
+
+.subMenuLink {
+  display: flex;
+  padding: 8px 25px;
+  padding-left: 40px;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.subMenuLink::after {
+  content: "";
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  border-color: var(--main-color);
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
