@@ -3,11 +3,6 @@ import PageHead from "@/components/Layout/PageHead";
 import Layout from "@/components/Layout/Layout";
 import BannerSection from '@/components/HomePage/BannerSection/BannerSection';
 import Key from '@/components/HomePage/Key/Key';
-import About from '@/components/HomePage/About/About';
-import OurService from '@/components/HomePage/OurService/OurService';
-import Counter from '@/components/HomePage/Counter';
-import CtaBlock from '@/components/HomePage/CtaBlock';
-import Testimonials from '@/components/Common/Testimonials';
 // import Form from '@/components/Common/Form';
 
 export default function Home({referrer }) {
