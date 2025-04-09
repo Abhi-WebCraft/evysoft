@@ -14,7 +14,7 @@ export default function Layout({children}) {
     <>
         <Header />
         {children}
-        <Footer />
+        {/* <Footer /> */}
         <WhatsAppChat
               phoneNumber="971524495817"
               accountName="Dar Aluloom International"

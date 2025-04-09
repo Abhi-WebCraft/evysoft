@@ -20,7 +20,7 @@ export default function Header() {
 
   return (
     <>
-      <header id="header-sticky" className={`${styles.headerContainer} ${sticky ? styles.headerSticky : "bg-[#fff]"}`}>
+      <header id="header-sticky" className={`${styles.headerContainer} ${sticky ? styles.headerSticky : ""}`}>
         <Container>
           <div className={styles.navbar}>
             <div className={styles.navbarLogo}>
@@ -56,7 +56,7 @@ export default function Header() {
               </div>
             </div>
             <div className={styles.headerCtaBtn}>
-                <div className={styles.CallBtn} onClick={() => setCallActive(true)} ><Phone/></div>
+                <div className={styles.CallBtn} onClick={() => setCallActive(true)} ></div>
                 <div className={styles.ContactBtn}>
                     <Btn link="/contact" title="Contact" />
                 </div>  

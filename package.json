@@ -19,7 +19,9 @@
     "react-floating-whatsapp": "^5.0.8",
     "react-hook-form": "^7.53.0",
     "react-modal-video": "^2.0.2",
+    "react-slick": "^0.30.3",
     "sass": "^1.79.1",
+    "slick-carousel": "^1.8.1",
     "swiper": "^11.1.14",
     "tailwindcss": "^3.4.15",
     "tw-elements": "^2.0.0"

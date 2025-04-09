@@ -9,27 +9,27 @@ const menu_data = [
     has_dropdown: true,
     title: "Our Services",
     link: "#",
-    sub_menus: [
-      { link: "/education-consultants-in-dubai", title: "Education Consultants in Dubai" },
-      { link: "/college-admissions-consultant-in-uae", title: " College Admissions Consultant in UAE" },
-      { link: "/medicine-college-consultant-in-dubai", title: "Medicine College Consultant in Dubai" },
-      { link: "/engineering-college-consultant-in-dubai", title: "Engineering College Consultant in Dubai" },
-      { link: "/canadian-college-consultant-in-dubai", title: "Canadian College Consultant in Dubai" },
-      { link: "/us-college-consultant-in-uae", title: "US College Consultant in UAE" },
-      { link: "/uk-college-admission-consultant-in-uae", title: "UK College Admissions Consultant in UAE" },
-    ],
+    // sub_menus: [
+    //   { link: "/education-consultants-in-dubai", title: "Education Consultants in Dubai" },
+    //   { link: "/college-admissions-consultant-in-uae", title: " College Admissions Consultant in UAE" },
+    //   { link: "/medicine-college-consultant-in-dubai", title: "Medicine College Consultant in Dubai" },
+    //   { link: "/engineering-college-consultant-in-dubai", title: "Engineering College Consultant in Dubai" },
+    //   { link: "/canadian-college-consultant-in-dubai", title: "Canadian College Consultant in Dubai" },
+    //   { link: "/us-college-consultant-in-uae", title: "US College Consultant in UAE" },
+    //   { link: "/uk-college-admission-consultant-in-uae", title: "UK College Admissions Consultant in UAE" },
+    // ],
   },
   {
     has_dropdown: true,
     title: "Test Prep",
     link: "#",
-    sub_menus: [
-      { link: "/test-preparation-in-uae", title: "Test Preparation in UAE" },
-      { link: "/ielts-test-prep-in-dubai", title: "IELTS Test Prep" },
-      { link: "/sat-preparation-in-dubai", title: "SAT Preparation" },
-      { link: "/ucat-preparation-in-dubai", title: "UCAT Preparation" },
+    // sub_menus: [
+    //   { link: "/test-preparation-in-uae", title: "Test Preparation in UAE" },
+    //   { link: "/ielts-test-prep-in-dubai", title: "IELTS Test Prep" },
+    //   { link: "/sat-preparation-in-dubai", title: "SAT Preparation" },
+    //   { link: "/ucat-preparation-in-dubai", title: "UCAT Preparation" },
       
-    ],
+    // ],
   },
 
   {

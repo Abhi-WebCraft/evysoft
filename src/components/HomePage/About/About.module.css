@@ -8,6 +8,6 @@
 }
 .abouticon:hover {
     transition: all ease 0.5s;
-    background-color: #261FB3;
+    background-color: rgb(84,132,255);
     border-radius: 5px;
 }
