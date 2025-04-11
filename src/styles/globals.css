@@ -288,7 +288,7 @@ img {
 @media (max-width:767px){
   .default-btn {
     font-size: 14px;
-    padding: 10px 10px;
+    /* padding: 10px 40px; */
 }
 }
 /* services */
@@ -504,4 +504,34 @@ img {
 
 .box-title a:hover {
   color: #684df4
+}
+/* ---InnerBanner--- */
+
+.innerbanner_bg {
+  background-image: url('/images/home/breadcumb-bg.jpg');
+  background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+;
+}
+.innerbanner_bg div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  width: 700px;
+}
+.innerbanner_bg div p{
+  font-size: 20px;
+  line-height: 1.75;
+  color: #fff;
+}
+.overly_inner {
+  width: 100% !important;
 }

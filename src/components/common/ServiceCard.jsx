@@ -9,7 +9,7 @@ export default function ServiceCards({ services }) {
     <div className="pb-[100px]">
         <div className="text-center mb-[50px] lg:max-w-[700px] mx-auto">
           <SectionTitle
-              subtitle="About The Company"
+              subtitle="Our Services The Company"
               title="We Are Increasing Business Success With IT Solution"
           />
         </div>
