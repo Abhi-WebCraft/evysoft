@@ -69,7 +69,7 @@ export default function Ourservices() {
                         <Link
                           key={index}
                           href="#"
-                          className="bg-[#fff] border py-[7px] px-[20px] rounded-[50px] min-w-[150px] md:w-[200px] text-center"
+                          className="bg-[#fff] border py-[7px] px-[20px] rounded-[50px] min-w-[150px] md:w-[220px] text-center"
                         >
                           {tag}
                         </Link>
@@ -82,7 +82,7 @@ export default function Ourservices() {
               <div className="flex flex-col items-start lg:items-end mt-4 lg:mt-0">
                 <div className="flex items-center gap-4">
                   <Btn title="See Details" link="#" />
-                  <div className="bg-[#fff] group-hover:bg-[#000] transition-all duration-500 rounded-full p-2 border-2 border-[rgb(84,132,255)]">
+                  <div className="bg-[#fff] ] transition-all duration-500 rounded-full p-2 border-2 border-[rgb(84,132,255)]">
                     <Image
                       src="/images/icons/arrows.svg"
                       alt="icon"

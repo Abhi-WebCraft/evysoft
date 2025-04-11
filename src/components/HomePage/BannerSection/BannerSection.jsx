@@ -10,14 +10,14 @@ export default function App() {
    <section className={styles.banner}>
       <Container>
         <div className='grid lg:grid-cols-12 '>
-          <div className='flex  flex-col items-start justify-center col-span-9'>
+          <div className='flex  flex-col items-start justify-center col-span-12 lg:col-span-9 ' data-aos="fade-right">
               <h1 className={styles.hero_title }>Seamless IT Solutions for <span>business</span> growth</h1>
               <p className={styles.hero_text }>Unleash the full portential of rapid data analysis. Empowering timely decision-making and driving business exellence</p>
               <div >
                 <Btn title="Get Start a Project" link="#"/>
               </div>
           </div>
-          <div className='col-span-3'>
+          <div className='col-span-0 lg:col-span-3'>
 
           </div>
         </div>
