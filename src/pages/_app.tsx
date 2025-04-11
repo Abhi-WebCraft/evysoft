@@ -10,7 +10,9 @@ const jost = Jost({ subsets: ['latin'] });
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      duration: 1000, 
+    });
   }, []);
 
   return (

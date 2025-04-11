@@ -9,31 +9,31 @@ const servicesData = [
     id: 1,
     title: "Website Development",
     tags: ["React Js Development", "React Js Development", "React Js Development", "React Js Development"],
-    animation: "zoom-in-down",
+    animation: "fade-up",
   },
   {
     id: 2,
     title: "Mobile Application Development",
     tags: ["React Js Development", "React Js Development", "React Js Development", "React Js Development"],
-    animation: "zoom-in-down",
+    animation: "fade-up",
   },
   {
     id: 3,
     title: "UX/UI Design",
     tags: ["React Js Development", "React Js Development", "React Js Development", "React Js Development"],
-    animation: "zoom-in-down",
+    animation: "fade-up",
   },
   {
     id: 4,
     title: "Graphics Design",
     tags: ["React Js Development", "React Js Development", "React Js Development", "React Js Development"],
-    animation: "zoom-in-down",
+    animation: "fade-up",
   },
   {
     id: 5,
     title: "Digital Marketing",
     tags: ["React Js Development", "React Js Development", "React Js Development", "React Js Development"],
-    animation: "zoom-in-down",
+    animation: "fade-up",
   },
 ];
 
@@ -54,7 +54,7 @@ export default function Ourservices() {
           {servicesData.map((service) => (
             <div
               key={service.id}
-              className="group bg-[#eff1f9] hover:bg-[#000] transition-all duration-500 p-6 md:p-10 space-y-4 rounded-[30px] grid grid-cols-1 lg:grid-cols-2 items-center justify-between"
+              className="group bg-[#eff1f9] hover:bg-[#000] hover:transition-all hover:duration-500 p-6 md:p-10 space-y-4 rounded-[30px] grid grid-cols-1 lg:grid-cols-2 items-center justify-between"
               data-aos={service.animation || "fade-up"}
             >
               <div className="space-y-4">

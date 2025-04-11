@@ -26,6 +26,7 @@ export default function Home({referrer }) {
             text: "We build fast, scalable, and responsive websites.",
             link: "/services/web-development",
             bgShape: "/images/home/service_card_bg.webp",
+            animation: "fade-up-right",
           },
           {
             number: "02",
@@ -34,6 +35,7 @@ export default function Home({referrer }) {
             text: "Get smooth and powerful mobile apps.",
             link: "/services/app-development",
             bgShape: "/images/home/service_card_bg.webp",
+            animation: "flip-down",
           },
           {
             number: "03",
@@ -42,6 +44,7 @@ export default function Home({referrer }) {
             text: "Get smooth and powerful mobile apps.",
             link: "/services/app-development",
             bgShape: "/images/home/service_card_bg.webp",
+            animation: "fade-up-left",
           },
           {
             number: "04",
@@ -50,6 +53,7 @@ export default function Home({referrer }) {
             text: "We build fast, scalable, and responsive websites.",
             link: "/services/web-development",
             bgShape: "/images/home/service_card_bg.webp",
+            animation: "fade-up-right"
           },
           {
             number: "05",
@@ -58,6 +62,7 @@ export default function Home({referrer }) {
             text: "Get smooth and powerful mobile apps.",
             link: "/services/app-development",
             bgShape: "/images/home/service_card_bg.webp",
+            animation: "flip-down",
           },
           {
             number: "06",
@@ -66,6 +71,7 @@ export default function Home({referrer }) {
             text: "Get smooth and powerful mobile apps.",
             link: "/services/app-development",
             bgShape: "/images/home/service_card_bg.webp",
+            animation: "fade-up-left",
           },
         ];
         
