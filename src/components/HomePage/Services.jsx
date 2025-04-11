@@ -15,7 +15,7 @@ export default function Services(){
                 />
                 </div>
                <div className="grid lg:grid-cols-2 gap-6 items-center">
-                    <div className="space-y-4">
+                    <div className="space-y-4 " data-aos="fade-right">
                         <div className="py-9 px-8 bg-[#fff] flex items-center gap-10 rounded-[16px]">
                             <div>
                                 <Image src="/images/icons/magnifying-glass.svg" alt="" width={500} height={500} className="w-[80px]"/>
@@ -54,7 +54,7 @@ export default function Services(){
                         </div>
                         
                     </div>
-                    <div>
+                    <div data-aos="fade-left">
                     <Image src="/images/home/process-image.jpg" alt="" width={500} height={500} className="w-full object-cover rounded-[40px]"/>
                     </div>
                </div>

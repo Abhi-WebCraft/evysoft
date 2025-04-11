@@ -22,7 +22,7 @@ export default function PageHead({ PageMeta }) {
             {PageMeta.ogimage && PageMeta.ogimage !== "/images/prof" ? (
                 <meta property="og:image" content={PageMeta.ogimage} />
             ) : (
-                <meta property="og:image" content="/images/kaartik-gor.jpg" />
+                <meta property="og:image" content="/images/" />
             )}
             <meta property="og:image:width" content="1422" />
             <meta property="og:image:height" content="800" />
@@ -35,7 +35,7 @@ export default function PageHead({ PageMeta }) {
             {PageMeta.ogimage && PageMeta.ogimage !== "/images/prof" ? (
                 <meta name="twitter:image" content={PageMeta.ogimage} />
             ) : (
-                <meta name="twitter:image" content="/images/kaartik-gor.jpg" />
+                <meta name="twitter:image" content="/images/" />
             )}
         </Head>
     );

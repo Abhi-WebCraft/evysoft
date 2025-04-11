@@ -19,10 +19,10 @@ export default function About (){
         <section className={styles.section}>
             <Container>
                 <div className="grid-cols-1 gap-8 lg:grid lg:grid-cols-2 md:grid md:grid-cols-2 items-center">
-                    <div>
+                    <div data-aos="fade-right">
                         <Image src="/images/home/about_1_1.png" alt="" width="934" height="824" className=" w-[100%] h-[100%] object-cover"/>
                     </div>
-                    <div >
+                    <div data-aos="fade-left">
                        <div className={'flex flex-col gap-6 {styles.aboutContent}'}>
                        <SectionTitle
                             subtitle="About The Company"

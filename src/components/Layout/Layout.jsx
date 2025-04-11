@@ -15,24 +15,7 @@ export default function Layout({children}) {
         <Header />
         {children}
         <Footer />
-        {/* <WhatsAppChat
-              phoneNumber="971524495817"
-              accountName="Dar Aluloom International"
-              statusMessage="We are here to help you! 😊"
-              chatMessage="Hi there! 👋 Welcome to Dar Aluloom International.How can We help you?"
-              avatar="/images/logo/main-logo.png"
-              serviceOptions="Educational Consultancy , Subject Tutoring , Test Prep , Others"
-          /> */}
-        {/* <FloatingWhatsApp
-          phoneNumber="971524495817"
-          accountName="Dar Aluloom International"
-          statusMessage="Can We Help You Today?"
-          chatMessage="Hello there! 🤝 How can We help you?"
-          avatar="/images/logo/main-logo.png"
-          notification
-          allowEsc
-          allowClickAway
-        /> */}
+       
     </>
   );
 }

@@ -9,31 +9,37 @@ const servicesData = [
     id: 1,
     title: "Website Development",
     tags: ["React Js Development", "React Js Development", "React Js Development", "React Js Development"],
+    animation: "zoom-in-down",
   },
   {
     id: 2,
     title: "Mobile Application Development",
     tags: ["React Js Development", "React Js Development", "React Js Development", "React Js Development"],
+    animation: "zoom-in-down",
   },
   {
     id: 3,
     title: "UX/UI Design",
     tags: ["React Js Development", "React Js Development", "React Js Development", "React Js Development"],
+    animation: "zoom-in-down",
   },
   {
     id: 4,
     title: "Graphics Design",
     tags: ["React Js Development", "React Js Development", "React Js Development", "React Js Development"],
+    animation: "zoom-in-down",
   },
   {
     id: 5,
     title: "Digital Marketing",
     tags: ["React Js Development", "React Js Development", "React Js Development", "React Js Development"],
+    animation: "zoom-in-down",
   },
 ];
 
 export default function Ourservices() {
   return (
+    <>
     <section className="section">
       <Container>
         <div className="text-center mb-[50px] mx-auto max-w-[800px]">
@@ -49,6 +55,7 @@ export default function Ourservices() {
             <div
               key={service.id}
               className="group bg-[#eff1f9] hover:bg-[#000] transition-all duration-500 p-6 md:p-10 space-y-4 rounded-[30px] grid grid-cols-1 lg:grid-cols-2 items-center justify-between"
+              data-aos={service.animation || "fade-up"}
             >
               <div className="space-y-4">
                 <h2 className="text-[#000] group-hover:text-[#ffffff] transition-colors duration-500 text-[22px] md:text-[30px] font-semibold">
@@ -91,5 +98,25 @@ export default function Ourservices() {
         </div>
       </Container>
     </section>
+
+     {/* <WhatsAppChat
+              phoneNumber="971524495817"
+              accountName="Dar Aluloom International"
+              statusMessage="We are here to help you! 😊"
+              chatMessage="Hi there! 👋 Welcome to Dar Aluloom International.How can We help you?"
+              avatar="/images/logo/main-logo.png"
+              serviceOptions="Educational Consultancy , Subject Tutoring , Test Prep , Others"
+          /> */}
+        {/* <FloatingWhatsApp
+          phoneNumber="971524495817"
+          accountName="Dar Aluloom International"
+          statusMessage="Can We Help You Today?"
+          chatMessage="Hello there! 🤝 How can We help you?"
+          avatar="/images/logo/main-logo.png"
+          notification
+          allowEsc
+          allowClickAway
+        /> */}
+        </>
   );
 }

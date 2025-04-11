@@ -1,12 +1,21 @@
+import { useEffect } from 'react';
+import type { AppProps } from "next/app";
+import { Jost } from 'next/font/google';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import 'react-modal-video/scss/modal-video.scss';
 import "@/styles/globals.css";
-import { Jost } from 'next/font/google';
+
 const jost = Jost({ subsets: ['latin'] });
-import type { AppProps } from "next/app";
-  export default function App({ Component, pageProps }: AppProps) {
-    return (
-      <main className={jost.className}>
-        <Component {...pageProps} />
-        </main>
-    )
+
+export default function App({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
+  return (
+    <main className={jost.className}>
+      <Component {...pageProps} />
+    </main>
+  );
 }

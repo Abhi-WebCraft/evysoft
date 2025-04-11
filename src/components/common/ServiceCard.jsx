@@ -13,12 +13,13 @@ export default function ServiceCards({ services }) {
               title="We Are Increasing Business Success With IT Solution"
           />
         </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <div
-              key={index}
-              className="service-card  p-6 rounded-xl shadow-md relative bg-white"
-            >
+            key={index}
+            className="service-card p-6 rounded-xl shadow-md relative bg-white"
+            data-aos={service.animation || "fade-up"} // 👈 fallback if no animation
+          >
               <div className="service-card_number text-3xl font-bold text-primary mb-4">
                 {service.number}
               </div>

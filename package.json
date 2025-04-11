@@ -27,6 +27,7 @@
     "tw-elements": "^2.0.0"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
     "@types/node": "20.17.11",
     "@types/react": "18.3.18",
     "@types/react-dom": "^18",

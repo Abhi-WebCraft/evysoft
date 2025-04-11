@@ -14,7 +14,7 @@ const Innerbanner = ({ title, description, image }) => {
       />
       <div className="relative z-10">
         <Container>
-          <div className="text-white">
+          <div className="text-white lg:w-[700px] w-auto">
             <h2 className="text-[42px] text-[#fff]">{title}</h2>
             <p className="text-[#fff]">{description}</p>
           </div>
