@@ -5,6 +5,11 @@ import BannerSection from '@/components/HomePage/BannerSection/BannerSection';
 import About from '@/components/HomePage/About/About';
 import Slider from '@/components/HomePage/Slider';
 import Services from '@/components/HomePage/Services';
+import Ourservices from '@/components/HomePage/Ourservices';
+import ServiceCards from '@/components/common/ServiceCard';
+import CtaBlock from '@/components/HomePage/CtaBlock';
+import Contactus from '@/components/common/Contactus';
+
 export default function Home({referrer }) {
   console.log(referrer)
     const PageMeta = 
@@ -13,16 +18,71 @@ export default function Home({referrer }) {
         description:"Discover Dar Aluloom International, your trusted education consultant in Dubai, offering test prep, tutoring & consulting for academic and career success.",
         keywords: "Global Education Consultants in UAE, Study Overseas or Abroad, Educational Consultants,  College Admissions, University Admissions Dubai UAE., Global Education Advisors in UAE,",
         }
-
+        const services = [
+          {
+            number: "01",
+            icon: "/images/icons/icon.svg",
+            title: "Web Development",
+            text: "We build fast, scalable, and responsive websites.",
+            link: "/services/web-development",
+            bgShape: "/images/home/service_card_bg.webp",
+          },
+          {
+            number: "02",
+            icon: "/images/icons/icon.svg",
+            title: "App Development",
+            text: "Get smooth and powerful mobile apps.",
+            link: "/services/app-development",
+            bgShape: "/images/home/service_card_bg.webp",
+          },
+          {
+            number: "03",
+            icon: "/images/icons/icon.svg",
+            title: "App Development",
+            text: "Get smooth and powerful mobile apps.",
+            link: "/services/app-development",
+            bgShape: "/images/home/service_card_bg.webp",
+          },
+          {
+            number: "04",
+            icon: "/images/icons/icon.svg",
+            title: "Web Development",
+            text: "We build fast, scalable, and responsive websites.",
+            link: "/services/web-development",
+            bgShape: "/images/home/service_card_bg.webp",
+          },
+          {
+            number: "05",
+            icon: "/images/icons/icon.svg",
+            title: "App Development",
+            text: "Get smooth and powerful mobile apps.",
+            link: "/services/app-development",
+            bgShape: "/images/home/service_card_bg.webp",
+          },
+          {
+            number: "06",
+            icon: "/images/icons/icon.svg",
+            title: "App Development",
+            text: "Get smooth and powerful mobile apps.",
+            link: "/services/app-development",
+            bgShape: "/images/home/service_card_bg.webp",
+          },
+        ];
+        
+        
+        
   return (
     <>
     <PageHead PageMeta={PageMeta} />
     <Layout>
       <BannerSection/>
       <About/>
+      <ServiceCards services={services} />
       <Slider/>
       <Services/>
-      {/* <Key services={serviceData}  subtitle="Welcome to Web Dev World" title="Your guide to building beautiful and functional websites" /> */}
+      <Ourservices/>
+      <Contactus/>
+      <CtaBlock/>
     </Layout>
     </>
   );

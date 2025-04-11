@@ -11,3 +11,8 @@
     background-color: rgb(84,132,255);
     border-radius: 5px;
 }
+@media (max-width:500px) {
+    .section{
+        padding-top: 0px;
+    }
+}
