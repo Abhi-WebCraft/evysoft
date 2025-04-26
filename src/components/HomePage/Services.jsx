@@ -5,7 +5,7 @@ import SectionTitle from "../Layout/SectionTitle";
 
 export default function Services(){
     return (
-        <section className="section mt-[50px] services_bg">
+        <section className="section mt-[50px] services_bg overflow-hidden">
             <Container>
                 <div className="text-center mb-[50px] mx-auto max-w-[800px]">
                     <SectionTitle

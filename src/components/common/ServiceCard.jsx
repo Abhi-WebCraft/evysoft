@@ -6,7 +6,7 @@ import SectionTitle from "../Layout/SectionTitle";
 export default function ServiceCards({ services }) {
   return (
     <Container>
-    <div className="pb-[100px]">
+    <div className="pb-[100px] overflow-hidden">
         <div className="text-center mb-[50px] lg:max-w-[700px] mx-auto">
           <SectionTitle
               subtitle="Our Services The Company"

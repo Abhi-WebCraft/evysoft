@@ -40,7 +40,7 @@ const servicesData = [
 export default function Ourservices() {
   return (
     <>
-    <section className="section">
+    <section className="section overflow-hidden">
       <Container>
         <div className="text-center mb-[50px] mx-auto max-w-[800px]">
           <SectionTitle

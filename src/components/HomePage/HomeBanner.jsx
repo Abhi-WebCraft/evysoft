@@ -3,7 +3,7 @@ import Container from "../Layout/Container";
 import Btn from "../Layout/Btns/Btn";
 export default function HomeBanner() {
 return (
-<section className="relative bg-center bg-no-repeat bg-cover home-banner section" style={{ backgroundImage: "url('/images/bg/home-banner.jpg')" }}>
+<section className="relative bg-center bg-no-repeat bg-cover home-banner section overflow-hidden" style={{ backgroundImage: "url('/images/bg/home-banner.jpg')" }}>
 <div className="overlay"></div>
 {/* Overlay */}
 <Container>

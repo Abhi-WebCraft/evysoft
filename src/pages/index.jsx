@@ -9,6 +9,7 @@ import Ourservices from '@/components/HomePage/Ourservices';
 import ServiceCards from '@/components/common/ServiceCard';
 import CtaBlock from '@/components/HomePage/CtaBlock';
 import Contactus from '@/components/common/Contactus';
+import Absection from '@/components/common/Absection';
 
 export default function Home({referrer }) {
   console.log(referrer)
@@ -82,6 +83,7 @@ export default function Home({referrer }) {
     <PageHead PageMeta={PageMeta} />
     <Layout>
       <BannerSection/>
+      <Absection/>
       <About/>
       <ServiceCards services={services} />
       <Slider/>
