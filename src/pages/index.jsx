@@ -83,7 +83,7 @@ export default function Home({referrer }) {
     <PageHead PageMeta={PageMeta} />
     <Layout>
       <BannerSection/>
-      <Absection/>
+      {/* <Absection/> */}
       <About/>
       <ServiceCards services={services} />
       <Slider/>
