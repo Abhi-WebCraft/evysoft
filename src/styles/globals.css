@@ -799,5 +799,17 @@ img {
     background-position: top right;
     background-repeat: no-repeat;
     width:100% ;
-  ;
+  }
+  /* <<<<<<<<<<<<testimonial_bg>>>>>>>>>> */
+  .testimonial_bg{
+    background-image: url('/images/about/testi_bg_10.jpg');
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+    height: 570px;
+  }
+  .testimonial_img{
+    clip-path: polygon(0 0, 100% 0%, 70% 100%, 0 100%);
+    width: 100%;
+    z-index: -1;
   }

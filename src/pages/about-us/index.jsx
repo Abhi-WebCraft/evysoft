@@ -9,6 +9,7 @@ import Ourservice from '@/components/common/OurService/OurService';
 import Counter from '@/components/common/Counter';
 import Points from '@/components/common/Points';
 import TeamSlider from '@/components/common/TeamSlider';
+import Testimonial from '@/components/common/Testimonial';
 
 export default function Home({referrer }) {
   console.log(referrer)
@@ -144,6 +145,7 @@ export default function Home({referrer }) {
       <ThreeCards/>
       <Ourservice/>
       <Counter/>
+      <Testimonial/>
       <Points points={pointsData} title="What We Do" description="At Dar Aluloom International, we offer specialized services to help aspiring engineers reach their academic and career goals. Here's how we assist:"/>
       <CtaBlock/>
     </Layout>

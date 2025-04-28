@@ -6,7 +6,7 @@ export default function Points({points, title, subtitle, description}) {
   
 
   return (
-    <section className="pb-[100px]">
+    <section className="py-[100px]">
       <Container>
       <div className="text-center max-w-[800px] mx-auto mb-[40px]">
         <SectionTitle
