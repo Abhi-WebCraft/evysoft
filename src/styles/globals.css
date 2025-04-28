@@ -536,13 +536,7 @@ img {
 }
 
 /* <<<<<<<<<<<<<threecrads>>>>>>>>>>> */
-.threecrads{
-  border-radius: 30px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
-.threecrads img{
-  border-radius: 30px;
-}
+
 /* <<<<<<<<<<<<<<<<<<<<<<<     Points                >>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .number-text {
   font-size: 70px;
@@ -797,4 +791,13 @@ img {
     .faq-section{
       background-position: bottom;
     }
+  }
+  /* <<<<form-bg>>>> */
+  .form-bg{
+    background-image: url('/images/from/contact_bg_1.png');
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+    width:100% ;
+  ;
   }

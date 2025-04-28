@@ -1,62 +1,61 @@
-import Image from "next/image";
-import Container from "../Layout/Container";
-import SectionTitle from "../Layout/SectionTitle";
+import React from "react";
 
-const cardData = [
+const steps = [
   {
-    id: 1,
-    image: "/images/home/process-image.jpg",
-    title: "AI in Space Exploration Robotic Missions Data",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus obcaecati repudiandae iure molestiae, minus debitis perferendis a labore doloremque! Expedita distinctio eos non, aspernatur ut fugit quibusdam temporibus! Vitae!",
+    number: "01",
+    title: "Select a project",
+    description: "Continua scale empowered metrics with cost effective innovation.",
+    icon: "📝", // You can replace with real SVGs if you have
   },
   {
-    id: 2,
-    image: "/images/home/process-image.jpg",
-    title: "AI in Space Exploration Robotic Missions Data",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus obcaecati repudiandae iure molestiae, minus debitis perferendis a labore doloremque! Expedita distinctio eos non, aspernatur ut fugit quibusdam temporibus! Vitae!",
+    number: "02",
+    title: "Project analysis",
+    description: "Continua scale empowered metrics with cost effective innovation.",
+    icon: "📋",
   },
   {
-    id: 3,
-    image: "/images/home/process-image.jpg",
-    title: "AI in Space Exploration Robotic Missions Data",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus obcaecati repudiandae iure molestiae, minus debitis perferendis a labore doloremque! Expedita distinctio eos non, aspernatur ut fugit quibusdam temporibus! Vitae!",
+    number: "03",
+    title: "Plan Execute",
+    description: "Continua scale empowered metrics with cost effective innovation.",
+    icon: "⚙️",
+  },
+  {
+    number: "04",
+    title: "Deliver result",
+    description: "Continua scale empowered metrics with cost effective innovation.",
+    icon: "📈",
   },
 ];
 
 const ThreeCards = () => {
   return (
-    <section className="section bg-[#eff1f9]">
-      <Container>
-        <div className="max-w-[700px] mx-auto text-center mb-[50px]">
-          <SectionTitle subtitle="AI in Space" title="Bridging the Virtual and Physical Worlds" />
-        </div>
-        <div className="grid lg:grid-cols-3 gap-6">
-          {cardData.map((card) => (
+    <section className="bg-gray-50 py-16 px-4 text-center ">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+          {steps.map((step, index) => (
             <div
-              key={card.id}
-              className="border p-6 threecrads space-y-4 overflow-hidden group bg-[#fff]"
-              data-aos="fade-up"
+              key={index}
+              className="bg-white rounded-xl shadow-md p-8 relative "
             >
-              <div className="overflow-hidden rounded-[30px]">
-                <Image
-                  src={card.image}
-                  alt={card.title}
-                  width={500}
-                  height={500}
-                  className="transition-transform duration-700 ease-in-out group-hover:scale-110"
-                />
+              {/* Circle number */}
+              <div className="absolute -top-8 left-5 transform -translate-x-1/2">
+                <div className="bg-indigo-600 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold border-4 border-indigo-200">
+                  {step.number}
+                </div>
               </div>
-              <div>
-                <h3 className="text-[26px] font-bold">{card.title}</h3>
-                <p className="text-gray-600">{card.description}</p>
-              </div>
+
+              {/* Icon */}
+              <div className="text-indigo-600 text-4xl mb-4">{step.icon}</div>
+
+              {/* Title */}
+              <h4 className="text-xl font-bold mb-2">{step.title}</h4>
+
+              {/* Description */}
+              <p className="text-gray-600 text-sm">{step.description}</p>
             </div>
           ))}
         </div>
-      </Container>
+      </div>
     </section>
   );
 };

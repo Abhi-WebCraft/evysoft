@@ -86,7 +86,7 @@ export default function Home({referrer }) {
       description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quia fugiat neque quam ad in assumenda laudantium libero quod omnis aperiam hic laborum earum, inventore sequi temporibus, voluptas recusandae molestias?"
       image="/images/about-bg.jpg"/>
       <About/>
-      {/* <ThreeCards/> */}
+      <ThreeCards/>
       <Ourservice/>
       <Counter/>
       <Points points={pointsData} title="What We Do" description="At Dar Aluloom International, we offer specialized services to help aspiring engineers reach their academic and career goals. Here's how we assist:"/>
