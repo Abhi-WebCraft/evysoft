@@ -3,57 +3,67 @@ import Btn from "@/components/Layout/Btns/Btn";
 import Container from "@/components/Layout/Container";
 import SectionTitle from "@/components/Layout/SectionTitle";
 import Image from "next/image";
-const about =[
-    {
-        image:"/images/icons/check.svg",
-        text:"Certified Company",
-    },
-    {
-        image:"/images/icons/check.svg",
-        text:"Expart Team",
-    },
-  
-];
-export default function About (){
-    return (
-        <section className={styles.section}>
-            <Container>
-                <div className="grid-cols-1 gap-8 lg:grid lg:grid-cols-2 md:grid md:grid-cols-2 items-center">
-                    <div data-aos="fade-right">
-                        <Image src="/images/home/about_1_1.png" alt="" width="934" height="824" className=" w-[100%] h-[100%] object-cover"/>
+
+// Props define kiye hain
+export default function About({
+  imageSrc = "/images/home/about_1_1.png",
+  subtitle = "Default Subtitle",
+  title = "Default Title",
+  description = "Default description...",
+  aboutList = [], // Yahan empty array default de diya.
+  buttonTitle = "Contact Us",
+  buttonLink = "#",
+}) {
+  return (
+    <section className={styles.section}>
+      <Container>
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 items-center">
+          {/* Left Side Image */}
+          <div data-aos="fade-right">
+            <Image
+              src={imageSrc}
+              alt="About Image"
+              width={934}
+              height={824}
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          {/* Right Side Content */}
+          <div data-aos="fade-left">
+            <div className={`flex flex-col gap-6 ${styles.aboutContent}`}>
+              <SectionTitle
+                subtitle={subtitle}
+                title={title}
+              />
+              <div className="flex flex-col gap-4">
+                <p>{description}</p>
+
+                {/* List Loop */}
+                <div className="flex flex-col gap-3">
+                  {aboutList.length > 0 && aboutList.map((item, index) => (
+                    <div key={index} className="flex items-center gap-3">
+                      <Image
+                        src={item.image}
+                        alt="Feature Icon"
+                        width={30}
+                        height={30}
+                        className={`w-[40px] h-[40px] ${styles.abouticon}`}
+                      />
+                      <h4 className="font-medium text-[17px]">{item.text}</h4>
                     </div>
-                    <div data-aos="fade-left">
-                       <div className={'flex flex-col gap-6 {styles.aboutContent}'}>
-                       <SectionTitle
-                            subtitle="About The Company"
-                            title="We Are Increasing Business Success With IT Solution"
-                        />
-                        <div className="flex flex-col gap-4">
-                            <p>Collaboratively envisioneer user friendly supply chains and cross unit imperative. Authoritativel fabricate competitive resource and holistic synergy. Uniquely generate efficient schemas before future.</p>
-                            {/* <p className="text-[#261FB3]">Here is the list of various college admissions consultation services we offer :</p> */}
-                            <div className="flex flex-col gap-3">
-                            {about.map((aboutus, index) => (
-                              <div className="flex items-center gap-3">
-                                <Image 
-                                src={aboutus.image}
-                                alt="vector" 
-                                width="30" 
-                                height="30" 
-                                className={`w-[40px] h-[40px] ${styles.abouticon}`} 
-                                />
-                                <h4 className="font-medium text-[17px]">{aboutus.text}</h4>
-                              </div>
-                            ))}
-                            </div>
-                        </div>
-                        <div>
-                            <Btn title="Contact Us" link="#"/>
-                        </div>
-                       </div>
-                        
-                    </div>
+                  ))}
                 </div>
-            </Container>
-        </section>
-    )
+              </div>
+
+              {/* Button */}
+              <div>
+                <Btn title={buttonTitle} link={buttonLink} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
 }

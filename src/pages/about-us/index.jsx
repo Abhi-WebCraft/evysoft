@@ -8,6 +8,7 @@ import ThreeCards from '@/components/common/ThreeCards';
 import Ourservice from '@/components/common/OurService/OurService';
 import Counter from '@/components/common/Counter';
 import Points from '@/components/common/Points';
+import TeamSlider from '@/components/common/TeamSlider';
 
 export default function Home({referrer }) {
   console.log(referrer)
@@ -75,8 +76,50 @@ export default function Home({referrer }) {
             },
             
         ];
-       
-        
+        const servicesData = [
+          {
+            number: "01",
+            title: "Web Development",
+            text: "We build amazing websites.",
+            icon: "/icons/web.svg",
+            link: "/services/web-development",
+            bgShape: "/shapes/bg1.png",
+            animation: "fade-up", // optional
+          },
+          {
+            number: "02",
+            title: "App Design",
+            text: "Beautiful and user-friendly apps.",
+            icon: "/icons/app.svg",
+            link: "/services/app-design",
+            bgShape: "/shapes/bg2.png",
+          },
+          {
+            number: "02",
+            title: "App Design",
+            text: "Beautiful and user-friendly apps.",
+            icon: "/icons/app.svg",
+            link: "/services/app-design",
+            bgShape: "/shapes/bg2.png",
+          },
+          {
+            number: "02",
+            title: "App Design",
+            text: "Beautiful and user-friendly apps.",
+            icon: "/icons/app.svg",
+            link: "/services/app-design",
+            bgShape: "/shapes/bg2.png",
+          },
+          {
+            number: "02",
+            title: "App Design",
+            text: "Beautiful and user-friendly apps.",
+            icon: "/icons/app.svg",
+            link: "/services/app-design",
+            bgShape: "/shapes/bg2.png",
+          },
+          // Add more items as needed...
+        ];
   return (
     <>
     <PageHead PageMeta={PageMeta} />
@@ -85,7 +128,19 @@ export default function Home({referrer }) {
       title="About Us"
       description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quia fugiat neque quam ad in assumenda laudantium libero quod omnis aperiam hic laborum earum, inventore sequi temporibus, voluptas recusandae molestias?"
       image="/images/about-bg.jpg"/>
-      <About/>
+     <About
+        imageSrc="/images/about/faq_1_1.png"
+        subtitle="About Company"
+        title="We Grow Your Business With IT"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quia fugiat neque quam ad in assumenda laudantium libero quod omnis aperiam hic laborum earum, inventore sequi temporibus, voluptas recusandae molestias"
+        aboutList={[
+          { image: "/images/icons/check.svg", text: "Certified Company" },
+          { image: "/images/icons/check.svg", text: "Expert Team" }
+        ]}
+        buttonTitle="Get Started"
+        buttonLink="/contact"
+      />
+      <TeamSlider services={servicesData} />
       <ThreeCards/>
       <Ourservice/>
       <Counter/>

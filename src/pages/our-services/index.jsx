@@ -143,7 +143,18 @@ export default function Home({referrer }) {
             title="Our Services"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quia fugiat neque quam ad in assumenda laudantium libero quod omnis aperiam hic laborum earum, inventore sequi temporibus, voluptas recusandae molestias?"
             image="/images/about-bg.jpg"/>
-            <About/>
+             <About
+                    imageSrc="/images/about/video_shape_1.png"
+                    subtitle="About Company"
+                    title="We Grow Your Business With IT"
+                    description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quia fugiat neque quam ad in assumenda laudantium libero quod omnis aperiam hic laborum earum, inventore sequi temporibus, voluptas recusandae molestias"
+                    aboutList={[
+                      { image: "/images/icons/check.svg", text: "Certified Company" },
+                      { image: "/images/icons/check.svg", text: "Expert Team" }
+                    ]}
+                    buttonTitle="Get Started"
+                    buttonLink="/contact"
+                  />
       {/* <Key services={serviceData}  subtitle="Key Differentiators" title="We're Your Reliable Education Consultants" /> */}
       <ServiceCards services={services} />
       <Faq faqs={faqData}/>
