@@ -27,7 +27,7 @@ const Testimonial = () => {
                             alt="Testimonial" 
                             width={500} 
                             height={500} 
-                            className="w-full mt-[-1.8px]"
+                            className="w-full mt-[13px]"
                         />
                     </div>
                     <div className="w-full">
