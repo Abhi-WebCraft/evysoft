@@ -4,7 +4,7 @@ import Layout from "@/components/Layout/Layout";
 import About from '@/components/HomePage/About/About';
 import CtaBlock from '@/components/HomePage/CtaBlock';
 import Innerbanner from '@/components/common/Innerbanner';
-import ThreeCards from '@/components/common/ThreeCards';
+import WhyCards from '@/components/common/WhyCards';
 import Ourservice from '@/components/common/OurService/OurService';
 import Counter from '@/components/common/Counter';
 import Points from '@/components/common/Points';
@@ -121,6 +121,44 @@ export default function Home({referrer }) {
           },
           // Add more items as needed...
         ];
+
+        const newdata = [
+          {
+          image: "/images/services/service2.png",
+          icon: "/images/icons/icon.svg",
+          title: "100% Compliance Guarantee",
+          description: "Always on time, every time—no penalties.",
+          link: "#",
+          },
+          {
+          image: "/images/services/service2.png",
+          icon: "/images/icons/icon.svg",
+          title: "Real-Time, Accurate Data",
+          description: "Always updated and error-free.",
+          link: "#",
+          },
+          {
+          image: "/images/services/service2.png",
+          icon: "/images/icons/icon.svg",
+          title: "Tailored Solutions",
+          description: "Perfect for businesses of all sizes, from startups to enterprises.",
+          link: "#",
+          },
+          {
+          image: "/images/services/service2.png",
+          icon: "/images/icons/icon.svg",
+          title: "Secure & Confidential",
+          description: "Your data is protected with advanced encryption and security.",
+          link: "#",
+          },
+          {
+          image: "/images/services/service2.png",
+          icon: "/images/icons/icon.svg",
+          title: "Expert Guidance",
+          description: "Stay ahead of regulations with our experienced financial advisors.",
+          link: "#",
+          },
+          ];
   return (
     <>
     <PageHead PageMeta={PageMeta} />
@@ -141,8 +179,8 @@ export default function Home({referrer }) {
         buttonTitle="Get Started"
         buttonLink="/contact"
       />
-      <TeamSlider services={servicesData} />
-      <ThreeCards/>
+      {/* <TeamSlider services={servicesData} /> */}
+      <WhyCards title="Key Features" subtitle="" content="" data={newdata}/>
       <Ourservice/>
       <Counter/>
       <Testimonial/>
