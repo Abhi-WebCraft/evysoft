@@ -5,10 +5,8 @@ import About from '@/components/HomePage/About/About';
 import CtaBlock from '@/components/HomePage/CtaBlock';
 import Innerbanner from '@/components/common/Innerbanner';
 import WhyCards from '@/components/common/WhyCards';
-import Ourservice from '@/components/common/OurService/OurService';
 import Counter from '@/components/common/Counter';
 import Points from '@/components/common/Points';
-import TeamSlider from '@/components/common/TeamSlider';
 import Testimonials from '@/components/common/Testimonials';
 
 export default function Home({ referrer }) {
@@ -179,7 +177,6 @@ export default function Home({ referrer }) {
           buttonTitle="Get Started"
           buttonLink="/contact"
         />
-        {/* <TeamSlider services={servicesData} /> */}
         <WhyCards title="Key Features" subtitle="" content="" data={newdata} />
         {/* <Ourservice/> */}
         <Counter />
