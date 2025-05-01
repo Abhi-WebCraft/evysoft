@@ -178,7 +178,6 @@ export default function Home({ referrer }) {
           buttonLink="/contact"
         />
         <WhyCards title="Key Features" subtitle="" content="" data={newdata} />
-        {/* <Ourservice/> */}
         <Counter />
         <div className='mt-[-100px]'>
           <Points points={pointsData} title="What We Do" description="At International, we offer specialized services to help aspiring engineers reach their academic and career goals. Here's how we assist:" />
