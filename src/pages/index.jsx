@@ -170,7 +170,7 @@ export default function Home({ referrer }) {
         <div className='pb-[100px]'>
           <Faq faqs={faqData} />
         </div>
-        <Contactus />
+        {/* <Contactus /> */}
         <CtaBlock />
       </Layout>
     </>
