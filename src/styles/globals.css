@@ -801,18 +801,59 @@ img {
     width:100% ;
   }
   /* <<<<<<<<<<<<testimonial_bg>>>>>>>>>> */
-  .testimonial_bg{
-    background-image: url('/images/about/testi_bg_10.jpg');
-    background-size: cover;
-    background-position: top right;
-    background-repeat: no-repeat;
-    height: 570px;
+
+/* >>>>>>>>>>>>>>>>>>>>>>>     Review         <<<<<<<<<<<<<<<<<<<<<<< */
+.review-card{
+  padding: 50px 25px;
+  border-radius: 15px;
+  height: 380px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+.review-slider .swiper-button-prev, .swiper-button-next {
+  position: absolute;
+  top:50%;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: #f3acac4d;
+  border-radius: 10%;
+  width: 50px;
+  height: 50px;
+}
+.review-slider .swiper-button-next {
+  position: absolute;
+  top:50%;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: #f3acac4d;
+  border-radius: 10%;
+  width: 50px;
+  height: 50px;
+}
+.review-slider .swiper-button-prev::after {
+  font-size: 20px;
+  color: #f64744;
+}
+.review-slider .swiper-button-next::after {
+  font-size: 20px;
+  color: #f64744;
+}
+@media (max-width: 768px) {
+  .review-slider .swiper-button-prev,
+  .review-slider .swiper-button-next {
+    display: none;
   }
-  .testimonial_img{
-    clip-path: polygon(0 0, 100% 0%, 70% 100%, 0 100%);
-    width: 100%;
-    z-index: -1;
+  .review-card{
+    height: 380px;
   }
+}
   
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<   CardsWhy   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .whyCard {
@@ -1031,4 +1072,82 @@ img {
 .animate-slide-up-down {
   animation: slideUpDown 3s ease-in-out infinite;
 }
+@media (max-width:1024px) {
+  .new-bn-image::after {
+    content: "";
+    position: absolute;
+    height: 470px;
+    width: 470px;
+    background: #684df4;
+    border-radius: 50%;
+    bottom: -22px;
+    left: -13px;
+    z-index: 0;
+}
+.new-bn-text h1 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.135;
+  margin-bottom: 0;
+}
+.new-bn-image::after {
+  content: "";
+  position: absolute;
+  height: 470px;
+  width: 470px;
+  background: #684df4;
+  border-radius: 50%;
+  bottom: -327px;
+  left: 391px;
+  z-index: 0;
+}
+}
 
+@media (max-width:768px) {
+.new-bn-image::after {
+  content: "";
+  position: absolute;
+  height: 470px;
+  width: 470px;
+  background: #684df4;
+  border-radius: 50%;
+  bottom: -327px;
+  left: 391px;
+  z-index: 0;
+}
+.banner-img-new {
+  width: 368px;
+  top: -170px;
+  right: -88px;
+}
+.new-bn-image::after {
+  content: "";
+  position: absolute;
+  height: 650px;
+  width: 650px;
+  background: #684df4;
+  border-radius: 50%;
+  bottom: -491px;
+  left: 52px;
+  z-index: 0;
+}
+}
+
+@media (max-width:425px) {
+  .new-bn-image::after {
+    content: "";
+    position: absolute;
+    height: 460px;
+    width: 460px;
+    background: #684df4;
+    border-radius: 50%;
+    bottom: -311px;
+    left: 135px;
+    z-index: -1;
+}
+.banner-img-new {
+  width: 300px;
+  top: -170px;
+  right: -88px;
+}
+  }

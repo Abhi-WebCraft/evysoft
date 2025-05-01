@@ -2,16 +2,10 @@ import React from 'react';
 import PageHead from "@/components/Layout/PageHead";
 import Layout from "@/components/Layout/Layout";
 import About from '@/components/HomePage/About/About';
-import Slider from '@/components/HomePage/Slider';
-import Services from '@/components/HomePage/Services';
-import Ourservices from '@/components/HomePage/Ourservices';
 import ServiceCards from '@/components/common/ServiceCard';
 import CtaBlock from '@/components/HomePage/CtaBlock';
-import Contactus from '@/components/common/Contactus';
 import Innerbanner from '@/components/common/Innerbanner';
-import Key from '@/components/HomePage/Key/Key';
 import Faq from '@/components/common/Faq';
-
 export default function Home({referrer }) {
   console.log(referrer)
     const PageMeta = 
@@ -157,7 +151,10 @@ export default function Home({referrer }) {
                   />
       {/* <Key services={serviceData}  subtitle="Key Differentiators" title="We're Your Reliable Education Consultants" /> */}
       <ServiceCards services={services} />
+
+      <div className='pb-[100px]'>
       <Faq faqs={faqData}/>
+      </div>
       <CtaBlock/>
     </Layout>
     </>

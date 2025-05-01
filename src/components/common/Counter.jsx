@@ -28,7 +28,7 @@ export default function Counter() {
     }, []);
 
     return (
-        <section className="section">
+        <section className="pb-[100px]">
             <Container>
                 <div className="lg:grid-cols-4 lg:grid lg:gap-4 md:grid md:grid-cols-4 md:gap-3 grid grid-cols-2 gap-5 py-[40px] bg-[rgb(84,132,255)] rounded-xl">
                     <div>

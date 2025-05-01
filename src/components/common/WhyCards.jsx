@@ -8,23 +8,23 @@ import Link from 'next/link';
 import SectionTitle from '../Layout/SectionTitle';
 import Container from '../Layout/Container';
 
-export default function WhyCards({ data , title, subtitle, content }) {
+export default function WhyCards({ data, title, subtitle, content }) {
   return (
     <section className='pb-[100px] '>
       <Container>
         <div className="mb-[50px] text-center">
-              <SectionTitle
-                title={title}
-                content={content}
-                contentColor
-                titleColor
-                titleSpanColor
-                titlespan
-                subtitle={subtitle}
-                subtitleColor
-              />
-          </div>
-          <div className="">
+          <SectionTitle
+            title={title}
+            content={content}
+            contentColor
+            titleColor
+            titleSpanColor
+            titlespan
+            subtitle={subtitle}
+            subtitleColor
+          />
+        </div>
+        <div className="">
           <Swiper
             modules={[Autoplay]}
             spaceBetween={30}
@@ -42,14 +42,15 @@ export default function WhyCards({ data , title, subtitle, content }) {
           >
             {data.map((item, index) => (
               <SwiperSlide key={index}>
-                <div className="whyCard border shadow-md ">
+                <div className="whyCard border shadow-md " data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom">
                   <div className="whyCard_img ">
                     <Image
                       src={item.image}
                       alt={item.title}
                       width={287}
                       height={180}
-                    className='h-[200px] object-cover'/>
+                      className='h-[200px] object-cover' />
                     <div className="whyCard-overlay"></div>
                   </div>
                   <div className="whyCard_content">
@@ -87,6 +88,6 @@ export default function WhyCards({ data , title, subtitle, content }) {
       </Container>
     </section>
 
-   
+
   );
 }
