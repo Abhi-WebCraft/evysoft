@@ -181,10 +181,10 @@ export default function Home({referrer }) {
       />
       {/* <TeamSlider services={servicesData} /> */}
       <WhyCards title="Key Features" subtitle="" content="" data={newdata}/>
-      <Ourservice/>
+      {/* <Ourservice/> */}
       <Counter/>
       <Testimonial/>
-      <Points points={pointsData} title="What We Do" description="At Dar Aluloom International, we offer specialized services to help aspiring engineers reach their academic and career goals. Here's how we assist:"/>
+      {/* <Points points={pointsData} title="What We Do" description="At Dar Aluloom International, we offer specialized services to help aspiring engineers reach their academic and career goals. Here's how we assist:"/> */}
       <CtaBlock/>
     </Layout>
     </>
