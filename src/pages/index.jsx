@@ -11,13 +11,13 @@ import CtaBlock from '@/components/HomePage/CtaBlock';
 import Contactus from '@/components/common/Contactus';
 import Absection from '@/components/common/Absection';
 import WhyCards from '@/components/common/WhyCards';
-
+import Newbanner from '@/components/HomePage/Newbanner';
 export default function Home({referrer }) {
   console.log(referrer)
     const PageMeta = 
         {
         title: "web site ",
-        description:"Discover Dar Aluloom International, your trusted education consultant in Dubai, offering test prep, tutoring & consulting for academic and career success.",
+        description:"Discover International, your trusted education consultant in Dubai, offering test prep, tutoring & consulting for academic and career success.",
         keywords: "Global Education Consultants in UAE, Study Overseas or Abroad, Educational Consultants,  College Admissions, University Admissions Dubai UAE., Global Education Advisors in UAE,",
         }
         const services = [
@@ -120,6 +120,7 @@ export default function Home({referrer }) {
     <PageHead PageMeta={PageMeta} />
     <Layout>
       <BannerSection/>
+      <Newbanner/>
       {/* <Absection/> */}
       <About/>
       <ServiceCards services={services} />

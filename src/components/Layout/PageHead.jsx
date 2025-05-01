@@ -10,15 +10,15 @@ export default function PageHead({ PageMeta }) {
             <meta name="description" content={PageMeta.description} />
             <meta name="keywords" content={PageMeta.keywords || "default, keywords, here"} />
             <meta name="robots" content=" follow, index" />
-            <link rel="canonical" href={`https://www.daraluloom.com${pathname}`} />
+            <link rel="canonical" href={`${pathname}`} />
             <meta property="og:locale" content="en_US" />
             <meta property="og:type" content="website" />
             <meta property="og:title" content={PageMeta.title} />
             <meta property="og:description" content={PageMeta.description} />
-            <meta property="og:url" content={`https://www.daraluloom.com${pathname}`} />
-            <meta property="og:site_name" content="Dar Aluloom International" />
-            <meta property="article:publisher" content="https://www.facebook.com/kaartikgor/" />
-            <meta property="article:author" content="https://www.facebook.com/kaartikgor" />
+            <meta property="og:url" content={`${pathname}`} />
+            <meta property="og:site_name" content="" />
+            <meta property="article:publisher" content="" />
+            <meta property="article:author" content="" />
             {PageMeta.ogimage && PageMeta.ogimage !== "/images/prof" ? (
                 <meta property="og:image" content={PageMeta.ogimage} />
             ) : (

@@ -1,6 +1,3 @@
-// File: components/Contactus.js
-"use client";
-
 import { useState } from "react";
 import Container from "../Layout/Container";
 import SectionTitle from "../Layout/SectionTitle";
@@ -9,30 +6,48 @@ const Contactus = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    subject: "General Inquiry",
     phone: "",
-    subject: "",
     message: "",
   });
 
+  const [status, setStatus] = useState(null);
+
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
+    setStatus("loading");
 
-    const result = await res.json();
-    if (result.success) {
-      alert("Message sent successfully!");
-    } else {
-      alert("Failed to send message.");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: `[Subject: ${formData.subject}]\n\n${formData.message}`,
+        }),
+      });
+
+      const data = await res.json();
+
+      if (data.status === "success") {
+        setStatus("success");
+        setFormData({ name: "", email: "", subject: "General Inquiry", phone: "", message: "" });
+      } else {
+        setStatus("error");
+      }
+    } catch (error) {
+      setStatus("error");
     }
   };
 
@@ -53,51 +68,50 @@ const Contactus = () => {
                 <input
                   type="text"
                   name="name"
+                  value={formData.name}
+                  onChange={handleChange}
                   placeholder="Enter Your Name"
                   className="w-full border border-gray-300 rounded-md p-4"
                   required
-                  value={formData.name}
-                  onChange={handleChange}
                 />
                 <input
                   type="email"
                   name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   placeholder="Enter Your Email"
                   className="w-full border border-gray-300 rounded-md p-4"
                   required
-                  value={formData.email}
-                  onChange={handleChange}
                 />
               </div>
               <div className="grid md:grid-cols-2 gap-6">
                 <select
                   name="subject"
-                  className="w-full border border-gray-300 rounded-md p-4"
                   value={formData.subject}
                   onChange={handleChange}
+                  className="w-full border border-gray-300 rounded-md p-4"
                 >
-                  <option value="">Select Subject</option>
-                  <option value="General Inquiry">General Inquiry</option>
-                  <option value="Support">Support</option>
-                  <option value="Feedback">Feedback</option>
+                  <option>General Inquiry</option>
+                  <option>Support</option>
+                  <option>Feedback</option>
                 </select>
                 <input
                   type="text"
                   name="phone"
-                  placeholder="Phone Number"
-                  className="w-full border border-gray-300 rounded-md p-4"
                   value={formData.phone}
                   onChange={handleChange}
+                  placeholder="Phone Number"
+                  className="w-full border border-gray-300 rounded-md p-4"
                 />
               </div>
               <textarea
                 name="message"
+                value={formData.message}
+                onChange={handleChange}
                 rows="5"
                 placeholder="Write Your Message"
                 className="w-full border border-gray-300 rounded-md p-4"
                 required
-                value={formData.message}
-                onChange={handleChange}
               />
               <button
                 type="submit"
@@ -105,6 +119,14 @@ const Contactus = () => {
               >
                 MAKE AN APPOINTMENT
               </button>
+
+              {status === "loading" && <p className="text-sm text-gray-500 mt-2">Sending...</p>}
+              {status === "success" && (
+                <p className="text-sm text-green-600 mt-2">Message sent successfully!</p>
+              )}
+              {status === "error" && (
+                <p className="text-sm text-red-600 mt-2">Failed to send message. Try again.</p>
+              )}
             </form>
           </div>
         </div>

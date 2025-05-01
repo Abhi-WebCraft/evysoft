@@ -16,7 +16,7 @@ export default function Home({referrer }) {
     const PageMeta = 
         {
         title: "web site ",
-        description:"Discover Dar Aluloom International, your trusted education consultant in Dubai, offering test prep, tutoring & consulting for academic and career success.",
+        description:"Discover International, your trusted education consultant in Dubai, offering test prep, tutoring & consulting for academic and career success.",
         keywords: "Global Education Consultants in UAE, Study Overseas or Abroad, Educational Consultants,  College Admissions, University Admissions Dubai UAE., Global Education Advisors in UAE,",
         }
         
@@ -184,7 +184,7 @@ export default function Home({referrer }) {
       {/* <Ourservice/> */}
       <Counter/>
       <Testimonial/>
-      {/* <Points points={pointsData} title="What We Do" description="At Dar Aluloom International, we offer specialized services to help aspiring engineers reach their academic and career goals. Here's how we assist:"/> */}
+      {/* <Points points={pointsData} title="What We Do" description="At International, we offer specialized services to help aspiring engineers reach their academic and career goals. Here's how we assist:"/> */}
       <CtaBlock/>
     </Layout>
     </>

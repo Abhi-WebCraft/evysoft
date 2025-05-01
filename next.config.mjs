@@ -23,7 +23,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'blog.daraluloom.com',
+        hostname: 'blog.',
         port: '',
         pathname: '/wp-content/uploads/**',
       },

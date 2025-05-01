@@ -623,7 +623,7 @@ img {
   .accordions__control {
     display: flex;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px 20px;
     padding-right: 10px;
     width: 100%;
     position: relative;
@@ -663,7 +663,7 @@ img {
   }
   
   .accordions__title {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 500;
     text-transform: capitalize;
     flex: 1;
@@ -685,7 +685,7 @@ img {
     flex: 0 0 50px;
     display: flex;
     height: 50px;
-    border: 1px solid #000;
+    border: 3px solid #ffffff;
     border-radius: 50%;
     position: relative;
     transition: 0.5s cubic-bezier(0.65, 0.2, 0.65, 1);
@@ -979,3 +979,56 @@ img {
 .whyCard:hover .whyCard-overlay{
   opacity: 0;
 } */
+
+
+/* <<<<<<<<<<<<<<<<<new-banner>>>>>>>>>> */
+.new-bn-text span{
+  color:#684df4;
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 17px;
+    text-transform: uppercase;
+    margin-top: -.24em;
+}
+.new-bn-text h1{
+  font-size: 74px;
+  font-weight: 700;
+  line-height: 1.135;
+  margin-bottom: 0;
+}
+.new-bn-text p{
+  margin-bottom: 43px;
+  font-size: 18px;
+  color: #737887;
+  line-height: 1.75;
+}
+.new-bn-image{
+  position: relative;
+  display: block;
+  z-index: 20;
+}
+.new-bn-image::after {
+  content: "";
+  position: absolute;
+  height: 540px;
+  width: 540px;
+  background: #684df4;
+  border-radius: 50%;
+  bottom: -144px;
+  left: -13px;
+  z-index: 0;
+}
+@keyframes slideUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(40px); /* adjust the distance */
+  }
+}
+
+.animate-slide-up-down {
+  animation: slideUpDown 3s ease-in-out infinite;
+}
+

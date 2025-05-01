@@ -1,48 +1,46 @@
 // pages/api/contact.js
 import nodemailer from 'nodemailer';
-const transporter = nodemailer.createTransport({
-  service: 'Gmail', // Or another service provider
-  auth: {
-    user: process.env.GMAIL_EMAIL,
-    pass: process.env.GMAIL_PASSWORD,
-  },
-});
+
 export default async function handler(req, res) {
-  if (req.method === 'POST') {
-    const { phone, name,email, message } = req.body;
-
-    try {
-      // Create reusable transporter object using the default SMTP transport
-      
-
-      // Send the email
-      const info = await transporter.sendMail({
-        from: `${name} <daraluloom.fz@gmail.com>`, // Sender address
-        to: 'daraluloom.fz@gmail.com', // Recipient address
-        subject: `${name} - New Enquiry From "Dar Aluloom"`, // Subject line
-        html: `
-          <p>Dar Aluloom Team,</p>
-          <p>Enquiry From: <b>${name}</b></p>
-          <p>Contact Number: <b>${phone}</b></p>
-          <p>Message: <b>${message}</b></p>
-          <p>Email: <b>${email}</b></p>
-          <p><b style="color:green">Best Regards,</b></p>
-          <p>${name}</p>
-          <p>Page Link: <b>${req.headers.referer}</b></p>
-        `,
-      });
-
-      console.log('Email sent successfully:', info);
-
-      // Send response
-      res.status(200).json({ status: 'success', message: 'Email sent successfully' });
-    } catch (error) {
-      console.error('Error sending email:', error);
-      res.status(500).json({ status: 'error', message: 'Failed to send email' });
-    }
-  } else {
-    // Handle unsupported methods
+  if (req.method !== 'POST') {
     res.setHeader('Allow', ['POST']);
-    res.status(405).end(`Method ${req.method} Not Allowed`);
+    return res.status(405).end(`Method ${req.method} Not Allowed`);
+  }
+
+  const { name, email, phone, message } = req.body;
+
+  if (!name || !email || !message) {
+    return res.status(400).json({ status: 'error', message: 'Missing required fields' });
+  }
+
+  try {
+    const transporter = nodemailer.createTransport({
+      service: 'Gmail',
+      auth: {
+        user: process.env.GMAIL_EMAIL,
+        pass: process.env.GMAIL_PASSWORD,
+      },
+    });
+
+    const mailOptions = {
+      from: `"${name}" <${process.env.GMAIL_EMAIL}>`,
+      to: 'Evvysoft@gmail.com',
+      subject: `${name} - New Enquiry From "Evvysoft"`,
+      html: `
+        <h3>New Contact Enquiry</h3>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
+        <p><strong>Message:</strong> ${message}</p>
+        <p><strong>Page Link:</strong> ${req.headers.referer || 'N/A'}</p>
+      `,
+    };
+
+    await transporter.sendMail(mailOptions);
+
+    return res.status(200).json({ status: 'success', message: 'Email sent successfully' });
+  } catch (error) {
+    console.error('Email send error:', error);
+    return res.status(500).json({ status: 'error', message: 'Failed to send email' });
   }
 }

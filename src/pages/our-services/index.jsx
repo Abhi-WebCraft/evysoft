@@ -17,7 +17,7 @@ export default function Home({referrer }) {
     const PageMeta = 
         {
         title: "web site ",
-        description:"Discover Dar Aluloom International, your trusted education consultant in Dubai, offering test prep, tutoring & consulting for academic and career success.",
+        description:"Discover International, your trusted education consultant in Dubai, offering test prep, tutoring & consulting for academic and career success.",
         keywords: "Global Education Consultants in UAE, Study Overseas or Abroad, Educational Consultants,  College Admissions, University Admissions Dubai UAE., Global Education Advisors in UAE,",
         }
         const services = [
@@ -110,7 +110,7 @@ export default function Home({referrer }) {
       const faqData=[
         {   
             number:"01",
-            question: " What sets Dar Aluloom International apart for engineering admissions?",
+            question: " What sets  International apart for engineering admissions?",
             answer: "We offer end-to-end, personalized services and have extensive experience guiding students to secure placements in top engineering programs worldwide.",
         },
         {   

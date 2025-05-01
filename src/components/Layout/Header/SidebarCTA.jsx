@@ -19,37 +19,37 @@ export default function SidebarCTA({ CallActive, setCallActive }) {
             <div className={styles.CTACol}>
                 <div className={styles.CTAicon}><Image src="images/icons/call.svg" width={50} height={50} alt="icon"/></div>
                 <div className={styles.CTAinfo}>
-                <Link href="tel:+971524495817">+971524495817 <span>Helpline Number</span></Link>
+                <Link href="#">+971524495817 <span>Helpline Number</span></Link>
                 </div>
             </div>
             <div className={styles.CTACol}>
                 <div className={styles.CTAicon}><Image src="images/icons/call-1.svg" width={50} height={50} alt="icon"/></div>
                 <div className={styles.CTAinfo}>
-                <Link href="tel:+97172041111">+<span>Telephone Number</span></Link>
+                <Link href="#">+<span>Telephone Number</span></Link>
                 </div>
             </div>
             <div className={styles.CTACol}>
                 <div className={styles.CTAicon}><Image src="images/icons/mail.svg" width={50} height={50} alt="icon"/></div>
                 <div className={styles.CTAinfo}>
-                <Link href="mailto:info@daraluloom.com">info@daraluloom.com <span>Online Support</span></Link>
+                <Link href="mailto:">ABHISHEK<span>Online Support</span></Link>
                 </div>
             </div>
             <div className={styles.CTACol}>
                 <div className={styles.CTAicon}><Image src="images/icons/map.svg" width={50} height={50} alt="icon"/></div>
                 <div className={styles.CTAinfo}>
-                <Link href="https://maps.app.goo.gl/wQviLnQTsUFfoTVd8" target='_blank'>Compass Building, Al Shohada Road, AL Hamra Industrial Zone, Ras Al Khaimah, UAE</Link>
+                <Link href="#" target='_blank'>Compass Building, Al Shohada Road, AL Hamra Industrial Zone, Ras Al Khaimah, UAE</Link>
                 </div>
             </div>
             <div className={styles.CTACol}>
                 <div className={styles.CTAicon}><Image src="images/icons/map.svg" width={50} height={50} alt="icon"/></div>
                 <div className={styles.CTAinfo}>
-                <Link href="https://maps.app.goo.gl/wQviLnQTsUFfoTVd8" target='_blank'>Block B - B33 - 176, SRTIP Sharjah, UAE</Link>
+                <Link href="#" target='_blank'>Block B - B33 - 176, SRTIP Sharjah, UAE</Link>
                 </div>
             </div>
             <div className={styles.CTACol}>
                 <div className={styles.CTAicon}><Image src="images/icons/map.svg" width={50} height={50} alt="icon"/></div>
                 <div className={styles.CTAinfo}>
-                <Link href="https://maps.app.goo.gl/wQviLnQTsUFfoTVd8" target='_blank'> 6th floor, Elite Business Center, Al Barsha 1 opp Lulu hypermarket Dubai, UAE<span>Mail Address</span></Link>
+                <Link href="#" target='_blank'> 6th floor, Elite Business Center, Al Barsha 1 opp Lulu hypermarket Dubai, UAE<span>Mail Address</span></Link>
                 </div>
             </div>
             </div>

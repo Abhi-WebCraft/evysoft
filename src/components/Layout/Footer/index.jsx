@@ -8,7 +8,7 @@ export default function Footer() {
 
   const contacts = [
     { href: "tel:+", icon: "/images/icons/telephone-call-1.svg", text: "+" },
-    { href: "mailto:info@daraluloom.com", icon: "/images/icons/email-11.svg", text: "abhishek.com" }, 
+    { href: "mailto:", icon: "/images/icons/email-11.svg", text: "abhishek.com" }, 
     { href: "#", icon: "/images/icons/location-11.svg", text: " ddddddddddddddd" }, 
     { href: "#", icon: "/images/icons/location-11.svg", text: "ddddddddddddddd" }, 
     { href: "#", icon: "/images/icons/location-11.svg", text: "sdsfsdffffffffff" }, 

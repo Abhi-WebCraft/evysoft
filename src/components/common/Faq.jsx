@@ -42,15 +42,12 @@ export default function Faq({ faqs }) {  // Accept faqData as a prop
   return (
     <section
     id="faq"
-    className="section bg-[#f5f5f8] relative bg-cover bg-no-repeat bg-fixed bg-right z-[1] overlay-container faq-section"
-    style={{ backgroundImage: "url('/images/home/process-image.jpg')" }}
-  >
-    <div className="absolute inset-0 bg-black bg-opacity-50 z-[2]"></div> {/* Black overlay */}
+    className="section-bottom bg-[#f2f2f2f] relative bg-cover bg-no-repeat bg-fixed bg-right z-[1] overlay-container faq-section" >
     <Container>
-      <div className="items-center lg:grid lg:grid-cols-2 lg:gap-5 md:grid md:grid-cols-2 md:gap-6 sm:grid sm:grid-cols-1 faq-grid relative z-[3]">
+      <div className="items-center faq-grid relative z-[3]">
         <div className=""> </div>
         <div className="relative z-10 faq-section">
-          <div className="mb-[30px]">
+          <div className="mb-[30px] text-center">
             <SectionTitle
               subtitle="Our questions & answers"
               title="Frequently Asked Questions"
@@ -74,7 +71,7 @@ export default function Faq({ faqs }) {  // Accept faqData as a prop
                     className="accordions__content text"
                     aria-hidden="true"
                   >
-                    <p>{faq.answer}</p>
+                    <p className='text-[18px] text-[#fff]'>{faq.answer}</p>
                   </div>
                 </li>
               ))}
