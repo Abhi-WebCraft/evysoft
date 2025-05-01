@@ -119,7 +119,7 @@ export default function Home({referrer }) {
     <>
     <PageHead PageMeta={PageMeta} />
     <Layout>
-      <BannerSection/>
+      {/* <BannerSection/> */}
       <Newbanner/>
       {/* <Absection/> */}
       <About/>
