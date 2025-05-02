@@ -19,7 +19,7 @@ export default function SidebarCTA({ CallActive, setCallActive }) {
             <div className={styles.CTACol}>
                 <div className={styles.CTAicon}><Image src="images/icons/call.svg" width={50} height={50} alt="icon"/></div>
                 <div className={styles.CTAinfo}>
-                <Link href="#">+971524495817 <span>Helpline Number</span></Link>
+                <Link href="#"><span>Helpline Number</span></Link>
                 </div>
             </div>
             <div className={styles.CTACol}>

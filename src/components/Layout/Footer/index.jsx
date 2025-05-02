@@ -7,11 +7,11 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const contacts = [
-    { href: "tel:+", icon: "/images/icons/telephone-call-1.svg", text: "+" },
-    { href: "mailto:", icon: "/images/icons/email-11.svg", text: "abhishek.com" }, 
-    { href: "#", icon: "/images/icons/location-11.svg", text: " ddddddddddddddd" }, 
-    { href: "#", icon: "/images/icons/location-11.svg", text: "ddddddddddddddd" }, 
-    { href: "#", icon: "/images/icons/location-11.svg", text: "sdsfsdffffffffff" }, 
+    { href: "tel:+", icon: "/images/icons/call.svg", text: "+(91) 7341173250" },
+    { href: "mailto:", icon: "/images/icons/email.svg", text: "Evysot@gmail.com" }, 
+    { href: "#", icon: "/images/icons/maps-and-flags.svg", text: "Mohali punjab india " }, 
+    // { href: "#", icon: "/images/icons/location-11.svg", text: "ddddddddddddddd" }, 
+    // { href: "#", icon: "/images/icons/location-11.svg", text: "sdsfsdffffffffff" }, 
   ];
 
 
@@ -30,26 +30,26 @@ export default function Footer() {
               <p className="leading-[26px] text-[#fff]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit minima quod error aut. Magni rem esse voluptates quia, nesciunt vitae fugit culpa exercitationem sunt sit quas recusandae ipsam vel temporibus.</p>
             </div>
             <div className={`${styles.footerItems} text-[#fff]`}>
-              <h4 className="text-[#fff]">Quick Links</h4>
+              <h4 className="text-[#fff] uppercase">Quick Links</h4>
               <ul>
                 <li><Link href="/">Home</Link></li>
                 <li><Link href="/about">About Us</Link></li>
-                <li><Link href="/blog">Blog</Link></li>
-                <li><Link href="/privacy-policy">Privacy Policy </Link></li>
-                <li><Link href="/terms-and-conditions">Terms & Conditions</Link></li>
+                <li><Link href="/why-chose-us">Why Whose Us</Link></li>
+                <li><Link href="/privacy-policy">Contact Us </Link></li>
+                {/* <li><Link href="/">Terms & Conditions</Link></li> */}
               </ul>
             </div>
             <div className={`${styles.footerItems} text-[#fff]`}>
-              <h4 className="text-[#fff]">Test Prep</h4>
+              <h4 className="text-[#fff] uppercase">IT SERVICES</h4>
               <ul>
-                <li><Link href="/test-preparation-in-uae">Test Preparation in UAE</Link></li>
-                <li><Link href="/ielts-test-prep-in-uae">IELTS Test Prep</Link></li>
-                <li><Link href="/sat-preparation-in-uae">SAT Preparation</Link></li>
-                <li><Link href="/ucat-preparation-in-uae">UCAT Preparation</Link></li>
+                <li><Link href="/web-development">Web Development</Link></li>
+                <li><Link href="/web-development">Business Development</Link></li>
+                <li><Link href="/web-development">Product Management</Link></li>
+                <li><Link href="/web-development">UI/UX Design</Link></li>
               </ul>
             </div>
             <div className={`${styles.footerItems} text-[#fff]`}>
-              <h4 className="text-[#fff]">Contact Us</h4>
+              <h4 className="text-[#fff] uppercase">Contact Us</h4>
                 <ul className="flex flex-col gap-3">
                   {contacts.map((contact, index) => (
                     <li key={index} className="flex items-center gap-3">

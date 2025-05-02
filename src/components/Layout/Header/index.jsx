@@ -26,7 +26,7 @@ export default function Header() {
             <div className={styles.navbarLogo}>
               <Link href="/" title="Bhutan holiday tours">
                 {/* <Image src="/images/logo/main-logo.png" alt="Bhutan Best Inbound Tour" width="100" height="100" className='w-[100%]' priority /> */}
-                <h2 className='text-[30px] text-[#000]'><span className='text-[#261FB3]'>Evy</span>Softc</h2>
+                <h2 className='text-[30px] text-[#000]'><span className='text-[#261FB3]'>Evy</span>Soft</h2>
               </Link>
             </div>
             <div className={styles.navigation}>

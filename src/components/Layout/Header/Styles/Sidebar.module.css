@@ -20,7 +20,7 @@
     right: 0;
     opacity: 1;
     visibility: visible;
-    background-color: #0a1019;
+    background-color: #684df4;
   }
   
   .offcanvasWrapper {
@@ -57,12 +57,14 @@
     height: 40px;
     padding: 10px;
     line-height: 20px;
-    background-color: var(--dark-color);
-    color: white;
+    background-color:#fff;
+    color:#684df4 ;
     border-radius: 50%;
     text-align: center;
     cursor: pointer;
     transition: all 0.5s ease-out;
+    font-weight: 900
+    ;
   }
   
   .offcanvasClose:hover {

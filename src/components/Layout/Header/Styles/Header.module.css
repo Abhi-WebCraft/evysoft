@@ -83,7 +83,7 @@
     display: flex;
   }
   .headerContainer.headerSticky .mobileNavBtn {
-    background-color: var(--text-color);
+    background-color:#684df4  ;
   }
   
   .mobileNavBtn span:first-child {
