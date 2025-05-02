@@ -3,8 +3,9 @@ import { useEffect } from 'react';
 import { useRouter } from "next/router";
 import Container from '@/components/Layout/Container';
 import SectionTitle from '@/components/Layout/SectionTitle';
+import { title } from 'process';
 
-export default function Faq({ faqs }) {  // Accept faqData as a prop
+export default function Faq({ faqs,subtitile,title }) {  // Accept faqData as a prop
   const router = useRouter();
   const { locale } = router;
 
@@ -49,8 +50,8 @@ export default function Faq({ faqs }) {  // Accept faqData as a prop
         <div className="relative z-10 faq-section">
           <div className="mb-[30px] text-center">
             <SectionTitle
-              subtitle="Our questions & answers"
-              title="Frequently Asked Questions"
+              subtitle={subtitile}
+              title={title}
             />
           </div>
           <div className="process__accordions">

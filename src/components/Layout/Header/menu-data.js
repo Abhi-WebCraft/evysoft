@@ -25,8 +25,8 @@ const menu_data = [
 
   {
     has_dropdown: false,
-    title: "Blog",
-    link: "/blog/",
+    title: "Why Chose Us",
+    link: "/why-chose-us",
   },
   {
     has_dropdown: false,

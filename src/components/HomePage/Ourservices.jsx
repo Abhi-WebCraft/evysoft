@@ -8,31 +8,31 @@ const servicesData = [
   {
     id: 1,
     title: "Website Development",
-    tags: ["React Js Development", "React Js Development", "React Js Development", "React Js Development"],
+    tags: ["React Js Development", "Laravel Development", "Anglular Js Development", "Vue Js Development"],
     animation: "fade-up",
   },
   {
     id: 2,
     title: "Mobile Application Development",
-    tags: ["React Js Development", "React Js Development", "React Js Development", "React Js Development"],
+   tags: ["React Js Development", "Laravel Development", "Anglular Js Development", "Vue Js Development"],
     animation: "fade-up",
   },
   {
     id: 3,
     title: "UX/UI Design",
-    tags: ["React Js Development", "React Js Development", "React Js Development", "React Js Development"],
+   tags: ["React Js Development", "Laravel Development", "Anglular Js Development", "Vue Js Development"],
     animation: "fade-up",
   },
   {
     id: 4,
     title: "Graphics Design",
-    tags: ["React Js Development", "React Js Development", "React Js Development", "React Js Development"],
+   tags: ["React Js Development", "Laravel Development", "Anglular Js Development", "Vue Js Development"],
     animation: "fade-up",
   },
   {
     id: 5,
     title: "Digital Marketing",
-    tags: ["React Js Development", "React Js Development", "React Js Development", "React Js Development"],
+   tags: ["React Js Development", "Laravel Development", "Anglular Js Development", "Vue Js Development"],
     animation: "fade-up",
   },
 ];
@@ -44,9 +44,9 @@ export default function Ourservices() {
       <Container>
         <div className="text-center mb-[50px] mx-auto max-w-[800px]">
           <SectionTitle
-            subtitle="Work Process"
-            title="Easy, Dynamic, and Optimal Workflow"
-            content="Unveiling the extraordinary power. Delving into the exceptionally powerful features of data analysis"
+            subtitle="Our Services"
+            title="Discover Our Digital Solutions"
+            content="Unveiling the extraordinary power. delving into the exceptionally powerfull features of data analysis"
           />
         </div>
 
@@ -69,7 +69,7 @@ export default function Ourservices() {
                         <Link
                           key={index}
                           href="#"
-                          className="bg-[#fff] border py-[7px] px-[20px] rounded-[50px] min-w-[150px] md:w-[220px] text-center"
+                          className="bg-[#fff] border py-[7px] px-[20px] rounded-[50px] min-w-[150px] md:w-[250px] text-center"
                         >
                           {tag}
                         </Link>

@@ -182,7 +182,7 @@ export default function Home({ referrer }) {
         <div className='mt-[-100px]'>
           <Points points={pointsData} title="What We Do" description="At International, we offer specialized services to help aspiring engineers reach their academic and career goals. Here's how we assist:" />
         </div>
-        <Testimonials/>
+        <Testimonials />
         <CtaBlock />
       </Layout>
     </>

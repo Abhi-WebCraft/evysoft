@@ -26,53 +26,53 @@ export default function Home({ referrer }) {
       number: "01",
       icon: "/images/icons/icon.svg",
       title: "Web Development",
-      text: "We build fast, scalable, and responsive websites.",
-      link: "/services/web-development",
+      text: "Conveniently promote transparent materials and stand-alone strategic theme areas.",
+      link: "/web-development",
       bgShape: "/images/home/service_card_bg.webp",
       animation: "fade-up-right",
     },
     {
       number: "02",
       icon: "/images/icons/icon.svg",
-      title: "App Development",
-      text: "Get smooth and powerful mobile apps.",
-      link: "/services/app-development",
+      title: "UI/UX Design",
+      text: "Conveniently promote transparent materials and stand-alone strategic theme areas.",
+      link: "/web-development",
       bgShape: "/images/home/service_card_bg.webp",
       animation: "flip-down",
     },
     {
       number: "03",
       icon: "/images/icons/icon.svg",
-      title: "App Development",
-      text: "Get smooth and powerful mobile apps.",
-      link: "/services/app-development",
+      title: "Digital Marketing",
+      text: "Conveniently promote transparent materials and stand-alone strategic theme areas.",
+      link: "/web-development",
       bgShape: "/images/home/service_card_bg.webp",
       animation: "fade-up-left",
     },
     {
       number: "04",
       icon: "/images/icons/icon.svg",
-      title: "Web Development",
-      text: "We build fast, scalable, and responsive websites.",
-      link: "/services/web-development",
+      title: "Business Analysis",
+      text: "Conveniently promote transparent materials and stand-alone strategic theme areas.",
+      link: "/web-development",
       bgShape: "/images/home/service_card_bg.webp",
       animation: "fade-up-right"
     },
     {
       number: "05",
       icon: "/images/icons/icon.svg",
-      title: "App Development",
-      text: "Get smooth and powerful mobile apps.",
-      link: "/services/app-development",
+      title: "Software Services",
+      text: "Conveniently promote transparent materials and stand-alone strategic theme areas.",
+      link: "/web-development",
       bgShape: "/images/home/service_card_bg.webp",
       animation: "flip-down",
     },
     {
       number: "06",
       icon: "/images/icons/icon.svg",
-      title: "App Development",
-      text: "Get smooth and powerful mobile apps.",
-      link: "/services/app-development",
+      title: "Machine Learning",
+      text: "Conveniently promote transparent materials and stand-alone strategic theme areas.",
+      link: "/web-development",
       bgShape: "/images/home/service_card_bg.webp",
       animation: "fade-up-left",
     },
@@ -151,16 +151,18 @@ export default function Home({ referrer }) {
         {/* <BannerSection/> */}
         <Newbanner />
         {/* <Absection/> */}
-        <About  imageSrc="/images/home/about_1_1.png"
-        subtitle="About Company"
-        title="We Grow Your Business With IT"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quia fugiat neque quam ad in assumenda laudantium libero quod omnis aperiam hic laborum earum, inventore sequi temporibus, voluptas recusandae molestias"
-        aboutList={[
-          { image: "/images/icons/check.svg", text: "Certified Company" },
-          { image: "/images/icons/check.svg", text: "Expert Team" }
-        ]}
-        buttonTitle="Get Started"
-        buttonLink="/contact"/>
+        <About imageSrc="/images/home/about_1_1.png"
+          subtitle="About Us"
+          title="We’re Awards winning Digtial Agency"
+          description="Webteck is an IT solution advisor and studyinng platform for high converting business.Sit sed suspendisse mattis dictumst pulvinar. Nunc parturient feugiat est ultrices"
+          aboutList={[
+            { image: "/images/icons/check.svg", text: "120+ Our Expert Team" },
+            { image: "/images/icons/check.svg", text: "250+ Award Winning" },
+            { image: "/images/icons/check.svg", text: "300+ Transparency Supports" },
+            { image: "/images/icons/check.svg", text: "24/7 customers Support" }
+          ]}
+          buttonTitle="Get Started"
+          buttonLink="/contact" />
         <ServiceCards services={services} />
         <div className='mb-[-50px]'>
           <WhyCards title="Website Development" subtitle="Web Site " content="" data={newdata} />
@@ -168,7 +170,7 @@ export default function Home({ referrer }) {
         <Services />
         <Ourservices />
         <div className='pb-[100px]'>
-          <Faq faqs={faqData} />
+          <Faq subtitile="Our questions & answers" title="Frequently Asked Questions" faqs={faqData} />
         </div>
         {/* <Contactus /> */}
         <CtaBlock />
