@@ -3,13 +3,9 @@ import PageHead from "@/components/Layout/PageHead";
 import Layout from "@/components/Layout/Layout";
 import BannerSection from '@/components/HomePage/BannerSection/BannerSection';
 import About from '@/components/HomePage/About/About';
-import Slider from '@/components/HomePage/Slider';
-import Services from '@/components/HomePage/Services';
 import Ourservices from '@/components/HomePage/Ourservices';
 import ServiceCards from '@/components/common/ServiceCard';
 import CtaBlock from '@/components/HomePage/CtaBlock';
-import Contactus from '@/components/common/Contactus';
-import Absection from '@/components/common/Absection';
 import WhyCards from '@/components/common/WhyCards';
 import Newbanner from '@/components/HomePage/Newbanner';
 import Faq from '@/components/common/Faq';
@@ -67,52 +63,37 @@ export default function Home({ referrer }) {
       bgShape: "/images/home/service_card_bg.webp",
       animation: "flip-down",
     },
-    {
-      number: "06",
-      icon: "/images/icons/icon.svg",
-      title: "Machine Learning",
-      text: "Conveniently promote transparent materials and stand-alone strategic theme areas.",
-      link: "/web-development",
-      bgShape: "/images/home/service_card_bg.webp",
-      animation: "fade-up-left",
-    },
+
   ];
 
   const newdata = [
     {
-      image: "/images/services/service2.png",
-      icon: "/images/icons/icon.svg",
-      title: "100% Compliance Guarantee",
-      description: "Always on time, every time—no penalties.",
-      link: "#",
+      image: "/images/about/project_6_1.jpg",
+      // icon: "/images/icons/icon.svg",
+      // title: "100% Compliance Guarantee",
+      // description: "Always on time, every time—no penalties.",
+      // link: "#",
     },
     {
-      image: "/images/services/service2.png",
-      icon: "/images/icons/icon.svg",
-      title: "Real-Time, Accurate Data",
-      description: "Always updated and error-free.",
-      link: "#",
+      image: "/images/about/project_6_2.jpg",
+      // icon: "/images/icons/icon.svg",
+      // title: "Real-Time, Accurate Data",
+      // description: "Always updated and error-free.",
+      // link: "#",
     },
     {
-      image: "/images/services/service2.png",
-      icon: "/images/icons/icon.svg",
-      title: "Tailored Solutions",
-      description: "Perfect for businesses of all sizes, from startups to enterprises.",
-      link: "#",
+      image: "/images/about/project_12_1.jpg",
+      // icon: "/images/icons/icon.svg",
+      // title: "Tailored Solutions",
+      // description: "Perfect for businesses of all sizes, from startups to enterprises.",
+      // link: "#",
     },
     {
-      image: "/images/services/service2.png",
-      icon: "/images/icons/icon.svg",
-      title: "Secure & Confidential",
-      description: "Your data is protected with advanced encryption and security.",
-      link: "#",
-    },
-    {
-      image: "/images/services/service2.png",
-      icon: "/images/icons/icon.svg",
-      title: "Expert Guidance",
-      description: "Stay ahead of regulations with our experienced financial advisors.",
-      link: "#",
+      image: "/images/about/project_12_1.jpg",
+      // icon: "/images/icons/icon.svg",
+      // title: "Expert Guidance",
+      // description: "Stay ahead of regulations with our experienced financial advisors.",
+      // link: "#",
     },
   ];
 
@@ -164,11 +145,11 @@ export default function Home({ referrer }) {
           buttonTitle="Get Started"
           buttonLink="/contact" />
         <ServiceCards services={services} />
+        {/* <Services /> */}
+        <Ourservices />
         <div className='mb-[-50px]'>
           <WhyCards title="Website Development" subtitle="Web Site " content="" data={newdata} />
         </div>
-        <Services />
-        <Ourservices />
         <div className='pb-[100px]'>
           <Faq subtitile="Our questions & answers" title="Frequently Asked Questions" faqs={faqData} />
         </div>

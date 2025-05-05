@@ -21,7 +21,7 @@
       padding: 5px 0;
     }
     .navbar {
-      padding: 18px !important;
+      padding: 10px !important;
     }
   }
   
@@ -30,7 +30,7 @@
     align-items: center;
     justify-content: space-between;
     background: #eff1f9;
-    padding: 30px;
+    padding: 18px;
     border-radius: 60px;
   }
   

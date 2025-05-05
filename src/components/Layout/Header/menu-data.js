@@ -8,12 +8,12 @@ const menu_data = [
   {
     has_dropdown: true,
     title: "About Us",
-    link: "/about-us",
+    link: "#it-sport-about",
   },
   {
     has_dropdown: true,
     title: "Our Services",
-    link: "/our-services",
+    link: "#it-sprot-our-services",
     // sub_menus: [
     //   { link: "/test-preparation-in-uae", title: "Test Preparation in UAE" },
     //   { link: "/ielts-test-prep-in-dubai", title: "IELTS Test Prep" },
@@ -26,7 +26,7 @@ const menu_data = [
   {
     has_dropdown: false,
     title: "Why Chose Us",
-    link: "/why-chose-us",
+    link: "#it-sprot-faq",
   },
   {
     has_dropdown: false,

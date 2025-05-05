@@ -37,12 +37,12 @@ export default function WhyCards({ data, title, subtitle, content }) {
             speed={1000}
             breakpoints={{
               768: { slidesPerView: 2 },
-              1024: { slidesPerView: 4 },
+              1024: { slidesPerView: 3 },
             }}
           >
             {data.map((item, index) => (
               <SwiperSlide key={index}>
-                <div className="whyCard border shadow-md " data-aos="fade-up"
+                <div className=" border  rounded-[20px]" data-aos="fade-up"
                   data-aos-anchor-placement="top-bottom">
                   <div className="whyCard_img ">
                     <Image
@@ -50,10 +50,10 @@ export default function WhyCards({ data, title, subtitle, content }) {
                       alt={item.title}
                       width={287}
                       height={180}
-                      className='h-[200px] object-cover' />
-                    <div className="whyCard-overlay"></div>
+                      className='h-[400px] object-cover rounded-[20px]' />
+                    {/* <div className="whyCard-overlay"></div> */}
                   </div>
-                  <div className="whyCard_content">
+                  {/* <div className="whyCard_content">
                     <div className="whyCard_icon">
                       <Image
                         src={item.icon}
@@ -79,7 +79,7 @@ export default function WhyCards({ data, title, subtitle, content }) {
                         height={300}
                       />
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </SwiperSlide>
             ))}

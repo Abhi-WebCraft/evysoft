@@ -66,6 +66,9 @@ body {
   color: var(--text-color);
   background: var(--theme-bg);
 }
+html {
+  scroll-behavior: smooth;
+}
 .section{
   padding: 100px 0px;
 }
@@ -886,7 +889,6 @@ img {
   width: 100%;
 }
 
-/* Top Image */
 .whyCard_img {
   border-radius: 10px 10px 0 0;
   overflow: hidden;
@@ -897,11 +899,10 @@ img {
   transition: 0.3s ease-in-out;
 }
 
-/* Content */
 .whyCard_content {
   position: relative;
   padding: 0 10px 25px 10px;
-  flex-grow: 1; /* NEW: Content area stretches */
+  flex-grow: 1; 
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -909,7 +910,6 @@ img {
   z-index: 2;
 }
 
-/* Icon */
 .whyCard_icon {
   width: 80px;
   height: 80px;  
@@ -926,8 +926,6 @@ img {
 .whyCard_icon img {
   transition: 0.3s ease-in-out;
 }
-
-/* Title */
 .whyCard .box-title {
   margin-bottom: 12px;
   font-size:20px; 
@@ -939,13 +937,11 @@ img {
   color: #f2f2f2;
 }
 
-/* Text */
 .whyCard_text {
   transition: 0.3s ease-in-out;
   /* margin: 0 auto 10px auto; */
 }
 
-/* Hover States */
 .whyCard:hover {
   background-color: #684df3;
 }
@@ -992,8 +988,6 @@ img {
 .whyCard:hover .whyCard_text {
   color: #fff;
 }
-
-/* Responsive Adjustments */
 @media (max-width: 768px) {
   .whyCard {
       min-height: 400px;
@@ -1060,18 +1054,18 @@ img {
   left: -13px;
   z-index: 0;
 }
-@keyframes slideUpDown {
+/* @keyframes slideUpDown {
   0%, 100% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(40px); /* adjust the distance */
+    transform: translateY(40px);
   }
 }
 
 .animate-slide-up-down {
   animation: slideUpDown 3s ease-in-out infinite;
-}
+} */
 @media (max-width:1024px) {
   .new-bn-image::after {
     content: "";

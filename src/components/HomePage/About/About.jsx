@@ -15,7 +15,7 @@ export default function About({
   buttonLink = "#",
 }) {
   return (
-    <section className={styles.section}>
+    <section id="it-sport-about" className={styles.section}>
       <Container>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 items-center">
           {/* Left Side Image */}

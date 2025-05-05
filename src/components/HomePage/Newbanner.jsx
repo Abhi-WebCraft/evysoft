@@ -18,7 +18,7 @@ export default function HomeBanner() {
                            <p data-aos="fade-down-right"> <Btn title="Contact Us" link="" /></p>
                         </div>
                         <div className=" relative new-bn-image" data-aos="fade-down-left">
-                            <Image src="/images/bg/hero_img_3_1-1.png" alt="" width={500} height={500} className=" absolute lg:top-[-220px] lg:left-[70px] z-10  banner-img-new" />
+                            <Image src="/images/bg/hero_bg_10_1.png" alt="" width={500} height={500} className=" absolute top-[-280px] left-[70px] z-10  banner-img-new" />
                         </div>
                     </div>
                 </Container>
