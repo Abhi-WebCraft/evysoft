@@ -24,7 +24,7 @@ export default function Footer() {
               <div className={styles.footerLogo}>
               <Link href="/" title="Bhutan holiday tours">
                 {/* <Image src="/images/logo/main-logo.png" alt="Bhutan Best Inbound Tour" width="100" height="100" className='w-[100%]' priority /> */}
-                <h2 className='text-[34px] text-[#fff]'><span className='text-[#261FB3]'>Evy</span>Soft</h2>
+                <h2 className='text-[34px] text-[#fff]'><span >Evy</span>Soft</h2>
               </Link>
               </div>
               <p className="leading-[26px] text-[#fff]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit minima quod error aut. Magni rem esse voluptates quia, nesciunt vitae fugit culpa exercitationem sunt sit quas recusandae ipsam vel temporibus.</p>

@@ -13,7 +13,7 @@ const CtaBlock = () => {
             <p className="text-[18px] font-bold text-[#fff]">
               Web development
             </p>
-            <div className=" text-[55px] font-extrabold capitalize text-[#fff] cta-head">
+            <div className="md:text-[42px] text-[32px] lg:text-[55px] font-extrabold capitalize text-[#fff] cta-head">
             Ready to Launch Your Next Big Idea?
             </div>
             <p className="text-[20px] text-[#fff] max-w-[800px]">
