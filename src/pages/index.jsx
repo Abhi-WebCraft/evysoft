@@ -9,6 +9,7 @@ import CtaBlock from '@/components/HomePage/CtaBlock';
 import WhyCards from '@/components/common/WhyCards';
 import Newbanner from '@/components/HomePage/Newbanner';
 import Faq from '@/components/common/Faq';
+import Testimonials from '@/components/common/Testimonials';
 export default function Home({ referrer }) {
   console.log(referrer)
   const PageMeta =
@@ -163,9 +164,10 @@ export default function Home({ referrer }) {
         <div className='mb-[-50px]'>
           <WhyCards title="Website Development" subtitle="Web Site " content="" data={newdata} />
         </div>
-        <div className='pb-[100px]'>
+        <div className='py-[100px]'>
           <Faq subtitile="Evysoft" title="Frequently Asked Questions" faqs={faqData} />
         </div>
+        <Testimonials/>
         {/* <Contactus /> */}
         <CtaBlock />
       </Layout>

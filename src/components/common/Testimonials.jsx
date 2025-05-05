@@ -10,25 +10,30 @@ import Container from "../Layout/Container";
 
 const testimonials = [
   {
-    text: "I wanted to let you know that the file you sent is excellent and serves our needs. We are impressed with the quality of your work, quick turnaround, and response to communication.",
-    author: "Ric Dube",
+    text: "EvySoft helped us transform our digital strategy. The team not only delivered high-quality software but also guided us through every step of the process. We saw a 40% increase in efficiency after implementing their solutions!",
+    author: "John Doe, CEO at TechVerse",
     bgColor: "#fff"
   },
   {
-    text: "We are impressed with the data entry services Computyne and the team provides to us. One ca undoubtedly count on Computyne for their invoice processing needs. Thank You!",
-    author: "Craig Archbold",
+    text: "Working with EvySoft was a game-changer for our mobile app development. Their attention to detail and innovative approach exceeded our expectations. Highly recommend their services!",
+    author: "Jane Smith, Product Manager at AppLabs",
     bgColor: "#fff"
   },
   {
-    text: "We are very satisfied with your resume processing services and you fitted all our deadlines and exceeded our expectations in quality and due that we consider Computyne a valuable component of our squad.",
-    author: "Shira Papir",
+    text: "The team at EvySoft is incredible. From start to finish, they were highly communicative, professional, and delivered on time. The new system they developed for us has streamlined our operations.",
+    author: "Michael Lee, CTO at FinNext",
     bgColor: "#fff"
   },
   {
-    text: "I appreciate that Computyne is putting in long hours on short notice with being very flexible and responsive. I continue to be impressed with your work ethic and desire to build a strong relationship.",
-    author: "Devin O'Leary",
+    text: "EvySoft helped us transform our digital strategy. The team not only delivered high-quality software but also guided us through every step of the process. We saw a 40% increase in efficiency after implementing their solutions!",
+    author: "John Doe, CEO at TechVerse",
     bgColor: "#fff"
-  }
+  },
+  {
+    text: "Working with EvySoft was a game-changer for our mobile app development. Their attention to detail and innovative approach exceeded our expectations. Highly recommend their services!",
+    author: "Jane Smith, Product Manager at AppLabs",
+    bgColor: "#fff"
+  },
 ];
 
 export default function Testimonials() {
