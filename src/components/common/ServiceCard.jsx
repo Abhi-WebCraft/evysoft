@@ -12,8 +12,9 @@ export default function ServiceCards({ services }) {
           <div className="pb-[100px] overflow-hidden">
             <div className="text-center mb-[50px] lg:max-w-[700px] mx-auto">
               <SectionTitle
-                subtitle="Our Services The Company"
-                title="We Are Increasing Business Success With IT Solution"
+                subtitle="Evysoft"
+                title=" Our Services"
+                content="At EvySoft, we offer end-to-end software services tailored to your business goals. Whether you're a startup or an enterprise, our expert team builds innovative digital products that scale."
               />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

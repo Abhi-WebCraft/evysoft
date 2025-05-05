@@ -1027,10 +1027,13 @@ img {
     margin-top: -.24em;
 }
 .new-bn-text h1{
-  font-size: 74px;
+  font-size: 72px;
   font-weight: 700;
   line-height: 1.135;
   margin-bottom: 0;
+}
+.new-bn-text{
+  margin-top: 40px;
 }
 .new-bn-text p{
   margin-bottom: 43px;

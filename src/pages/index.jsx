@@ -13,16 +13,16 @@ export default function Home({ referrer }) {
   console.log(referrer)
   const PageMeta =
   {
-    title: "web site ",
-    description: "Discover International, your trusted education consultant in Dubai, offering test prep, tutoring & consulting for academic and career success.",
-    keywords: "Global Education Consultants in UAE, Study Overseas or Abroad, Educational Consultants,  College Admissions, University Admissions Dubai UAE., Global Education Advisors in UAE,",
+    title: "EvySoft | Smart & Scalable Software Solutions",
+    description: "EvySoft is a forward-thinking software company delivering tailored solutions for startups and businesses. Web apps, mobile apps, and digital transformation — all in one place.",
+    keywords: "EvySoft, software development, web development, mobile app development, custom software solutions, UI UX design, digital transformation, tech startup solutions, scalable applications, enterprise software, SaaS development, business automation, IT consulting, cloud solutions, next.js development"
   }
   const services = [
     {
       number: "01",
       icon: "/images/icons/icon.svg",
-      title: "Web Development",
-      text: "Conveniently promote transparent materials and stand-alone strategic theme areas.",
+      title: "Custom Software Development",
+      text: "We build scalable, secure, and high-performance software tailored to your unique needs — from simple tools to complex platforms.",
       link: "/web-development",
       bgShape: "/images/home/service_card_bg.webp",
       animation: "fade-up-right",
@@ -30,8 +30,8 @@ export default function Home({ referrer }) {
     {
       number: "02",
       icon: "/images/icons/icon.svg",
-      title: "UI/UX Design",
-      text: "Conveniently promote transparent materials and stand-alone strategic theme areas.",
+      title: "Web Application Development",
+      text: "Using modern frameworks like Next.js and React, we create responsive, fast, and user-friendly web apps optimized for performance and SEO.",
       link: "/web-development",
       bgShape: "/images/home/service_card_bg.webp",
       animation: "flip-down",
@@ -39,8 +39,8 @@ export default function Home({ referrer }) {
     {
       number: "03",
       icon: "/images/icons/icon.svg",
-      title: "Digital Marketing",
-      text: "Conveniently promote transparent materials and stand-alone strategic theme areas.",
+      title: "Mobile App Development",
+      text: "We develop cross-platform mobile apps for iOS and Android that deliver great user experiences and business value.",
       link: "/web-development",
       bgShape: "/images/home/service_card_bg.webp",
       animation: "fade-up-left",
@@ -48,8 +48,8 @@ export default function Home({ referrer }) {
     {
       number: "04",
       icon: "/images/icons/icon.svg",
-      title: "Business Analysis",
-      text: "Conveniently promote transparent materials and stand-alone strategic theme areas.",
+      title: "UI/UX Design",
+      text: "We craft intuitive and elegant interfaces that enhance user engagement and simplify complex workflows.",
       link: "/web-development",
       bgShape: "/images/home/service_card_bg.webp",
       animation: "fade-up-right"
@@ -57,8 +57,17 @@ export default function Home({ referrer }) {
     {
       number: "05",
       icon: "/images/icons/icon.svg",
-      title: "Software Services",
-      text: "Conveniently promote transparent materials and stand-alone strategic theme areas.",
+      title: " Cloud & DevOps Services",
+      text: "From cloud migration to CI/CD automation, we streamline your infrastructure for speed, scalability, and security.",
+      link: "/web-development",
+      bgShape: "/images/home/service_card_bg.webp",
+      animation: "flip-down",
+    },
+    {
+      number: "06",
+      icon: "/images/icons/icon.svg",
+      title: "IT Consulting & Strategy",
+      text: "Not sure where to start? Our tech experts help you choose the right tools and architecture to future-proof your product.",
       link: "/web-development",
       bgShape: "/images/home/service_card_bg.webp",
       animation: "flip-down",
@@ -100,28 +109,33 @@ export default function Home({ referrer }) {
   const faqData = [
     {
       number: "01",
-      question: " What sets  International apart for engineering admissions?",
-      answer: "We offer end-to-end, personalized services and have extensive experience guiding students to secure placements in top engineering programs worldwide.",
+      question: "What services does EvySoft offer?",
+      answer: "We specialize in custom software development, web and mobile application development, UI/UX design, cloud solutions, business automation, IT consulting, and more. Our goal is to provide end-to-end digital solutions tailored to your business needs.",
     },
     {
       number: "02",
-      question: " Can I apply to engineering colleges in multiple countries?",
-      answer: "Yes, we specialize in managing multi-country applications and navigating varying requirements to maximize your options.",
+      question: "How long does it take to develop a custom software solution?",
+      answer: "The timeline for a custom software solution varies depending on the complexity of the project. Typically, it ranges from a few weeks for smaller apps to several months for more complex, enterprise-level platforms. We work with you to define a clear timeline and milestones for your project.",
     },
     {
       number: "03",
-      question: "Do you assist with specific engineering entrance exams?",
-      answer: "Absolutely. We offer tailored preparation for exams such as SAT, ACT, GRE, and other relevant tests required by top engineering institutions.",
+      question: " What technologies does EvySoft use?",
+      answer: "We use modern technologies like React, Next.js, Node.js, Flutter, Angular, Tailwind CSS, and AWS for web and mobile app development. We ensure the best fit for your project needs and business goals.",
     },
     {
       number: "04",
-      question: "What if I’m unsure about which engineering field to choose?",
-      answer: "Our academic counselors work with you to identify your strengths, interests, and career goals to recommend the best-fit engineering programs.",
+      question: " Can you help with my existing software or project?",
+      answer: "Absolutely! We provide ongoing maintenance, updates, and improvements for existing applications. Whether you're looking for bug fixes, performance optimization, or new features, our team is here to help.",
     },
     {
       number: "05",
-      question: "Do you provide post-admission support?",
-      answer: "Yes! We assist with visa applications, pre-departure preparation, and settling-in guidance to ensure a seamless transition to college life.",
+      question: "How do you ensure the security of my project?",
+      answer: "We take security seriously. Our development processes follow the best security practices, including data encryption, secure coding standards, and regular security audits. Additionally, we implement robust testing to ensure your product is secure before launch.",
+    },
+    {
+      number: "06",
+      question: "How can I get started with EvySoft?",
+      answer: "Simply contact us through the [Contact Us] page, and one of our experts will reach out to discuss your project. We offer free consultations to understand your needs and offer the best solution.",
     },
 
   ];
@@ -134,13 +148,12 @@ export default function Home({ referrer }) {
         {/* <Absection/> */}
         <About imageSrc="/images/home/about_1_1.png"
           subtitle="About Us"
-          title="We’re Awards winning Digtial Agency"
-          description="Webteck is an IT solution advisor and studyinng platform for high converting business.Sit sed suspendisse mattis dictumst pulvinar. Nunc parturient feugiat est ultrices"
+          title="Empowering Businesses with Smart Technology"
+          description="EvySoft is a forward-thinking software company that builds scalable, custom digital solutions for startups, enterprises, and entrepreneurs. From web and mobile apps to cloud platforms and UI/UX design, we combine innovation with reliability to turn your ideas into reality."
           aboutList={[
-            { image: "/images/icons/check.svg", text: "120+ Our Expert Team" },
-            { image: "/images/icons/check.svg", text: "250+ Award Winning" },
-            { image: "/images/icons/check.svg", text: "300+ Transparency Supports" },
-            { image: "/images/icons/check.svg", text: "24/7 customers Support" }
+            { image: "/images/icons/check.svg", text: "Expert Teams" },
+            { image: "/images/icons/check.svg", text: "Agile Development" },
+            { image: "/images/icons/check.svg", text: "100% Client-Focused" },
           ]}
           buttonTitle="Get Started"
           buttonLink="/contact" />
@@ -151,7 +164,7 @@ export default function Home({ referrer }) {
           <WhyCards title="Website Development" subtitle="Web Site " content="" data={newdata} />
         </div>
         <div className='pb-[100px]'>
-          <Faq subtitile="Our questions & answers" title="Frequently Asked Questions" faqs={faqData} />
+          <Faq subtitile="Evysoft" title="Frequently Asked Questions" faqs={faqData} />
         </div>
         {/* <Contactus /> */}
         <CtaBlock />
