@@ -41,7 +41,7 @@ export default function Faq({ faqs,subtitile,title }) {  // Accept faqData as a 
   }, []);
 
   return (
-   <div id='it-sprot-faq'>
+   <div>
      <section
     id="faq "
     className="section-bottom bg-[#f2f2f2f] relative bg-cover bg-no-repeat bg-fixed bg-right z-[1] overlay-container faq-section" >
