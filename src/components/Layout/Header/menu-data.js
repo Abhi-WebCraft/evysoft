@@ -8,12 +8,12 @@ const menu_data = [
   {
     has_dropdown: true,
     title: "About Us",
-    link: "#it-sport-about",
+    link: "/about-us",
   },
   {
     has_dropdown: true,
     title: "Our Services",
-    link: "#it-sprot-our-services",
+    link: "our-services",
     // sub_menus: [
     //   { link: "/test-preparation-in-uae", title: "Test Preparation in UAE" },
     //   { link: "/ielts-test-prep-in-dubai", title: "IELTS Test Prep" },
