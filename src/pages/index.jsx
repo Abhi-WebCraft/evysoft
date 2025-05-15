@@ -58,7 +58,7 @@ export default function Home({ referrer }) {
     {
       number: "05",
       icon: "/images/icons/icon.svg",
-      title: " Cloud & DevOps Services",
+      title: " Process Automation",
       text: "From cloud migration to CI/CD automation, we streamline your infrastructure for speed, scalability, and security.",
       link: "/web-development",
       bgShape: "/images/home/service_card_bg.webp",

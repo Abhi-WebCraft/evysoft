@@ -52,13 +52,13 @@ export default function ServiceCards({ services }) {
                     {service.text}
                   </p>
 
-                  <Link
+                  {/* <Link
                     href={service.link}
                     className="th-btn inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
                   >
                     Read More
                     <i className="fa-regular fa-arrow-right ms-2"></i>
-                  </Link>
+                  </Link> */}
 
                   <div className="bg-shape absolute bottom-0 right-0  opacity-20">
                     <Image
