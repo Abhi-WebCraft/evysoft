@@ -88,8 +88,8 @@ export default function Ourservices() {
 
               <div className="flex flex-col items-start lg:items-end mt-4 lg:mt-0">
                 <div className="flex items-center gap-4">
-                  <Btn title="See Details" link="#" />
-                  <div className="bg-[#fff] transition-all duration-500 rounded-full p-2 border-2 border-[rgb(84,132,255)]">
+                  <Btn title="Contact Us" link="#" />
+                  {/* <div className="bg-[#fff] transition-all duration-500 rounded-full p-2 border-2 border-[rgb(84,132,255)]">
                     <Image
                       src="/images/icons/arrows.svg"
                       alt="icon"
@@ -97,7 +97,7 @@ export default function Ourservices() {
                       height={50}
                       className="w-[35px]"
                     />
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
