@@ -28,7 +28,7 @@ export default function ServiceCards({ services }) {
                     {service.number}
                   </div>
 
-                  <div className="shape-icon flex items-center justify-center relative mb-4">
+                  {/* <div className="shape-icon flex items-center justify-center relative mb-4">
                     <Image
                       width={1000}
                       height={1000}
@@ -37,7 +37,7 @@ export default function ServiceCards({ services }) {
                       className="w-10 h-10 object-contain"
                     />
                     <span className="dots "></span>
-                  </div>
+                  </div> */}
 
                   <h3 className="box-title text-xl font-semibold mb-2">
                     <Link
