@@ -162,22 +162,24 @@ export default function Home({ referrer }) {
       <PageHead PageMeta={PageMeta} />
       <Layout>
         <Innerbanner
-          title="About Us"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quia fugiat neque quam ad in assumenda laudantium libero quod omnis aperiam hic laborum earum, inventore sequi temporibus, voluptas recusandae molestias?"
+          subtt="About Us"
+          title="Empowering Businesses Through Smart Technology"
+          description="At Evysoft, we create custom digital solutions that help companies innovate, scale, and succeed in the digital age."
           image="/images/about-bg.jpg" />
         <About
           imageSrc="/images/about/faq_1_1.png"
-          subtitle="About Company"
-          title="We Grow Your Business With IT"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quia fugiat neque quam ad in assumenda laudantium libero quod omnis aperiam hic laborum earum, inventore sequi temporibus, voluptas recusandae molestias"
+          subtitle="About Us"
+          title="Who We Are"
+          description="At Evysoft, we’re more than a tech company — we’re your digital growth partner. We combine creativity, technical expertise, and business insight to deliver solutions that drive real results. Our team is committed to building software that works seamlessly and scales effortlessly."
           aboutList={[
-            { image: "/images/icons/check.svg", text: "Certified Company" },
-            { image: "/images/icons/check.svg", text: "Expert Team" }
+            { image: "/images/icons/check.svg", text: "Human-Centered Design: We build solutions with your users in mind, ensuring intuitive and engaging experiences." },
+            { image: "/images/icons/check.svg", text: "End-to-End Expertise: From planning to deployment, we cover the entire digital product lifecycle." },
+             { image: "/images/icons/check.svg", text: "Results-Driven Approach: Your goals shape our strategy — we focus on measurable outcomes and long-term success." }
           ]}
           buttonTitle="Get Started"
           buttonLink="/contact"
         />
-        <WhyCards title="Key Features" subtitle="" content="" data={newdata} />
+        <WhyCards title="Get to Know Evysoft" subtitle="" content="From our roots in innovation to our passion for creating meaningful digital solutions, Evysoft is built on a foundation of expertise, creativity, and trust. Slide through our story to discover what makes us different — and why we’re the right partner for your next big idea." data={newdata} />
         <Counter />
         <div className='mt-[-100px]'>
           <Points points={pointsData} title="What We Do" description="At International, we offer specialized services to help aspiring engineers reach their academic and career goals. Here's how we assist:" />

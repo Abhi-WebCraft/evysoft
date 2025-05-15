@@ -21,9 +21,9 @@ export default function Counter() {
             }, 20); // Speed of increment
         };
 
-        incrementCounter(setYearsExperience, 30); // Years of Experience
-        incrementCounter(setEmployees, 2); // Employees
-        incrementCounter(setProjectsCompleted, 5); // Projects Completed
+        incrementCounter(setYearsExperience, 120); // Years of Experience
+        incrementCounter(setEmployees, 30); // Employees
+        incrementCounter(setProjectsCompleted, 10); // Projects Completed
         incrementCounter(setClientsWorldwide, 5); // Clients Worldwide
     }, []);
 
@@ -35,8 +35,8 @@ export default function Counter() {
                         <div className="relative flex flex-col items-center gap-3 counter">
                             <Image src="/images/icons/workflow.svg" alt="vector" width="50" height="50" className="w-[70px] h-[70px] stats-img"/>
                             <div className="flex flex-col items-center">
-                                <span className="text-[40px] font-semibold text-white stats-head">{yearsExperience}k+</span>
-                                <span className="text-white text-[13px]">Web Site design</span>
+                                <span className="text-[40px] font-semibold text-white stats-head">{yearsExperience}+</span>
+                                <span className="text-white text-[13px]">Projects Delivered</span>
                             </div>
                         </div>
                     </div>
@@ -45,8 +45,8 @@ export default function Counter() {
                         <div className="relative flex flex-col items-center gap-3 counter">
                             <Image src="/images/icons/software-as-a-service.svg" alt="vector" width="50" height="50" className="w-[70px] h-[70px] stats-img"/>
                             <div className="flex flex-col items-center">
-                                <span className="text-[40px] font-semibold text-white stats-head">{employees}k+</span>
-                                <span className="text-white text-[13px]">web development services</span>
+                                <span className="text-[40px] font-semibold text-white stats-head">{employees}+</span>
+                                <span className="text-white text-[13px]">Happy Clients Worldwide</span>
                             </div>
                         </div>
                     </div>
@@ -55,8 +55,8 @@ export default function Counter() {
                         <div className="relative flex flex-col items-center gap-3 counter">
                             <Image src="/images/icons/ai-search.svg" alt="vector" width="50" height="50" className="w-[70px] h-[70px] stats-img"/>
                             <div className="flex flex-col items-center">
-                                <span className="text-[40px] font-semibold text-white stats-head">{projectsCompleted}k+</span>
-                                <span className="text-white text-[13px]">web ai</span>
+                                <span className="text-[40px] font-semibold text-white stats-head">{projectsCompleted}+</span>
+                                <span className="text-white text-[13px]">Industries Served</span>
                             </div>
                         </div>
                     </div>
@@ -65,8 +65,8 @@ export default function Counter() {
                         <div className="relative flex flex-col items-center gap-3 ">
                             <Image src="/images/icons/review.svg" alt="vector" width="50" height="50" className="w-[70px] h-[70px] stats-img"/>
                             <div className="flex flex-col items-center">
-                                <span className="text-[40px] font-semibold text-white stats-head">{clientsWorldwide}k+</span>
-                                <span className="text-white text-[13px]">Reviews</span>
+                                <span className="text-[40px] font-semibold text-white stats-head">{clientsWorldwide}+Years</span>
+                                <span className="text-white text-[13px]">Of Digital Excellence</span>
                             </div>
                         </div>
                     </div>
