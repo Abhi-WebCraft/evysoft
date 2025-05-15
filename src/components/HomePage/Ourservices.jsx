@@ -48,7 +48,7 @@ export default function Ourservices() {
       <Container>
         <div className="text-center mb-[50px] mx-auto max-w-[800px]">
           <SectionTitle
-            subtitle="EvySoft"
+            subtitle=""
             title="Why Choose EvySoft?"
             content=""
           />
