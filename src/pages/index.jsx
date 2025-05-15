@@ -162,7 +162,7 @@ export default function Home({ referrer }) {
         {/* <Services /> */}
         <Ourservices />
         <div className='mb-[-50px]'>
-          <WhyCards title="Website Development" subtitle=" " content="" data={newdata} />
+          <WhyCards title="All  Clients" subtitle=" " content="" data={newdata} />
         </div>
         <div className='py-[100px]'>
           <Faq subtitile="" title="Frequently Asked Questions" faqs={faqData} />
