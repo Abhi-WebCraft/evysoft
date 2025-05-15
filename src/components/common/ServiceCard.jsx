@@ -12,7 +12,7 @@ export default function ServiceCards({ services }) {
           <div className="pb-[100px] overflow-hidden">
             <div className="text-center mb-[50px] lg:max-w-[700px] mx-auto">
               <SectionTitle
-                subtitle="Evysoft"
+                subtitle=""
                 title=" Our Services"
                 content="At EvySoft, we offer end-to-end software services tailored to your business goals. Whether you're a startup or an enterprise, our expert team builds innovative digital products that scale."
               />
