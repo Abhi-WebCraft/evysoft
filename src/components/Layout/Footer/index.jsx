@@ -39,7 +39,7 @@ export default function Footer() {
                 {/* <li><Link href="/">Terms & Conditions</Link></li> */}
               </ul>
             </div>
-            <div className={`${styles.footerItems} text-[#fff]`}>
+            {/* <div className={`${styles.footerItems} text-[#fff]`}>
               <h4 className="text-[#fff] uppercase">IT SERVICES</h4>
               <ul>
                 <li><Link href="/web-development">Web Development</Link></li>
@@ -47,7 +47,7 @@ export default function Footer() {
                 <li><Link href="/web-development">Product Management</Link></li>
                 <li><Link href="/web-development">UI/UX Design</Link></li>
               </ul>
-            </div>
+            </div> */}
             <div className={`${styles.footerItems} text-[#fff]`}>
               <h4 className="text-[#fff] uppercase">Contact Us</h4>
                 <ul className="flex flex-col gap-3">

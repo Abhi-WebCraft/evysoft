@@ -148,7 +148,7 @@ export default function Home({ referrer }) {
         <Newbanner />
         {/* <Absection/> */}
         <About imageSrc="/images/home/about_1_1.png"
-          subtitle="About Us"
+          subtitle=""
           title="Empowering Businesses with Smart Technology"
           description="EvySoft is a forward-thinking software company that builds scalable, custom digital solutions for startups, enterprises, and entrepreneurs. From web and mobile apps to cloud platforms and UI/UX design, we combine innovation with reliability to turn your ideas into reality."
           aboutList={[
@@ -162,10 +162,10 @@ export default function Home({ referrer }) {
         {/* <Services /> */}
         <Ourservices />
         <div className='mb-[-50px]'>
-          <WhyCards title="Website Development" subtitle="Web Site " content="" data={newdata} />
+          <WhyCards title="Website Development" subtitle=" " content="" data={newdata} />
         </div>
         <div className='py-[100px]'>
-          <Faq subtitile="Evysoft" title="Frequently Asked Questions" faqs={faqData} />
+          <Faq subtitile="" title="Frequently Asked Questions" faqs={faqData} />
         </div>
         <Testimonials/>
         {/* <Contactus /> */}
