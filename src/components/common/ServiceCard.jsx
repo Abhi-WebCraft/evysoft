@@ -39,9 +39,9 @@ export default function ServiceCards({ services }) {
 
                 {/* Card Content */}
                 <div className="relative z-10 p-6">
-                  <div className="service-card_number text-3xl font-bold text-primary mb-4">
+                  {/* <div className="service-card_number text-3xl font-bold text-primary mb-4">
                     {service.number}
-                  </div>
+                  </div> */}
 
                   <h3 className="box-title  text-[#fff] font-semibold mb-2">
                     <Link
