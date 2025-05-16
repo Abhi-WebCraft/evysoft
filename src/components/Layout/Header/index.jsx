@@ -26,7 +26,7 @@ export default function Header() {
             <div className={styles.navbarLogo}>
               <Link href="/" title="Bhutan holiday tours">
                 {/* <Image src="/images/logo/main-logo.png" alt="Bhutan Best Inbound Tour" width="100" height="100" className='w-[100%]' priority /> */}
-                <h2 className='text-[30px] text-[#000] ml-[35px]'><span className='text-[#261FB3]'>EvySoft</span></h2>
+                <h2 className='text-[30px] text-[#000] '><span className='text-[#261FB3]'>EvySoft</span></h2>
               </Link>
             </div>
             <div className={styles.navigation}>
@@ -57,9 +57,9 @@ export default function Header() {
             </div>
             <div className={styles.headerCtaBtn}>
                 <div className={styles.CallBtn} onClick={() => setCallActive(true)} ></div>
-                {/* <div className={styles.ContactBtn}>
-                    <Btn link="/contact" title="Let’s Talk" />
-                </div>   */}
+                <div className={styles.ContactBtn}>
+                    <Btn link="/contact" title="Contact us" />
+                </div>  
                 <div className={styles.mobileNavBtn} onClick={() => setIsActive(true)}>
                     <span></span>
                     <span></span>

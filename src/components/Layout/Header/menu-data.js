@@ -19,7 +19,7 @@ const menu_data = [
     //   { link: "/ielts-test-prep-in-dubai", title: "IELTS Test Prep" },
     //   { link: "/sat-preparation-in-dubai", title: "SAT Preparation" },
     //   { link: "/ucat-preparation-in-dubai", title: "UCAT Preparation" },
-      
+
     // ],
   },
 
@@ -28,11 +28,11 @@ const menu_data = [
     title: "Why Chose Us",
     link: "#it-sprot-faq",
   },
-  {
-    has_dropdown: false,
-    title: "Contact us",
-    link: "/contact",
-  },
+  // {
+  //   has_dropdown: false,
+  //   title: "Contact us",
+  //   link: "/contact",
+  // },
 ];
 
 export default menu_data;
