@@ -7,7 +7,7 @@ const menu_data = [
 
   {
     has_dropdown: true,
-    title: "all Services",
+    title: "All Services",
     link: "our-services",
     // sub_menus: [
     //   { link: "/test-preparation-in-uae", title: "Test Preparation in UAE" },
