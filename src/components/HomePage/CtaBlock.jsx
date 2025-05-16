@@ -20,7 +20,7 @@ const CtaBlock = () => {
             Let’s build something amazing together. From design to deployment — we’ve got you covered.
             </p>
           </div>
-          <Btn title="Let's Talk" link="/contact"/>
+          <Btn title="Let's start" link="/contact"/>
         </div>
       </Container>
     </section>
