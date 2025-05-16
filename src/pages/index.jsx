@@ -10,6 +10,8 @@ import WhyCards from '@/components/common/WhyCards';
 import Newbanner from '@/components/HomePage/Newbanner';
 import Faq from '@/components/common/Faq';
 import Testimonials from '@/components/common/Testimonials';
+import BannerSection1 from '@/components/HomePage/BannerSection1/BannerSection/BannerSection1';
+import IndustriesWeServe from '@/components/common/IndustriesWeServe/IndustriesWeServe';
 export default function Home({ referrer }) {
   console.log(referrer)
   const PageMeta =
@@ -145,7 +147,8 @@ export default function Home({ referrer }) {
       <PageHead PageMeta={PageMeta} />
       <Layout>
         {/* <BannerSection/> */}
-        <Newbanner />
+        {/* <Newbanner /> */}
+        <BannerSection1/>
         {/* <Absection/> */}
         <About imageSrc="/images/home/about_1_1.png"
           subtitle=""
@@ -159,6 +162,7 @@ export default function Home({ referrer }) {
           buttonTitle="Get Started"
           buttonLink="/contact" />
         <ServiceCards services={services} />
+        <IndustriesWeServe/>
         {/* <Services /> */}
         <Ourservices />
         <div className='mb-[-50px]'>

@@ -6,8 +6,6 @@ const Contactus = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    subject: "General Inquiry",
-    phone: "",
     message: "",
   });
 
@@ -33,8 +31,7 @@ const Contactus = () => {
         body: JSON.stringify({
           name: formData.name,
           email: formData.email,
-          phone: formData.phone,
-          message: `[Subject: ${formData.subject}]\n\n${formData.message}`,
+          message: formData.message,
         }),
       });
 
@@ -42,7 +39,7 @@ const Contactus = () => {
 
       if (data.status === "success") {
         setStatus("success");
-        setFormData({ name: "", email: "", subject: "General Inquiry", phone: "", message: "" });
+        setFormData({ name: "", email: "", message: "" });
       } else {
         setStatus("error");
       }
@@ -84,26 +81,7 @@ const Contactus = () => {
                   required
                 />
               </div>
-              <div className="grid md:grid-cols-2 gap-6">
-                <select
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
-                  className="w-full border border-gray-300 rounded-md p-4"
-                >
-                  <option>General Inquiry</option>
-                  <option>Support</option>
-                  <option>Feedback</option>
-                </select>
-                <input
-                  type="text"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  placeholder="Phone Number"
-                  className="w-full border border-gray-300 rounded-md p-4"
-                />
-              </div>
+
               <textarea
                 name="message"
                 value={formData.message}
@@ -113,6 +91,7 @@ const Contactus = () => {
                 className="w-full border border-gray-300 rounded-md p-4"
                 required
               />
+
               <button
                 type="submit"
                 className="w-full bg-indigo-600 text-white py-4 rounded-md"

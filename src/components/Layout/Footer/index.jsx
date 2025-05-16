@@ -8,7 +8,7 @@ export default function Footer() {
 
   const contacts = [
     { href: "tel:+", icon: "/images/icons/call.svg", text: "+(91) 7341173250" },
-    { href: "mailto:", icon: "/images/icons/email.svg", text: "Evysot@gmail.com" }, 
+    { href: "mailto:", icon: "/images/icons/email.svg", text: "Evvysot@gmail.com" }, 
     { href: "#", icon: "/images/icons/maps-and-flags.svg", text: "Mohali punjab india " }, 
     // { href: "#", icon: "/images/icons/location-11.svg", text: "ddddddddddddddd" }, 
     // { href: "#", icon: "/images/icons/location-11.svg", text: "sdsfsdffffffffff" }, 
