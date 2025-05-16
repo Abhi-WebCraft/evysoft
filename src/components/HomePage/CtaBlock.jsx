@@ -20,7 +20,7 @@ const CtaBlock = () => {
             Let’s build something amazing together. From design to deployment — we’ve got you covered.
             </p>
           </div>
-          <Btn title=" Get a Free Quote" link="tel:+7341173250"/>
+          <Btn title="Let's Talk" link="/contact"/>
         </div>
       </Container>
     </section>
