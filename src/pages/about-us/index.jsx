@@ -166,7 +166,7 @@ export default function Home({ referrer }) {
           title=""
           description=""
           image="/images/abhi/5.jpg" />
-        <About
+        {/* <About
           imageSrc="/images/about/faq_1_1.png"
           subtitle="About Us"
           title="Who We Are"
@@ -179,11 +179,11 @@ export default function Home({ referrer }) {
           buttonTitle="Get Started"
           buttonLink="/contact"
         />
-        <WhyCards title="Get to Know Evysoft" subtitle="" content="From our roots in innovation to our passion for creating meaningful digital solutions, Evysoft is built on a foundation of expertise, creativity, and trust. Slide through our story to discover what makes us different — and why we’re the right partner for your next big idea." data={newdata} />
+        <WhyCards title="Get to Know Evysoft" subtitle="" content="From our roots in innovation to our passion for creating meaningful digital solutions, Evysoft is built on a foundation of expertise, creativity, and trust. Slide through our story to discover what makes us different — and why we’re the right partner for your next big idea." data={newdata} /> */}
         <Counter />
-        <div className='mt-[-100px]'>
+        {/* <div className='mt-[-100px]'>
           <Points points={pointsData} title="What We Do" description="At International, we offer specialized services to help aspiring engineers reach their academic and career goals. Here's how we assist:" />
-        </div>
+        </div> */}
         <Testimonials />
         <CtaBlock />
       </Layout>
