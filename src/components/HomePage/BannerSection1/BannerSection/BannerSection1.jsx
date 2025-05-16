@@ -1,84 +1,57 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import styles from './BannerSection1.module.css';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
+import styles from './BannerSection1.module.css'; // optional
 import Container from '@/components/Layout/Container';
 import Btn from '@/components/Layout/Btns/Btn';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function BannerSection1() {
-  // Array of banner data
-  const bannerbg = [
+  const slides = [
     {
-      heading: 'Empowering  ',
-      heading1: ' Digital',
-      heading2: 'Innovation',
-      para:'Cutting-edge IT solutions that drive your business forward.'
+      heading: 'Empowering Digital Innovation',
+      para: 'Cutting-edge IT solutions that drive your business forward.',
+      image: '/images/home/2.jpg',
     },
-      {
-      heading: 'Transforming     ',
-      heading1: 'Ideas Into',
-      heading2: 'Technology',
-      para:'Custom software. Scalable systems. Smarter future.'
+    {
+      heading: 'Transforming Ideas Into Technology',
+      para: 'Custom software. Scalable systems. Smarter future.',
+      image: '/images/home/3.jpg',
     },
-     {
-      heading: 'Smart Solutions  ',
-      heading1: 'for a',
-      heading2: ' Digital World  ',
-      para:'IT services that simplify, streamline, and succeed.'
+    {
+      heading: 'Smart Solutions for a Digital World',
+      para: 'IT services that simplify, streamline, and succeed.',
+      image: '/images/home/4.jpg',
     },
   ];
 
   return (
     <section className={styles.bannerslider}>
-      {/* Static background image */}
-      <div className="absolute inset-0 w-full h-[700px] bg-center bg-cover" style={{ backgroundImage: 'url(/images/banner/4.jpg)' }}></div>
-
-      {/* Swiper component for sliding text content */}
       <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
+        spaceBetween={0}
         loop={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
+        autoplay={{ delay: 4000, disableOnInteraction: false }}
         navigation={true}
-        modules={[Autoplay,Navigation]}
-        className={styles.bannerslider}
+        modules={[Autoplay, Navigation]}
       >
-        {bannerbg.map((banner, index) => (
+        {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className="relative h-[700px]">
-              <div className="overlay"></div>
+            <div
+              className="relative h-[700px] w-full bg-cover bg-center"
+              style={{ backgroundImage: `url(${slide.image})` }}
+            >
+              <div className="absolute inset-0 bg-black/50"></div>
               <Container>
-                <div className="absolute top-[50%] left-[20%] transform -translate-x-[20%] -translate-y-[50%] max-w-[800px] banner-content">
-                  <div className='flex flex-col gap-6'>
-                    {index === 0 ? (
-                      <h1 className='text-[#261fb3]'>{banner.heading} <span className='rajeev font-[500] text-[65px] leading-[55px] banner-h2 '> {banner.heading1}</span>&nbsp;
-                      <span className='text-[65px] leading-[55px] font-[500] text-[#261fb3] banner-h2'>{banner.heading2}</span></h1>
-                    ) : (
-                      <h2 className='text-[65px] leading-[65px] font-[500] text-[#261fb3] banner-h2'>{banner.heading} <span className='rajeev text-[55px] leading-[75px] banner-h2'> {banner.heading1}</span>&nbsp;
-                      <span className='text-[65px] font-[500] leading-[55px] font-[500] text-[#261fb3] banner-h2'>{banner.heading2}</span></h2>
-                    )}
-                    <p className='text-[20px] font-[600] text-banner text-white'>
-                    IT services that simplify, streamline, and succeed.
-                    </p>
-                    <div className='flex gap-5 pt-3 buttons-banner'>
-                      <div>
-                        <Btn title="Contact Us" link="/contact" />
-                      </div>
-                      <Link href="tel:+971524495817">
-                        {/* <div className='flex items-center gap-3'>
-                          <Image src="/images/icons/call.svg" alt="phone-vector" width="20" height="20" className="w-[30px] h-[30px] banner-icon" />
-                          <p className='text-[25px] font-bold banner-cta text-white'>+911234567</p>
-                        </div> */}
-                      </Link>
-                    </div>
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white max-w-2xl z-10">
+                  <h1 className="text-4xl md:text-[50px] font-[400] leading-[55px] mb-4">{slide.heading}</h1>
+                  <p className="text-lg md:text-[22px] font-medium mb-6">{slide.para}</p>
+                  <div className="flex justify-center gap-5">
+                    <Btn title="Contact Us" link="/contact" />
+                    {/* <Link href="tel:+971524495817" className="text-white text-lg font-semibold underline">
+                      Call Us
+                    </Link> */}
                   </div>
                 </div>
               </Container>

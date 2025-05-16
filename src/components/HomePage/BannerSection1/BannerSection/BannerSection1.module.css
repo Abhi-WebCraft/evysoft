@@ -13,6 +13,10 @@
     width: 45px;
     height: 45px;
   }
+  .banner-h2{
+        font-size: 60px;
+        line-height: 50px !important;
+    }
   
   .bannerslider :global(.swiper-button-next:after), 
   .bannerslider :global(.swiper-button-prev:after) {
