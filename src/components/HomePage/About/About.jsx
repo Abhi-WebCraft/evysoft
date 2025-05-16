@@ -25,7 +25,7 @@ export default function About({
               alt="About Image"
               width={934}
               height={824}
-              className="w-full h-full object-cover"
+              className="w-full lg:h-[500px] object-cover"
             />
           </div>
 

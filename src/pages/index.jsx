@@ -150,7 +150,7 @@ export default function Home({ referrer }) {
         {/* <Newbanner /> */}
         <BannerSection1/>
         {/* <Absection/> */}
-        <About imageSrc="/images/home/about_1_1.png"
+        <About imageSrc="/images/about/9.jpg"
           subtitle=""
           title="Empowering Businesses with Smart Technology"
           description="EvySoft is a forward-thinking software company that builds scalable, custom digital solutions for startups, enterprises, and entrepreneurs. From web and mobile apps to cloud platforms and UI/UX design, we combine innovation with reliability to turn your ideas into reality."
