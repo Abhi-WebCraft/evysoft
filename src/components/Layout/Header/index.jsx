@@ -29,7 +29,8 @@ export default function Header() {
                 <h2 className='text-[30px] text-[#000] ml-[20px]'><span className='text-[#261FB3]'>EvySoft</span></h2>
               </Link>
             </div>
-            <div className={styles.navigation}>
+            <div className='flex'>
+               <div className={styles.navigation}>
               <div className={styles.mainmenu}>
                 <nav className={styles.nav}>
                   <ul className={styles.menu}>
@@ -57,14 +58,18 @@ export default function Header() {
             </div>
             <div className={styles.headerCtaBtn}>
                 <div className={styles.CallBtn} onClick={() => setCallActive(true)} ></div>
-                <div className={styles.ContactBtn}>
+                    <div className='mr-[20px]'>
+                                      <div className={styles.ContactBtn}>
                     <Btn link="/contact" title="Contact us" />
                 </div>  
+                    </div>
                 <div className={styles.mobileNavBtn} onClick={() => setIsActive(true)}>
                     <span></span>
                     <span></span>
                 </div>
             </div>
+            </div>
+           
           </div>
         </Container>  
       </header>

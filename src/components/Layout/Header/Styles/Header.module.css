@@ -56,10 +56,10 @@
     gap: 10px;
   }
   
-  .CallBtn {
+  /* .CallBtn {
     width: 46px;
     cursor: pointer;
-  }
+  } */
   @media (max-width: 767px) {
     .headerCtaBtn {
     }
