@@ -15,11 +15,15 @@ export default function About({
   buttonLink = "#",
 }) {
   return (
-    <section id="it-sport-about" className={styles.section}>
+    <section
+      id="it-sport-about"
+      className={`${styles.section} bg-cover bg-center bg-no-repeat`}
+      style={{ backgroundImage: `url('/images/home/1.jpg')` }}
+    >
       <Container>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 items-center">
           {/* Left Side Image */}
-          <div data-aos="fade-right">
+          {/* <div data-aos="fade-right">
             <Image
               src={imageSrc}
               alt="About Image"
@@ -27,7 +31,7 @@ export default function About({
               height={824}
               className="w-full lg:h-[500px] object-cover"
             />
-          </div>
+          </div> */}
 
           {/* Right Side Content */}
           <div data-aos="fade-left">
@@ -37,7 +41,7 @@ export default function About({
                 title={title}
               />
               <div className="flex flex-col gap-4">
-                <p>{description}</p>
+                <p className="text-[#fff]">{description}</p>
 
                 {/* List Loop */}
                 <div className="flex flex-col gap-3">
@@ -50,7 +54,7 @@ export default function About({
                         height={30}
                         className={`w-[40px] h-[40px] ${styles.abouticon}`}
                       />
-                      <h4 className="font-medium text-[17px]">{item.text}</h4>
+                      <h4 className="font-medium text-[17px] text-[#fff]">{item.text}</h4>
                     </div>
                   ))}
                 </div>
