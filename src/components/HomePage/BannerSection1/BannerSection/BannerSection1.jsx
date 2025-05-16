@@ -65,7 +65,7 @@ export default function BannerSection1() {
                       <h2 className='text-[65px] leading-[65px] font-[500] text-[#261fb3] banner-h2'>{banner.heading} <span className='rajeev text-[55px] leading-[75px] banner-h2'> {banner.heading1}</span>&nbsp;
                       <span className='text-[65px] font-[500] leading-[55px] font-[500] text-[#261fb3] banner-h2'>{banner.heading2}</span></h2>
                     )}
-                    <p className='text-[18px] text-banner text-white'>
+                    <p className='text-[20px] font-[600] text-banner text-white'>
                     IT services that simplify, streamline, and succeed.
                     </p>
                     <div className='flex gap-5 pt-3 buttons-banner'>
