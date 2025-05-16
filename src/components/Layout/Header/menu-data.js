@@ -7,12 +7,7 @@ const menu_data = [
 
   {
     has_dropdown: true,
-    title: "About Us",
-    link: "/about-us",
-  },
-  {
-    has_dropdown: true,
-    title: "Our Services",
+    title: "all Services",
     link: "our-services",
     // sub_menus: [
     //   { link: "/test-preparation-in-uae", title: "Test Preparation in UAE" },
@@ -27,6 +22,11 @@ const menu_data = [
     has_dropdown: false,
     title: "Why Chose Us",
     link: "#it-sprot-faq",
+  },
+  {
+    has_dropdown: true,
+    title: "About Us",
+    link: "/about-us",
   },
   // {
   //   has_dropdown: false,
