@@ -59,11 +59,11 @@ export default function BannerSection1() {
                 <div className="absolute top-[50%] left-[20%] transform -translate-x-[20%] -translate-y-[50%] max-w-[800px] banner-content">
                   <div className='flex flex-col gap-6'>
                     {index === 0 ? (
-                      <h1 className='text-[#261fb3]'>{banner.heading} <span className='rajeev text-[65px] leading-[75px] banner-h2 '> {banner.heading1}</span>&nbsp;
-                      <span className='text-[65px] leading-[75px] text-[#261fb3] banner-h2'>{banner.heading2}</span></h1>
+                      <h1 className='text-[#261fb3]'>{banner.heading} <span className='rajeev font-[500] text-[65px] leading-[55px] banner-h2 '> {banner.heading1}</span>&nbsp;
+                      <span className='text-[65px] leading-[55px] font-[500] text-[#261fb3] banner-h2'>{banner.heading2}</span></h1>
                     ) : (
-                      <h2 className='text-[65px] leading-[75px] text-[#261fb3] banner-h2'>{banner.heading} <span className='rajeev text-[65px] leading-[75px] banner-h2'> {banner.heading1}</span>&nbsp;
-                      <span className='text-[65px] leading-[75px] text-[#261fb3] banner-h2'>{banner.heading2}</span></h2>
+                      <h2 className='text-[65px] leading-[65px] font-[500] text-[#261fb3] banner-h2'>{banner.heading} <span className='rajeev text-[55px] leading-[75px] banner-h2'> {banner.heading1}</span>&nbsp;
+                      <span className='text-[65px] font-[500] leading-[55px] font-[500] text-[#261fb3] banner-h2'>{banner.heading2}</span></h2>
                     )}
                     <p className='text-[18px] text-banner text-white'>
                     IT services that simplify, streamline, and succeed.
