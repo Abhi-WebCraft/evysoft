@@ -17,9 +17,16 @@ export default function About({
   return (
     <section
       id="it-sport-about"
-      className={`${styles.section} bg-cover bg-center bg-no-repeat`}
+      className={`${styles.section} relative  bg-cover bg-center bg-no-repeat`}
       style={{ backgroundImage: `url('/images/home/1.jpg')` }}
     >
+         <div
+    className="absolute inset-0 z-0"
+    style={{
+      background: 'linear-gradient(0deg, rgba(255, 255, 255, 0.36) 0%, rgb(0, 0, 0) 100%)',
+      opacity: 0.8, // Optional: adjust for visibility
+    }}
+  ></div>
       <Container>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 items-center">
           {/* Left Side Image */}
@@ -36,10 +43,11 @@ export default function About({
           {/* Right Side Content */}
           <div data-aos="fade-left">
             <div className={`flex flex-col gap-6 ${styles.aboutContent}`}>
-              <SectionTitle
+              {/* <SectionTitle
                 subtitle={subtitle}
                 title={title}
-              />
+              /> */}
+              <h2 className="text-[#fff] text-[40px] leading-[50px]">{title}</h2>
               <div className="flex flex-col gap-4">
                 <p className="text-[#fff]">{description}</p>
 
