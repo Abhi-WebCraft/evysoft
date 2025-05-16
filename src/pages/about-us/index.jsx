@@ -162,10 +162,10 @@ export default function Home({ referrer }) {
       <PageHead PageMeta={PageMeta} />
       <Layout>
         <Innerbanner
-          subtt="About Us"
-          title="Empowering Businesses Through Smart Technology"
-          description="At Evysoft, we create custom digital solutions that help companies innovate, scale, and succeed in the digital age."
-          image="/images/about-bg.jpg" />
+          subtt=""
+          title=""
+          description=""
+          image="/images/abhi/5.jpg" />
         <About
           imageSrc="/images/about/faq_1_1.png"
           subtitle="About Us"
