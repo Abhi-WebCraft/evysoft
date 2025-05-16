@@ -8,6 +8,8 @@ import WhyCards from '@/components/common/WhyCards';
 import Counter from '@/components/common/Counter';
 import Points from '@/components/common/Points';
 import Testimonials from '@/components/common/Testimonials';
+import Container from '@/components/Layout/Container';
+import SectionTitle from '@/components/Layout/SectionTitle';
 
 export default function Home({ referrer }) {
   console.log(referrer)
@@ -166,6 +168,25 @@ export default function Home({ referrer }) {
           title=""
           description=""
           image="/images/abhi/5.jpg" />
+          <section className='section mt-[100px] bg-[#eff1f9s]'>
+            <Container>
+              <div className='space-y-3'>
+                <SectionTitle title="About Us" content=""/>
+                <p className='text-[22px]'>Evysoft is a forward-thinking IT solutions company founded in 2018 with a mission to help businesses harness the power of technology. Since our inception, we’ve been committed to delivering innovative, scalable, and cost-effective digital solutions that drive real results.</p>
+                <p className='text-[22px]'>With a team of passionate developers, designers, and technology strategists, we specialize in custom software development, web and mobile applications, cloud integration, and IT consulting. </p>
+                <p className='text-[22px]'>Our goal is to empower organizations of all sizes to stay ahead in a rapidly evolving digital landscape</p>
+                <p className='text-[22px]'>At Evysoft, we believe that great technology is built on trust, collaboration, and a deep understanding of our clients' needs. Whether you're a startup looking to launch your first app or an enterprise in need of complex system integration, we bring the expertise and dedication to turn your ideas into reality.</p>
+                <h4 className='text-[28px]'>Our Core Values:</h4>
+             <ul className="list-disc list-inside">
+                <li className="text-[22px]">Innovation-Driven</li>
+                <li className="text-[22px]">Quality-Focused</li>
+                <li className="text-[22px]">Customer-Centric</li>
+                <li className="text-[22px]">Transparent & Reliable</li>
+               </ul>
+               <p className="text-[22px]">Let’s build something extraordinary—together.</p>
+              </div>
+            </Container>
+          </section>
         {/* <About
           imageSrc="/images/about/faq_1_1.png"
           subtitle="About Us"
