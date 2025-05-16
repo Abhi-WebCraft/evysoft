@@ -29,6 +29,7 @@ export default function Home({ referrer }) {
       link: "#",
       bgShape: "/images/home/service_card_bg.webp",
       animation: "fade-up-right",
+      bgimg:"/images/about/3.jpg"
     },
     {
       number: "02",
@@ -38,6 +39,7 @@ export default function Home({ referrer }) {
      link: "#",
       bgShape: "/images/home/service_card_bg.webp",
       animation: "flip-down",
+      bgimg:"/images/about/4.jpg"
     },
     {
       number: "03",
@@ -47,6 +49,7 @@ export default function Home({ referrer }) {
      link: "#",
       bgShape: "/images/home/service_card_bg.webp",
       animation: "fade-up-left",
+      bgimg:"/images/about/5.jpg"
     },
     {
       number: "04",
@@ -55,7 +58,8 @@ export default function Home({ referrer }) {
       text: "AI enables businesses to lean into the power of data and insights to  enable better responsiveness and decision-making to reimagine operations, experiences, and products.",
      link: "#",
       bgShape: "/images/home/service_card_bg.webp",
-      animation: "fade-up-right"
+      animation: "fade-up-right",
+      bgimg:"/images/about/6.jpg"
     },
     {
       number: "05",
@@ -65,6 +69,7 @@ export default function Home({ referrer }) {
      link: "#",
       bgShape: "/images/home/service_card_bg.webp",
       animation: "flip-down",
+      bgimg:"/images/about/7.jpg",
     },
     {
       number: "06",
@@ -74,6 +79,7 @@ export default function Home({ referrer }) {
      link: "#",
       bgShape: "/images/home/service_card_bg.webp",
       animation: "flip-down",
+      bgimg:"/images/about/8.jpg"
     },
 
   ];

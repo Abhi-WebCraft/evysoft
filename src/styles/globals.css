@@ -494,20 +494,21 @@ img {
   left: 27px
 }
 
-.box-title {
-  font-size: 24px;
+.box-title a {
+  font-size: 28px;
   line-height: 1.417;
   font-weight: 700;
-  margin-top: -.32em
+  margin-top: -.32em;
+  color: #ffffff;
 }
 
-.box-title a {
+/* .box-title a {
   color: inherit
-}
+} */
 
-.box-title a:hover {
+/* .box-title a:hover {
   color: #684df4
-}
+} */
 /* ---InnerBanner--- */
 
 .innerbanner_bg {
@@ -933,9 +934,9 @@ img {
   color: #000000;
 }
 
-.whyCard .box-title a:hover {
+/* .whyCard .box-title a:hover {
   color: #f2f2f2;
-}
+} */
 
 .whyCard_text {
   transition: 0.3s ease-in-out;
