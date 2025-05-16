@@ -14,19 +14,22 @@ export default function BannerSection1() {
   // Array of banner data
   const bannerbg = [
     {
-      heading: 'Building the   ',
-      heading1: 'Future of Software',
+      heading: 'Empowering  ',
+      heading1: ' Digital',
       heading2: 'Innovation',
+      para:'Cutting-edge IT solutions that drive your business forward.'
     },
       {
-      heading: 'Building the   ',
-      heading1: 'Future of Software',
-      heading2: 'Innovation',
+      heading: 'Transforming     ',
+      heading1: 'Ideas Into',
+      heading2: 'Technology',
+      para:'Custom software. Scalable systems. Smarter future.'
     },
      {
-      heading: 'Building the   ',
-      heading1: 'Future of Software',
-      heading2: 'Innovation',
+      heading: 'Smart Solutions  ',
+      heading1: 'for a',
+      heading2: ' Digital World  ',
+      para:'IT services that simplify, streamline, and succeed.'
     },
   ];
 
@@ -63,17 +66,17 @@ export default function BannerSection1() {
                       <span className='text-[65px] leading-[75px] text-[#261fb3] banner-h2'>{banner.heading2}</span></h2>
                     )}
                     <p className='text-[18px] text-banner text-white'>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora necessitatibus ut expedita fugit sed, provident commodi recusandae suscipit, voluptates assumenda accusantium? Aut nostrum iste vitae sequi magnam exercitationem at fugiat!
+                    IT services that simplify, streamline, and succeed.
                     </p>
                     <div className='flex gap-5 pt-3 buttons-banner'>
                       <div>
                         <Btn title="Contact Us" link="/contact" />
                       </div>
                       <Link href="tel:+971524495817">
-                        <div className='flex items-center gap-3'>
+                        {/* <div className='flex items-center gap-3'>
                           <Image src="/images/icons/call.svg" alt="phone-vector" width="20" height="20" className="w-[30px] h-[30px] banner-icon" />
                           <p className='text-[25px] font-bold banner-cta text-white'>+911234567</p>
-                        </div>
+                        </div> */}
                       </Link>
                     </div>
                   </div>
