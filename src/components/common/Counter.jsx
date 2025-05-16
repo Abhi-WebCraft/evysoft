@@ -21,7 +21,7 @@ export default function Counter() {
             }, 20); // Speed of increment
         };
 
-        incrementCounter(setYearsExperience, 1200); // Years of Experience
+        incrementCounter(setYearsExperience, 500); // Years of Experience
         incrementCounter(setEmployees, 300); // Employees
         incrementCounter(setProjectsCompleted, 100); // Projects Completed
         incrementCounter(setClientsWorldwide, 5); // Clients Worldwide
