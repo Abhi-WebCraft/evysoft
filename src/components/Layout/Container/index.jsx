@@ -1,6 +1,7 @@
-// components/Layout/Container.js
-const Container = ({ children }) => {
-  return <div className="max-w-7xl mx-auto px-4">{children}</div>;
-};
+import styles from './Container.module.css';
 
-export default Container;
+export default function Container({ children }) {
+  return (
+    <div className={styles.container}>{children}</div>
+  );
+}
