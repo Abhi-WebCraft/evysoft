@@ -9,6 +9,7 @@ import Counter from '@/components/common/Counter';
 import Points from '@/components/common/Points';
 import Testimonials from '@/components/common/Testimonials';
 import SectionTitle from '@/components/Layout/SectionTitle';
+import Container from '@/components/Layout/Container';
 
 export default function Home({ referrer }) {
   console.log(referrer)
