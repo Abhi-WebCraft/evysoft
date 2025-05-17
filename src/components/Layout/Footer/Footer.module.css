@@ -13,7 +13,7 @@
   }
   .footerGrid{
     display: grid;
-    grid-template-columns: 375px 1fr 1fr 380px;
+       grid-template-columns: 475px 1fr 1fr 1fr;
     grid-gap: 60px;
     gap: 30px;
     margin: 0 auto;

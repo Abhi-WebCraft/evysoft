@@ -20,7 +20,7 @@ const CtaBlock = () => {
             Let’s build something amazing together. From design to deployment — we’ve got you covered.
             </p>
           </div>
-          <Btn title="Let's start" link="/contact"/>
+           <Link href="/contact" className='bg-[#fff] border-2 border[#261fb3] py-[12px] px-[45px] rounded-full text-[17px] font-[600] text-[#261fb3]'>Let's start</Link>
         </div>
       </Container>
     </section>

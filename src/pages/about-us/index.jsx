@@ -168,7 +168,7 @@ export default function Home({ referrer }) {
           title=""
           description=""
           image="/images/abhi/5.jpg" />
-          <section className='section mt-[100px]  bg-[#f5fbfb]'>
+          <section className='section mb-[100px]  bg-[#f5fbfb]'>
             <Container>
               <div className='space-y-3'>
                 <SectionTitle title="About Us" content=""/>

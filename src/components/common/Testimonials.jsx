@@ -1,102 +1,118 @@
-"use client";
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import Image from "next/image";
-import "swiper/css";
-import "swiper/css/autoplay";
-import { Autoplay } from "swiper/modules";
-import SectionTitle from "../Layout/SectionTitle";
-import Container from "../Layout/Container";
+'use client'; // Needed if using Next.js app router
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination } from 'swiper/modules';
+import Image from 'next/image';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import Container from '../Layout/Container';
 
 const testimonials = [
   {
-    text: "EvySoft helped us transform our digital strategy. The team not only delivered high-quality software but also guided us through every step of the process. We saw a 40% increase in efficiency after implementing their solutions!",
-    author: "John Doe, CEO at TechVerse",
-    bgColor: "#fff"
+    id: 1,
+    name: 'John Doe',
+    image: '/images/about/test1.jpeg',
+    text: 'EvySoft helped us transform our digital strategy. The team not only delivered high-quality software but also guided us through every step of the process. We saw a 40% increase in efficiency after implementing their solutions!',
+    rating: 3.5,
   },
   {
-    text: "Working with EvySoft was a game-changer for our mobile app development. Their attention to detail and innovative approach exceeded our expectations. Highly recommend their services!",
-    author: "Jane Smith, Product Manager at AppLabs",
-    bgColor: "#fff"
+    id: 2,
+    name: 'Jane Smith',
+     image: '/images/about/test2.jpeg',
+    text: 'Working with EvySoft was a game-changer for our mobile app development. Their attention to detail and innovative approach exceeded our expectations. Highly recommend their services!',
+    rating: 3,
   },
   {
-    text: "The team at EvySoft is incredible. From start to finish, they were highly communicative, professional, and delivered on time. The new system they developed for us has streamlined our operations.",
-    author: "Michael Lee, CTO at FinNext",
-    bgColor: "#fff"
+    id: 3,
+    name: 'Michael Lee',
+    image: '/images/about/test3.jpeg',
+    text: 'The team at EvySoft is incredible. From start to finish, they were highly communicative, professional, and delivered on time. The new system they developed for us has streamlined our operations.',
+    rating: 4,
   },
   {
-    text: "EvySoft helped us transform our digital strategy. The team not only delivered high-quality software but also guided us through every step of the process. We saw a 40% increase in efficiency after implementing their solutions!",
-    author: "John Doe, CEO at TechVerse",
-    bgColor: "#fff"
+    id: 4,
+    name: 'John Doe',
+     image: '/images/about/test4.jpeg',
+    text: 'EvySoft helped us transform our digital strategy. The team not only delivered high-quality software but also guided us through every step of the process. We saw a 40% increase in efficiency after implementing their solutions!',
+    rating: 5,
   },
   {
-    text: "Working with EvySoft was a game-changer for our mobile app development. Their attention to detail and innovative approach exceeded our expectations. Highly recommend their services!",
-    author: "Jane Smith, Product Manager at AppLabs",
-    bgColor: "#fff"
+    id: 5,
+    name: 'Jane Smith',
+     image: '/images/about/test3.jpeg',
+    text: 'Working with EvySoft was a game-changer for our mobile app development. Their attention to detail and innovative approach exceeded our expectations. Highly recommend their services!',
+    rating: 3,
   },
 ];
 
-export default function Testimonials() {
+const Testimonials = () => {
   return (
-    <section className="section bg-[#f5fbfb]" >
-      <div className="review-slider">
+    <div className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-100">
+      <div className="space-y-12">
+        <h2 className="text-3xl font-extrabold text-center text-gray-900">What Our Clients Say</h2>
         <Container>
-          <div className="max-w-[1000px] mx-auto text-center pb-[50px]">
-            <SectionTitle title="Client's Review" />
-          </div>
-          <div className="service-slide-box">
-            <Swiper
-              spaceBetween={20}
-              loop={true}
-              centeredSlides={true}
-              autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
-              }}
-              breakpoints={{
-                640: { slidesPerView: 1 },
-                768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
-              }}
-              modules={[Autoplay]}
-              className="review-slider-section"
-            >
-              {testimonials.map((testimonial, index) => (
-                <SwiperSlide key={index}>
-                  <div
-                    className="review-card flex flex-col gap-6 border-[#684df3]"
-                    style={{
-                      backgroundColor: testimonial.bgColor,
-                      boxShadow: "rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px"
-                    }}
-                  >
-                    <div className="review-quote w-full">
-                      <Image
-                        src="/images/icons/text.svg"
-                        alt=""
-                        width="128"
-                        height="128"
-                        className="h-[50px] object-contain"
+        {/* Swiper (Autoplay and Pagination enabled) */}
+        <Swiper
+          modules={[Autoplay, Pagination]} 
+          autoplay={{ delay: 3000, disableOnInteraction: false }} // 3 seconds delay
+          pagination={{ clickable: true }} // Enable clickable pagination dots
+          loop={true} // Looping the slider
+          spaceBetween={30} // Spacing between slides
+          slidesPerView={1} // One slide at a time (default)
+          breakpoints={{
+            640: { slidesPerView: 1 }, // 1 slide per view for small screens
+            768: { slidesPerView: 2 }, // 2 slides per view for medium screens
+            1024: { slidesPerView: 3 }, // 3 slides per view for large screens
+          }}
+        >
+          {testimonials.map(({ id, name, image, text, rating }) => (
+            <SwiperSlide key={id}>
+              {/* Testimonial Card */}
+              <div className="bg-white p-6 rounded-lg shadow-lg h-full flex flex-col">
+               
+                <p className="text-gray-700 italic flex-grow">"{text}"</p>
+                <div className="mt-4 flex">
+                  {/* Rating Stars */}
+                  {[...Array(5)].map((_, index) => (
+                    <svg
+                      key={index}
+                      className={`w-5 h-5 ${index < rating ? 'text-yellow-500' : 'text-gray-300'}`}
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10 15l-3.09 1.63a1 1 0 01-1.45-1.05l.59-3.44-2.5-2.44a1 1 0 01.55-1.71l3.45-.5L7.91 3.5a1 1 0 011.79-.9l1.54 3.12 3.46.5a1 1 0 01.55 1.71l-2.5 2.44.59 3.44a1 1 0 01-1.45 1.05L10 15z"
+                        clipRule="evenodd"
                       />
-                    </div>
-                    <div className="review-text">
-                      <p>{testimonial.text}</p>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <Image src="/images/icons/star.svg" alt="star" width="18" height="18" className="w-[18px] h-[18px]" />
-                      <Image src="/images/icons/star.svg" alt="star" width="18" height="18" className="w-[18px] h-[18px]" />
-                      <Image src="/images/icons/star.svg" alt="star" width="18" height="18" className="w-[18px] h-[18px]" />
-                      <Image src="/images/icons/star.svg" alt="star" width="18" height="18" className="w-[18px] h-[18px]" />
-                      <Image src="/images/icons/star.svg" alt="star" width="18" height="18" className="w-[18px] h-[18px]" />
-                    </div>
-                    <h3 className="text-[22px]">{testimonial.author}</h3>
+                    </svg>
+                    
+                  ))}
+                </div>
+                 <div className="flex items-center space-x-4 my-6">
+                  <div className=" w-[60px] h-[60px]">
+                    <Image
+                      className="rounded-full clear-start h-[60px] w-[6s0px]"
+                      src={image || '/images/default-avatar.png'} // Fallback image
+                      alt={name}
+                      width={60}
+                      height={60}
+                    />
                   </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
+                  <div>
+                    <p className="text-lg font-semibold text-gray-900">{name}</p>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
         </Container>
       </div>
-    </section>
+    </div>
   );
-}
+};
+
+export default Testimonials;

@@ -19,9 +19,9 @@ export default function  Home({referrer }) {
     <PageHead PageMeta={PageMeta} />
     <Layout>
         <Innerbanner
-            title="CONTACT WITH US"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quia fugiat neque quam ad in assumenda laudantium libero quod omnis aperiam hic laborum earum, inventore sequi temporibus, voluptas recusandae molestias?"
-            image="/images/about-bg.jpg"/>
+            title=""
+            description=""
+            image="/images/from/6.jpg"/>
         <section className='section'>
             <Container>
               <div className='grid lg:grid-cols-3 gap-8'>

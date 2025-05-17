@@ -39,15 +39,7 @@ export default function Footer() {
                 {/* <li><Link href="/">Terms & Conditions</Link></li> */}
               </ul>
             </div>
-            {/* <div className={`${styles.footerItems} text-[#fff]`}>
-              <h4 className="text-[#fff] uppercase">IT SERVICES</h4>
-              <ul>
-                <li><Link href="/web-development">Web Development</Link></li>
-                <li><Link href="/web-development">Business Development</Link></li>
-                <li><Link href="/web-development">Product Management</Link></li>
-                <li><Link href="/web-development">UI/UX Design</Link></li>
-              </ul>
-            </div> */}
+         
             <div className={`${styles.footerItems} text-[#fff]`}>
               <h4 className="text-[#fff] uppercase">Contact Us</h4>
                 <ul className="flex flex-col gap-3">
@@ -66,6 +58,14 @@ export default function Footer() {
                     </li>
                   ))}
                 </ul>
+            </div>
+               <div className={`${styles.footerItems} text-[#fff]`}>
+              <h4 className="text-[#fff] uppercase">social links</h4>
+              <ul className="space-y-2">
+                <li><Link href="/web-development" className="flex gap-3"><Image src="/images/icons/facebook.png" alt="" width={500} height={500} className="w-[35px] h-[35px]"/> facebook</Link></li>
+                <li><Link href="/web-development" className="flex gap-3"><Image src="/images/icons/instagram.png" alt="" width={500} height={500} className="w-[35px] h-[35px]"/> instagram</Link></li>
+                <li><Link href="/web-development" className="flex gap-3"><Image src="/images/icons/youtube.png" alt="" width={500} height={500} className="w-[35px] h-[35px]"/> youtube</Link></li>
+              </ul>
             </div>
           </div>
         </Container>

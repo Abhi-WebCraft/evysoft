@@ -48,10 +48,8 @@ export default function BannerSection1() {
                   <h1 className="text-4xl md:text-[50px] font-[400] leading-[55px] mb-4">{slide.heading}</h1>
                   <p className="text-lg md:text-[22px] font-medium mb-6">{slide.para}</p>
                   <div className="flex justify-center gap-5">
-                    <Btn title="Contact Us" link="/contact" />
-                    {/* <Link href="tel:+971524495817" className="text-white text-lg font-semibold underline">
-                      Call Us
-                    </Link> */}
+                    {/* <Btn title="Contact Us" link="/contact" /> */}
+                    <Link href="/contact" className='bg-[#fff] border-2 border[#261fb3] py-[12px] px-[45px] rounded-full text-[17px] font-[600] text-[#261fb3]'>Contact Us</Link>
                   </div>
                 </div>
               </Container>
