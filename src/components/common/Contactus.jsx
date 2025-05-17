@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Container from "../Layout/Container";
 import SectionTitle from "../Layout/SectionTitle";
+import Container from "../Layout/Container";
 
 const Contactus = () => {
   const [formData, setFormData] = useState({
