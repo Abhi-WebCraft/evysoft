@@ -19,7 +19,7 @@ export default function ServiceCards({ services }) {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
-              <div
+              <Link href="/contact"
                 key={index}
                className="relative rounded-xl overflow-hidden shadow-md lg:h-[400px] flex flex-col items-center justify-center text-center"
                 data-aos={service.animation || "fade-up"}
@@ -67,7 +67,7 @@ export default function ServiceCards({ services }) {
                     />
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </Container>
