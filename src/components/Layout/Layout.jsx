@@ -16,7 +16,7 @@ export default function Layout({children}) {
         {children}
           <WhatsAppChat
         phoneNumber="7341173250"
-        accountName="Welcome to Evysoft –"
+        accountName=""
         statusMessage=" How Can We Power Your Digital Vision Today?"
         chatMessage="Hi there! How can we help you today?"
         avatar="/images/icons/evy.png"

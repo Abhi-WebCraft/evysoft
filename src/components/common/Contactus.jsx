@@ -6,6 +6,7 @@ const Contactus = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    requestType: "", // New field
     message: "",
   });
 
@@ -22,24 +23,25 @@ const Contactus = () => {
     e.preventDefault();
     setStatus("loading");
 
+    if (!formData.requestType) {
+      setStatus("invalid-request-type");
+      return;
+    }
+
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          message: formData.message,
-        }),
+        body: JSON.stringify(formData),
       });
 
       const data = await res.json();
 
       if (data.status === "success") {
         setStatus("success");
-        setFormData({ name: "", email: "", message: "" });
+        setFormData({ name: "", email: "", requestType: "", message: "" });
       } else {
         setStatus("error");
       }
@@ -52,11 +54,8 @@ const Contactus = () => {
     <section className="section bg-gray-50 form-bg">
       <Container>
         <div className="lg:w-[900px] mb-[30px]">
-          <SectionTitle
-            subtitle="CONTACT WITH US!"
-            title="Have Any Questions?"
-            content="Enthusiastically disintermediate one-to-one leadership via business e-commerce. Dramatically reintermediate compelling process improvements rather than empowered relationships."
-          />
+          <SectionTitle subtitle="" title="Connect with us" content="" />
+          <h2 className="text-[#000]">How can we help?</h2>
         </div>
         <div className="grid lg:grid-cols-12">
           <div className="col-span-8">
@@ -80,6 +79,26 @@ const Contactus = () => {
                   className="w-full border border-gray-300 rounded-md p-4"
                   required
                 />
+                <select
+                  name="requestType"
+                  value={formData.requestType}
+                  onChange={handleChange}
+                  className={`w-full border rounded-md p-4 ${
+                    status === "invalid-request-type" ? "border-red-500" : "border-gray-300"
+                  }`}
+                  required
+                >
+                  <option value="">What can we help you with?</option>
+                  <option value="Custom Software Development">Custom Software Development</option>
+                  <option value="Web Application Development">Web Application Development</option>
+                  <option value="Mobile App Development">Mobile App Development</option>
+                   <option value="Artificial Intelligence">Artificial Intelligence</option>
+                  <option value="Process Automation"> Process Automation</option>
+                  <option value="IT Consulting & Strategy">IT Consulting & Strategy</option>
+                </select>
+                {status === "invalid-request-type" && (
+                  <p className="text-sm text-red-600">Please enter a valid request type</p>
+                )}
               </div>
 
               <textarea

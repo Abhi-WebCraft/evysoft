@@ -8,7 +8,6 @@ import WhyCards from '@/components/common/WhyCards';
 import Counter from '@/components/common/Counter';
 import Points from '@/components/common/Points';
 import Testimonials from '@/components/common/Testimonials';
-import Container from '@/components/Layout/Container';
 import SectionTitle from '@/components/Layout/SectionTitle';
 
 export default function Home({ referrer }) {

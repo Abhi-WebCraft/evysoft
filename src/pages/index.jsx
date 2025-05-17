@@ -21,66 +21,66 @@ export default function Home({ referrer }) {
     keywords: "EvySoft, software development, web development, mobile app development, custom software solutions, UI UX design, digital transformation, tech startup solutions, scalable applications, enterprise software, SaaS development, business automation, IT consulting, cloud solutions, next.js development"
   }
   const services = [
-    {
-      number: "01",
-      icon: "/images/icons/icon.svg",
-      title: "Custom Software Development",
-      text: "We build scalable, secure, and high-performance software tailored to your unique needs — from simple tools to complex platforms.",
+      {
+        number: "01",
+        icon: "/images/icons/icon.svg",
+        title: "Custom Software Development",
+        text: "We build scalable, secure, and high-performance software tailored to your unique needs — from simple tools to complex platforms.",
+        link: "#",
+        bgShape: "/images/home/service_card_bg.webp",
+        animation: "fade-up-right",
+        bgimg:"/images/about/3.jpg"
+      },
+      {
+        number: "02",
+        icon: "/images/icons/icon.svg",
+        title: "Web Application Development",
+        text: "Using modern frameworks like Next.js and React, we create responsive, fast, and user-friendly web apps optimized for performance and SEO.",
       link: "#",
-      bgShape: "/images/home/service_card_bg.webp",
-      animation: "fade-up-right",
-      bgimg:"/images/about/3.jpg"
-    },
-    {
-      number: "02",
-      icon: "/images/icons/icon.svg",
-      title: "Web Application Development",
-      text: "Using modern frameworks like Next.js and React, we create responsive, fast, and user-friendly web apps optimized for performance and SEO.",
-     link: "#",
-      bgShape: "/images/home/service_card_bg.webp",
-      animation: "flip-down",
-      bgimg:"/images/about/4.jpg"
-    },
-    {
-      number: "03",
-      icon: "/images/icons/icon.svg",
-      title: "Mobile App Development",
-      text: "We develop cross-platform mobile apps for iOS and Android that deliver great user experiences and business value.",
-     link: "#",
-      bgShape: "/images/home/service_card_bg.webp",
-      animation: "fade-up-left",
-      bgimg:"/images/about/5.jpg"
-    },
-    {
-      number: "04",
-      icon: "/images/icons/icon.svg",
-      title: "Artificial Intelligence",
-      text: "AI enables businesses to lean into the power of data and insights to  enable better responsiveness and decision-making to reimagine operations, experiences, and products.",
-     link: "#",
-      bgShape: "/images/home/service_card_bg.webp",
-      animation: "fade-up-right",
-      bgimg:"/images/about/6.jpg"
-    },
-    {
-      number: "05",
-      icon: "/images/icons/icon.svg",
-      title: " Process Automation",
-      text: "Process Automation is the use of technology to perform repetitive, rule-based tasks and workflows without human intervention. It helps businesses improve efficiency, reduce errors, cut costs, and increase productivity.",
-     link: "#",
-      bgShape: "/images/home/service_card_bg.webp",
-      animation: "flip-down",
-      bgimg:"/images/about/7.jpg",
-    },
-    {
-      number: "06",
-      icon: "/images/icons/icon.svg",
-      title: "IT Consulting & Strategy",
-      text: "Not sure where to start? Our tech experts help you choose the right tools and architecture to future-proof your product.",
-     link: "#",
-      bgShape: "/images/home/service_card_bg.webp",
-      animation: "flip-down",
-      bgimg:"/images/about/8.jpg"
-    },
+        bgShape: "/images/home/service_card_bg.webp",
+        animation: "flip-down",
+        bgimg:"/images/about/4.jpg"
+      },
+      {
+        number: "03",
+        icon: "/images/icons/icon.svg",
+        title: "Mobile App Development",
+        text: "We develop cross-platform mobile apps for iOS and Android that deliver great user experiences and business value.",
+      link: "#",
+        bgShape: "/images/home/service_card_bg.webp",
+        animation: "fade-up-left",
+        bgimg:"/images/about/5.jpg"
+      },
+      {
+        number: "04",
+        icon: "/images/icons/icon.svg",
+        title: "Artificial Intelligence",
+        text: "AI enables businesses to lean into the power of data and insights to  enable better responsiveness and decision-making to reimagine operations, experiences, and products.",
+      link: "#",
+        bgShape: "/images/home/service_card_bg.webp",
+        animation: "fade-up-right",
+        bgimg:"/images/about/6.jpg"
+      },
+      {
+        number: "05",
+        icon: "/images/icons/icon.svg",
+        title: " Process Automation",
+        text: "Process Automation is the use of technology to perform repetitive, rule-based tasks and workflows without human intervention. It helps businesses improve efficiency, reduce errors, cut costs, and increase productivity.",
+      link: "#",
+        bgShape: "/images/home/service_card_bg.webp",
+        animation: "flip-down",
+        bgimg:"/images/about/7.jpg",
+      },
+      {
+        number: "06",
+        icon: "/images/icons/icon.svg",
+        title: "IT Consulting & Strategy",
+        text: "Not sure where to start? Our tech experts help you choose the right tools and architecture to future-proof your product.",
+      link: "#",
+        bgShape: "/images/home/service_card_bg.webp",
+        animation: "flip-down",
+        bgimg:"/images/about/8.jpg"
+      },
 
   ];
 

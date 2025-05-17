@@ -3,6 +3,7 @@ import Btn from "@/components/Layout/Btns/Btn";
 import Container from "@/components/Layout/Container";
 import SectionTitle from "@/components/Layout/SectionTitle";
 import Image from "next/image";
+import Link from "next/link";
 
 // Props define kiye hain
 export default function About({
@@ -69,8 +70,8 @@ export default function About({
               </div>
 
               {/* Button */}
-              <div>
-                <Btn title={buttonTitle} link={buttonLink} />
+              <div className="mt-[20px]">
+                <Link href="/contact" className='bg-[#fff] border-2 border[#261fb3] py-[12px] px-[45px] rounded-full text-[17px] font-[600] text-[#261fb3]'>Contact Us</Link>
               </div>
             </div>
           </div>

@@ -94,7 +94,7 @@ const Testimonials = () => {
                  <div className="flex items-center space-x-4 my-6">
                   <div className=" w-[60px] h-[60px]">
                     <Image
-                      className="rounded-full clear-start h-[60px] w-[6s0px]"
+                      className="rounded-full  clear-start h-[60px] w-[6s0px]"
                       src={image || '/images/default-avatar.png'} // Fallback image
                       alt={name}
                       width={60}

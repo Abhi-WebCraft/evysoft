@@ -193,9 +193,9 @@
     color: #000;
   }
   
-  .headerContainer.headerSticky .menuLink:hover {
+  /* .headerContainer.headerSticky .menuLink:hover {
     color: #d62828;
-  }
+  } */
   
   @media (max-width: 1100px) {
     .menuLink {
