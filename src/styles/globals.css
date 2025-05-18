@@ -1159,3 +1159,11 @@ img {
   right: -88px;
 }
   }
+button.tawk-custom-color.tawk-custom-border-color.tawk-outline.tawk-button.tawk-button-circle.tawk-button-large {
+    display: none !important;
+}
+
+
+.tawk-min-container {
+    display: non !important;
+}
