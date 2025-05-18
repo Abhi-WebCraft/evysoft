@@ -46,7 +46,7 @@ export default function ServiceCards({ services }) {
                   <h3 className="box-title  text-[#fff] font-semibold mb-2">
                     <Link
                       href={service.link}
-                      className="text-blue-600 hover:underline"
+                      className="text-blue-600 hover:underline "
                     >
                       {service.title}
                     </Link>

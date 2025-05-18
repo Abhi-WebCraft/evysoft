@@ -501,6 +501,16 @@ img {
   margin-top: -.32em;
   color: #ffffff;
 }
+@media (max-width: 500px) {
+  .box-title a {
+    font-size: 28px;
+    line-height: 0.2; 
+    font-weight: 700;
+    margin-top: -0.32em;
+    color: #ffffff;
+  }
+}
+
 
 /* .box-title a {
   color: inherit
@@ -611,7 +621,7 @@ img {
     }
   }
   .accordions__item {
-       background-color: rgb(38 31 179);
+       background-color: #261fb3;
     border-radius: 10px;
     overflow: hidden;
     transition: 0.5s cubic-bezier(0.65, 0.2, 0.65, 1);

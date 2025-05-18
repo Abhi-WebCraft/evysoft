@@ -86,28 +86,35 @@ export default function Home({ referrer }) {
 
   const newdata = [
     {
-      image: "/images/about/project_6_1.jpg",
+      image: "/images/services/slider.png",
       // icon: "/images/icons/icon.svg",
       // title: "100% Compliance Guarantee",
       // description: "Always on time, every time—no penalties.",
       // link: "#",
     },
     {
-      image: "/images/about/project_6_2.jpg",
+      image: "/images/services/logo2.png",
       // icon: "/images/icons/icon.svg",
       // title: "Real-Time, Accurate Data",
       // description: "Always updated and error-free.",
       // link: "#",
     },
     {
-      image: "/images/about/project_12_1.jpg",
+      image: "/images/services/logo.png",
       // icon: "/images/icons/icon.svg",
       // title: "Tailored Solutions",
       // description: "Perfect for businesses of all sizes, from startups to enterprises.",
       // link: "#",
     },
     {
-      image: "/images/about/project_12_1.jpg",
+      image: "/images/services/slider3.png",
+      // icon: "/images/icons/icon.svg",
+      // title: "Expert Guidance",
+      // description: "Stay ahead of regulations with our experienced financial advisors.",
+      // link: "#",
+    },
+      {
+      image: "/images/services/slider4.png",
       // icon: "/images/icons/icon.svg",
       // title: "Expert Guidance",
       // description: "Stay ahead of regulations with our experienced financial advisors.",

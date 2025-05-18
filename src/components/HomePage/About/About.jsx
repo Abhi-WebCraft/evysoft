@@ -41,7 +41,7 @@ export default function About({
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 items-center relative z-10">
           <div data-aos="fade-left">
             <div className={`flex flex-col gap-6 ${styles.aboutContent}`}>
-              <h2 className="text-white text-[40px] leading-[50px] font-bold">{title}</h2>
+              <h2 className="text-white lg:text-[40px] text-[32px] leading-[35px] lg:leading-[50px] font-bold">{title}</h2>
               <p className="text-white">{description}</p>
 
               {/* 🔹 Feature List */}

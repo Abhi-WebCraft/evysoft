@@ -4,14 +4,17 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import Image from 'next/image';
-import Link from 'next/link';
 import SectionTitle from '../Layout/SectionTitle';
 import Container from '../Layout/Container';
 
 export default function WhyCards({ data, title, subtitle, content }) {
+  // Duplicate the array to ensure seamless loop
+  const loopedData = [...data, ...data];
+
   return (
-    <section className='pb-[100px] '>
+    <section className="">
       <Container>
+        {/* Section Title */}
         <div className="mb-[50px] text-center">
           <SectionTitle
             title={title}
@@ -24,70 +27,41 @@ export default function WhyCards({ data, title, subtitle, content }) {
             subtitleColor
           />
         </div>
-        <div className="">
-          <Swiper
-            modules={[Autoplay]}
-            spaceBetween={30}
-            slidesPerView={1}
-            loop={true}
-            autoplay={{
-              delay: 2000,
-              disableOnInteraction: false,
-            }}
-            speed={1000}
-            breakpoints={{
-              768: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
-            }}
-          >
-            {data.map((item, index) => (
-              <SwiperSlide key={index}>
-                <div className=" border  rounded-[20px]" data-aos="fade-up"
-                  data-aos-anchor-placement="top-bottom">
-                  <div className="whyCard_img ">
-                    <Image
-                      src={item.image}
-                      alt={item.title}
-                      width={287}
-                      height={180}
-                      className='h-[400px] object-cover rounded-[20px]' />
-                    {/* <div className="whyCard-overlay"></div> */}
-                  </div>
-                  {/* <div className="whyCard_content">
-                    <div className="whyCard_icon">
-                      <Image
-                        src={item.icon}
-                        alt="Service Icon"
-                        width={100}
-                        height={100}
-                        className="w-8"
-                      />
-                    </div>
-                    <h4 className="box-title  ">
-                      <Link href={item.link}>
-                        {item.title}
-                      </Link>
-                    </h4>
-                    <p className="whyCard_text">
-                      {item.description}
-                    </p>
-                    <div className="bg-shape">
-                      <Image
-                        src="/images/home/service_card_bg.webp"
-                        alt="Background Shape"
-                        width={400}
-                        height={300}
-                      />
-                    </div>
-                  </div> */}
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+
+        {/* Swiper Logo Slider */}
+        <Swiper
+          modules={[Autoplay]}
+          spaceBetween={0}
+          loop={true}
+          speed={2400} // Slow and smooth
+          allowTouchMove={false} // Prevent user interaction interruptions
+          autoplay={{
+            delay: 0,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: false,
+          }}
+          slidesPerView={4}
+          breakpoints={{
+            0: { slidesPerView: 2 },
+            640: { slidesPerView: 3 },
+            1024: { slidesPerView: 4 },
+          }}
+        >
+          {loopedData.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div className="w-full h-[120px] bg-[#757575] flex px-6 items-center justify-center">
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  width={200}
+                  height={100}
+                  className="object-contain w-full h-full"
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </Container>
     </section>
-
-
   );
 }

@@ -20,7 +20,9 @@ export default function IndustriesWeServe() {
   return (
     <Section className={styles.section}>
       <Container>
-        <SectionTitle title="Industries We Serve" content="" />
+       <div className="mb-[50px]">
+         <SectionTitle title="Industries We Serve" content="" />
+       </div>
         <div className={styles.industriesList}>
           {project_data.map((item) => (
             <div key={item.id} className={styles.industryCard}>

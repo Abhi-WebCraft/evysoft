@@ -28,7 +28,7 @@ export default function BannerSection1() {
   ];
 
   return (
-    <section className={styles.bannerslider}>
+    <section className={`${styles.bannerslider}`}>
       <Swiper
         spaceBetween={0}
         loop={true}
@@ -39,13 +39,12 @@ export default function BannerSection1() {
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div
-              className="relative h-[700px] w-full bg-cover bg-center"
+              className=" w-full h-[450px] lg:h-[700px] bg-cover bg-center"
               style={{ backgroundImage: `url(${slide.image})` }}
             >
-              <div className="absolute inset-0 bg-black/50"></div>
               <Container>
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white max-w-2xl z-10">
-                  <h1 className="text-4xl md:text-[50px] font-[400] leading-[55px] mb-4">{slide.heading}</h1>
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white w-[100%] lg:max-w-2xl z-10">
+                  <h1 className="text-[42px] lg:text-[50px] font-[400] leading-[45px] lg:leading-[55px] mt-[50px] md:mt-[60px] lg:mt-[0px] mb-2 lg:mb-4">{slide.heading}</h1>
                   <p className="text-lg md:text-[22px] font-medium mb-6">{slide.para}</p>
                   <div className="flex justify-center gap-5">
                     {/* <Btn title="Contact Us" link="/contact" /> */}
