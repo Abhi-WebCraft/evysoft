@@ -1,7 +1,6 @@
 import React from 'react';
 import PageHead from "@/components/Layout/PageHead";
 import Layout from "@/components/Layout/Layout";
-import InnerBannerDesign from '@/components/Common/InnerBannerDesign';
 import Container from '@/components/Layout/Container';
 import SectionTitle from '@/components/Layout/SectionTitle';
 import Link from 'next/link';
