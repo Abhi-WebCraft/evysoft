@@ -7,9 +7,9 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const contacts = [
-    { href: "tel:+", icon: "/images/icons/call.svg", text: "+(91) 7341173250" },
-    { href: "mailto:", icon: "/images/icons/email.svg", text: "Evvysot@gmail.com" }, 
-    { href: "#", icon: "/images/icons/maps-and-flags.svg", text: "Mohali punjab india " }, 
+    { href: "tel:8847540817", icon: "/images/icons/call.svg", text: "+(91) 8847540817" },
+    { href: "mailto:evysoft13@gmail.com", icon: "/images/icons/email.svg", text: "evysoft13@gmail.com" }, 
+    { href: "#", icon: "/images/icons/maps-and-flags.svg", text: "Mohali, Punjab, India" }, 
     // { href: "#", icon: "/images/icons/location-11.svg", text: "ddddddddddddddd" }, 
     // { href: "#", icon: "/images/icons/location-11.svg", text: "sdsfsdffffffffff" }, 
   ];

@@ -20,7 +20,7 @@ export default function IndustriesWeServe() {
   return (
     <Section className={styles.section}>
       <Container>
-       <div className="mb-[50px]">
+       <div className="mb-[50px] text-center">
          <SectionTitle title="Industries We Serve" content="" />
        </div>
         <div className={styles.industriesList}>
