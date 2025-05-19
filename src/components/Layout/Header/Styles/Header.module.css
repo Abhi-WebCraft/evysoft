@@ -5,7 +5,7 @@
     left: 0;
     width: 100%;
     z-index: 999;
-    padding: 10px 0;
+    padding: 0px 0;
   }
   
   .headerContainer.headerSticky {
