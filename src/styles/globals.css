@@ -1167,3 +1167,8 @@ button.tawk-custom-color.tawk-custom-border-color.tawk-outline.tawk-button.tawk-
 .tawk-min-container {
     display: non !important;
 }
+.tawk-min-container, .tawk-min-container .tawk-button {
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+}
