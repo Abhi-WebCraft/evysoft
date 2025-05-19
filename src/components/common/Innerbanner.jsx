@@ -9,7 +9,7 @@ const Innerbanner = ({ subtt,title, description, image }) => {
       <div
         className="absolute overly_inner inset-0 top-0 right-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(90deg, rgb(84 132 255 / 42%) 45%, rgb(255 255 255 / 0%) 100%), url('${image}')`,
+          backgroundImage: ` url('${image}')`,
         }}
       />
       <div className="relative z-10">

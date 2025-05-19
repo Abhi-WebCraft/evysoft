@@ -30,7 +30,7 @@ export default function Counter() {
     return (
         <section className="pb-[100px]">
             <Container>
-                <div className="lg:grid-cols-4 lg:grid lg:gap-4 md:grid md:grid-cols-4 md:gap-3 grid grid-cols-2 gap-5 py-[40px] bg-[rgb(84,132,255)] rounded-xl">
+                <div className="lg:grid-cols-4 lg:grid lg:gap-4 md:grid md:grid-cols-4 md:gap-3 grid grid-cols-2 gap-5 py-[40px] bg-[#261FB3] rounded-xl">
                     <div>
                         <div className="relative flex flex-col items-center gap-3 counter">
                             <Image src="/images/icons/workflow.svg" alt="vector" width="50" height="50" className="w-[70px] h-[70px] stats-img"/>

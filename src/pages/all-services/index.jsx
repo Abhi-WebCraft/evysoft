@@ -231,7 +231,7 @@ export default function Home({ referrer }) {
           subtt=""
           title=""
           description=""
-          image="/images/abhi/5.jpg"/>
+          image="/images/bg/service-bg.jpg"/>
            <ServiceCards services={services} />
         <Counter />
         <Testimonials />

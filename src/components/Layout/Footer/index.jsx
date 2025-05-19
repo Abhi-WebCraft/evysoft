@@ -35,7 +35,7 @@ export default function Footer() {
                 <li><Link href="/">Home</Link></li>
                 <li><Link href="/about-us">About Us</Link></li>
                  <li><Link href="/all-services">All services</Link></li>
-                <li><Link href="/why-choose-us">Why Whose Us</Link></li>
+                <li><Link href="/why-choose-us">Why Choose Us</Link></li>
                 <li><Link href="/contact">Contact Us </Link></li>
                 <li><Link href="/privacy-policy">Privacy Policy</Link></li>
               </ul>
@@ -74,8 +74,7 @@ export default function Footer() {
       <div className={`${styles.footerbottom}  text-[#fff] bg-[#000000e1]`}>
         <Container>
           <div className="flex flex-wrap text-[#fff] justify-between gap-5">
-            <div> Copyright &copy; {currentYear} Evysoft Limited
- .</div>
+            <div> Copyright &copy; {currentYear} Evysoft Limited</div>
           </div>
         </Container>
       </div>

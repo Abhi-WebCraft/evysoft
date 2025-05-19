@@ -20,7 +20,7 @@ export default function Header() {
 
   return (
     <>
-      <header id="header-sticky" className={`${styles.headerContainer} ${sticky ? styles.headerSticky : ""}`}>
+      <header id="header-sticky" className={`${styles.headerContainer} ${sticky ? styles.headerSticky : "bg-[#eff1f9]"}`}>
         <Container>
           <div className={styles.navbar}>
             <div className={styles.navbarLogo}>

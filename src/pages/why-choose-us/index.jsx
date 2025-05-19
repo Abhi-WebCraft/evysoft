@@ -140,7 +140,7 @@ export default function Home({ referrer }) {
                 <Innerbanner
                     title=""
                     description=""
-                    image="/images/about-bg.jpg" />
+                    image="/images/bg/why-bg.jpg" />
                 <Ourservices />
                   <Counter />
                 <Testimonials />

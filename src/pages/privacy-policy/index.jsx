@@ -27,7 +27,7 @@ export default function Home({ referrer }) {
           subtt=""
           title=""
           description=""
-          image="/images/abhi/5.jpg" />
+          image="/images/bg/privacy-bg.jpg" />
         <section className='section'>
           <Container>
             <div>
