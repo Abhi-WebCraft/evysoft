@@ -13,8 +13,8 @@ const menu_data = [
 
   {
     has_dropdown: false,
-    title: "Why Chose Us",
-    link: "/why-chose-us",
+    title: "Why Choose Us",
+    link: "/why-choose-us",
   },
   {
     has_dropdown: true,

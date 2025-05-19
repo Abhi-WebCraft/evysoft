@@ -74,7 +74,8 @@ export default function Footer() {
       <div className={`${styles.footerbottom}  text-[#fff] bg-[#000000e1]`}>
         <Container>
           <div className="flex flex-wrap text-[#fff] justify-between gap-5">
-            <div>&copy; {currentYear} Web .Site Development .</div>
+            <div> Copyright &copy; {currentYear} Evysoft Limited
+ .</div>
           </div>
         </Container>
       </div>
