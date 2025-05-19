@@ -5,6 +5,7 @@ import InnerBannerDesign from '@/components/Common/InnerBannerDesign';
 import Container from '@/components/Layout/Container';
 import SectionTitle from '@/components/Layout/SectionTitle';
 import Link from 'next/link';
+import Innerbanner from '@/components/common/Innerbanner';
 
 export default function Home({ referrer }) {
   console.log(referrer);
@@ -23,11 +24,11 @@ export default function Home({ referrer }) {
     <>
       <PageHead PageMeta={PageMeta} />
       <Layout>
-        <InnerBannerDesign
-          title="Privacy Policy"
-          breadcrumbs={breadcrumbs}
-          image="/images/bg/privacy-policy.jpg"
-        />
+    <Innerbanner
+          subtt=""
+          title=""
+          description=""
+          image="/images/abhi/5.jpg" />
         <section className='section'>
           <Container>
             <div>
