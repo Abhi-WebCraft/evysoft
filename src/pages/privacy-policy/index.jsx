@@ -24,7 +24,7 @@ export default function Home({ referrer }) {
     <>
       <PageHead PageMeta={PageMeta} />
       <Layout>
-    <Innerbanner
+        <Innerbanner
           subtt=""
           title=""
           description=""
