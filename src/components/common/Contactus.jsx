@@ -51,7 +51,7 @@ const Contactus = () => {
   };
 
   return (
-    <section className="section bg-gray-50 form-bg">
+    <section className="section bg-gray-50 forbg">
       <Container>
         <div className="lg:w-[900px] mb-[30px]">
           <SectionTitle subtitle="" title="Connect with us" content="" />

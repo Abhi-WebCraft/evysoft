@@ -73,7 +73,7 @@ export default function Header() {
           </div>
         </Container>  
       </header>
-      <SidebarCTA className="" CallActive={CallActive} setCallActive={setCallActive}/>
+      {/* <SidebarCTA className="" CallActive={CallActive} setCallActive={setCallActive}/> */}
       <Sidebar isActive={isActive} setIsActive={setIsActive} />
     </>
   );

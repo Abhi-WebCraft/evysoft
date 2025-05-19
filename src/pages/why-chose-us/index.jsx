@@ -9,6 +9,7 @@ import Faq from '@/components/common/Faq';
 import Services from '@/components/HomePage/Services';
 import Ourservices from '@/components/HomePage/Ourservices';
 import Testimonials from '@/components/common/Testimonials';
+import Counter from '@/components/common/Counter';
 export default function Home({ referrer }) {
     console.log(referrer)
     const PageMeta =
@@ -137,28 +138,11 @@ export default function Home({ referrer }) {
             <PageHead PageMeta={PageMeta} />
             <Layout>
                 <Innerbanner
-                    title="Why Chose Us"
-                    description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quia fugiat neque quam ad in assumenda laudantium libero quod omnis aperiam hic laborum earum, inventore sequi temporibus, voluptas recusandae molestias?"
+                    title=""
+                    description=""
                     image="/images/about-bg.jpg" />
-                <Services />
-                {/* <About
-                    imageSrc="/images/about/video_shape_1.png"
-                    subtitle="About Company"
-                    title="We Grow Your Business With IT"
-                    description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quia fugiat neque quam ad in assumenda laudantium libero quod omnis aperiam hic laborum earum, inventore sequi temporibus, voluptas recusandae molestias"
-                    aboutList={[
-                      { image: "/images/icons/check.svg", text: "Certified Company" },
-                      { image: "/images/icons/check.svg", text: "Expert Team" }
-                    ]}
-                    buttonTitle="Get Started"
-                    buttonLink="/contact"
-                  /> */}
-                {/* <Key services={serviceData}  subtitle="Key Differentiators" title="We're Your Reliable Education Consultants" /> */}
-                {/* <ServiceCards services={services} /> */}
                 <Ourservices />
-                {/* <div className='pb-[100px]'>
-                <Faq faqs={faqData}/>
-                </div> */}
+                  <Counter />
                 <Testimonials />
                 <CtaBlock />
             </Layout>
