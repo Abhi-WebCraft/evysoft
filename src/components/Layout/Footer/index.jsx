@@ -36,7 +36,7 @@ export default function Footer() {
                 <li><Link href="/about">About Us</Link></li>
                 <li><Link href="/why-chose-us">Why Whose Us</Link></li>
                 <li><Link href="/contact">Contact Us </Link></li>
-                {/* <li><Link href="/">Terms & Conditions</Link></li> */}
+                <li><Link href="/">privacy-policy</Link></li>
               </ul>
             </div>
          
