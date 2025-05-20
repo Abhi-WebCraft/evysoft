@@ -21,7 +21,9 @@ export default function  Home({referrer }) {
         <Innerbanner
             title=""
             description=""
-            image="/images/from/6.jpg"/>
+            image="/images/from/6.jpg"/>  
+            
+       <Contactus/>
         <section className='section'>
             <Container>
               <div className='grid lg:grid-cols-3 gap-8'>
@@ -29,7 +31,7 @@ export default function  Home({referrer }) {
                     <Image src="/images/icons/maps-and-flags.svg" alt='' width={50} height={50} className='w-20 p-3 bg-[#684df4] rounded-lg shadow-2xl' />
                     <div className=''>
                         <h3>Our Office Address</h3>
-                        <p className='text-[#737887]'>Mohali, Punjab, India</p>
+                        <p className='text-[#737887]'>A-40 A, Extension, Industrial Focal Point, Industrial Area, Sector 75, Sahibzada Ajit Singh Nagar, Punjab 160059, India</p>
                     </div>
                 </div>
                 <div className='border shadow-lg rounded-lg flex items-center gap-3 p-3'>
@@ -49,7 +51,6 @@ export default function  Home({referrer }) {
               </div>
             </Container>
         </section>
-       <Contactus/>
     </Layout>
     </>
   );

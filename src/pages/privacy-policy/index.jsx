@@ -89,8 +89,8 @@ export default function Home({ referrer }) {
                 <h3>8. Contact Us</h3>
                 <p>For questions or privacy-related concerns, contact us:</p>
                 <ul className='flex flex-col gap-2'>
-                  <Link href="mailto:Evvysot@gmail.com"><b>Email:</b> Evvysot@gmail.com</Link>
-                  <Link href="tel:+1234567890"><b>Phone:</b> +123 456 7890</Link>
+                  <Link href="mailto:evysoft13@gmail.com"><b>Email:</b>evysoft13@gmail.com</Link>
+                  <Link href="tel:8847540817"><b>Phone:</b>(+91) 8847540817</Link>
                   <Link href="https://evysoft.com"><b>Website:</b> www.evysoft.com</Link>
                 </ul>
               </div>

@@ -8,40 +8,41 @@ import 'swiper/css/pagination';
 import Container from '../Layout/Container';
 
 const testimonials = [
+  
   {
     id: 1,
-    name: 'John Doe',
+    name: 'James Walker',
     image: '/images/rew/3.jpg',
-    text: 'EvySoft helped us transform our digital strategy. The team not only delivered high-quality software but also guided us through every step of the process. We saw a 40% increase in efficiency after implementing their solutions!',
+    text: 'EvySoft provided solid development support. There were a few delays, but overall the quality of work met our expectations.',
     rating: 3.5,
   },
   {
     id: 2,
-    name: 'Jane Smith',
-     image: '/images/rew/4.jpg',
-    text: 'Working with EvySoft was a game-changer for our mobile app development. Their attention to detail and innovative approach exceeded our expectations. Highly recommend their services!',
-    rating: 3,
+    name: 'Aisha Patel',
+    image: '/images/rew/4.jpg',
+    text: 'Excellent experience! The app they built for us is fast, intuitive, and looks great. The team was also very responsive.',
+    rating: 4.5,
   },
   {
     id: 3,
-    name: 'Michael Lee',
+    name: 'Omar Hassan',
     image: '/images/rew/5.jpg',
-    text: 'The team at EvySoft is incredible. From start to finish, they were highly communicative, professional, and delivered on time. The new system they developed for us has streamlined our operations.',
-    rating: 4,
-  },
-  {
-    id: 4,
-    name: 'John Doe',
-     image: '/images/rew/6.jpg',
-    text: 'EvySoft helped us transform our digital strategy. The team not only delivered high-quality software but also guided us through every step of the process. We saw a 40% increase in efficiency after implementing their solutions!',
+    text: 'Their team impressed us with their professionalism and deep understanding of our industry. We’ve seen real improvements in our workflow.',
     rating: 5,
   },
   {
+    id: 4,
+    name: 'Liam Thompson',
+    image: '/images/rew/6.jpg',
+    text: 'Honestly, the project had a rocky start, but EvySoft turned things around quickly. The final product exceeded our expectations.',
+    rating: 4,
+  },
+  {
     id: 5,
-    name: 'Jane Smith',
-     image: '/images/rew/7.jpg',
-    text: 'Working with EvySoft was a game-changer for our mobile app development. Their attention to detail and innovative approach exceeded our expectations. Highly recommend their services!',
-    rating: 3,
+    name: 'Emily Carter',
+    image: '/images/rew/7.jpg',
+    text: 'We expected a bit more in terms of innovation, but the software works well and is stable. Support team was helpful during launch.',
+    rating: 5,
   },
 ];
 

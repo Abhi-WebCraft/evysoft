@@ -43,7 +43,7 @@ export default function Footer() {
               <ul className="flex items-center gap-5 mt-[30px]">
                 <li><Link href="/web-development" className="flex gap-3"><Image src="/images/icons/facebook.png" alt="" width={500} height={500} className="w-[35px] h-[35px]"/> facebook</Link></li>
                 <li><Link href="/web-development" className="flex gap-3"><Image src="/images/icons/instagram.png" alt="" width={500} height={500} className="w-[35px] h-[35px]"/> instagram</Link></li>
-                <li><Link href="/web-development" className="flex gap-3"><Image src="/images/icons/youtube.png" alt="" width={500} height={500} className="w-[35px] h-[35px]"/> youtube</Link></li>
+                {/* <li><Link href="/web-development" className="flex gap-3"><Image src="/images/icons/youtube.png" alt="" width={500} height={500} className="w-[35px] h-[35px]"/> youtube</Link></li> */}
               </ul>
             </div>
             </div>
