@@ -57,7 +57,7 @@ export default function Header() {
               </div>
             </div>
             <div className={styles.headerCtaBtn}>
-                <div className={styles.CallBtn} onClick={() => setCallActive(true)} ></div>
+                {/* <div className={styles.CallBtn} onClick={() => setCallActive(true)} ></div> */}
                     <div className='mr-[20px]'>
                                       <div className={styles.ContactBtn}>
                     <Btn link="/contact" title="Contact us" />

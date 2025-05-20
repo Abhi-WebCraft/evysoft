@@ -49,13 +49,13 @@ export default function WhyCards({ data, title, subtitle, content }) {
         >
           {loopedData.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="w-full h-[120px] bg-[#757575] flex px-6 items-center justify-center">
+              <div className="w-full h-[50px]  flex px-6 items-center justify-center">
                 <Image
                   src={item.image}
                   alt={item.title}
                   width={200}
                   height={100}
-                  className="object-contain w-full h-full"
+                  className="object-contain w-full h-full grayscale brightness-75 "
                 />
               </div>
             </SwiperSlide>
