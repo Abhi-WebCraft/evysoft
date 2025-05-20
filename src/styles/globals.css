@@ -522,11 +522,11 @@ img {
 /* ---InnerBanner--- */
 
 .innerbanner_bg {
-  background-image: url('/images/home/breadcumb-bg.jpg');
+ margin-top: 60px;
   background-size: cover;
   background-position: top right;
   background-repeat: no-repeat;
-  height: 550px;
+  height: 650px;
   display: flex;
   align-items: center;
   justify-content: center;
