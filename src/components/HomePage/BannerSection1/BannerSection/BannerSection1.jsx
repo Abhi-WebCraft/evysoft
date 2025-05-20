@@ -28,7 +28,7 @@ export default function BannerSection1() {
   ];
 
   return (
-    <section className={`${styles.bannerslider}`}>
+    <section className={`${styles.bannerslider} mt-4`}>
       <Swiper
         spaceBetween={0}
         loop={true}
