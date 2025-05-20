@@ -6,13 +6,12 @@ import Link from "next/link";
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
-  const contacts = [
-    { href: "tel:8847540817", icon: "/images/icons/call.svg", text: "+(91) 8847540817" },
-    { href: "mailto:evysoft13@gmail.com", icon: "/images/icons/email.svg", text: "evysoft13@gmail.com" }, 
-    { href: "#", icon: "/images/icons/maps-and-flags.svg", text: "Mohali, Punjab, India" }, 
-    // { href: "#", icon: "/images/icons/location-11.svg", text: "ddddddddddddddd" }, 
-    // { href: "#", icon: "/images/icons/location-11.svg", text: "sdsfsdffffffffff" }, 
-  ];
+  // const contacts = [
+  //   { href: "tel:8847540817", icon: "/images/icons/call.svg", text: "+(91) 8847540817" },
+  //   { href: "mailto:evysoft13@gmail.com", icon: "/images/icons/email.svg", text: "evysoft13@gmail.com" }, 
+  //   { href: "#", icon: "/images/icons/maps-and-flags.svg", text: "A-40 A, Extension, Industrial Focal Point, Industrial Area, Sector 75, Sahibzada Ajit Singh Nagar, Punjab 160059, India, India" }, 
+  
+  // ];
 
 
   return (
@@ -31,7 +30,7 @@ export default function Footer() {
             </div>
             <div className={`${styles.footerItems} text-[#fff]`}>
               <h4 className="text-[#fff] uppercase">Quick Links</h4>
-              <ul>
+              <ul className="flex gap-6">
                 <li><Link href="/">Home</Link></li>
                 <li><Link href="/about-us">About Us</Link></li>
                  <li><Link href="/all-services">All services</Link></li>
@@ -39,9 +38,17 @@ export default function Footer() {
                 <li><Link href="/contact">Contact Us </Link></li>
                 <li><Link href="/privacy-policy">Privacy Policy</Link></li>
               </ul>
+               <div className={`${styles.ddd} text-[#fff]`}>
+              {/* <h4 className="text-[#fff] uppercase">social links</h4> */}
+              <ul className="flex items-center gap-5 mt-[30px]">
+                <li><Link href="/web-development" className="flex gap-3"><Image src="/images/icons/facebook.png" alt="" width={500} height={500} className="w-[35px] h-[35px]"/> facebook</Link></li>
+                <li><Link href="/web-development" className="flex gap-3"><Image src="/images/icons/instagram.png" alt="" width={500} height={500} className="w-[35px] h-[35px]"/> instagram</Link></li>
+                <li><Link href="/web-development" className="flex gap-3"><Image src="/images/icons/youtube.png" alt="" width={500} height={500} className="w-[35px] h-[35px]"/> youtube</Link></li>
+              </ul>
+            </div>
             </div>
          
-            <div className={`${styles.footerItems} text-[#fff]`}>
+            {/* <div className={`${styles.footerItems} text-[#fff]`}>
               <h4 className="text-[#fff] uppercase">Contact Us</h4>
                 <ul className="flex flex-col gap-3">
                   {contacts.map((contact, index) => (
@@ -59,15 +66,8 @@ export default function Footer() {
                     </li>
                   ))}
                 </ul>
-            </div>
-               <div className={`${styles.footerItems} text-[#fff]`}>
-              <h4 className="text-[#fff] uppercase">social links</h4>
-              <ul className="space-y-2">
-                <li><Link href="/web-development" className="flex gap-3"><Image src="/images/icons/facebook.png" alt="" width={500} height={500} className="w-[35px] h-[35px]"/> facebook</Link></li>
-                <li><Link href="/web-development" className="flex gap-3"><Image src="/images/icons/instagram.png" alt="" width={500} height={500} className="w-[35px] h-[35px]"/> instagram</Link></li>
-                <li><Link href="/web-development" className="flex gap-3"><Image src="/images/icons/youtube.png" alt="" width={500} height={500} className="w-[35px] h-[35px]"/> youtube</Link></li>
-              </ul>
-            </div>
+            </div> */}
+              
           </div>
         </Container>
       </footer>
