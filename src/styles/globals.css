@@ -1159,7 +1159,7 @@ img {
   right: -88px;
 }
   }
-button.tawk-custom-color.tawk-custom-border-color.tawk-outline.tawk-button.tawk-button-circle.tawk-button-large {
+/* button.tawk-custom-color.tawk-custom-border-color.tawk-outline.tawk-button.tawk-button-circle.tawk-button-large {
     display: none !important;
 }
 
@@ -1171,7 +1171,7 @@ button.tawk-custom-color.tawk-custom-border-color.tawk-outline.tawk-button.tawk-
     height: 100%;
     width: 100%;
     visibility: hidden;
-}
+} */
 
 .ul-item{
   display: flex;

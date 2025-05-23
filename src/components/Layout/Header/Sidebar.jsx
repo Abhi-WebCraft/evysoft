@@ -14,7 +14,7 @@ export default function Sidebar({ isActive, setIsActive }) {
           <MobileMenus />
           <div className={styles.offcanvasBottom}>
             {/* <div className={styles.offcanvasBottomText}>Have a query regarding the website?</div> */}
-            <Btn title="Get in touch" link="/contact" />
+            <Btn title="Contact Us " link="/contact" />
           </div>
         </div>
       </div>
