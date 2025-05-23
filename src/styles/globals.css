@@ -1172,3 +1172,14 @@ button.tawk-custom-color.tawk-custom-border-color.tawk-outline.tawk-button.tawk-
     width: 100%;
     visibility: hidden;
 }
+
+.ul-item{
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .ul-item{
+    display: block;
+  }
+  
+}

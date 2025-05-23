@@ -30,7 +30,7 @@ export default function Footer() {
             </div>
             <div className={`${styles.footerItems} text-[#fff]`}>
               <h4 className="text-[#fff] uppercase">Quick Links</h4>
-              <ul className="flex gap-6">
+              <ul className="flex ul-item gap-6">
                 <li><Link href="/">Home</Link></li>
                 <li><Link href="/about-us">About Us</Link></li>
                  <li><Link href="/all-services">All services</Link></li>
@@ -40,7 +40,7 @@ export default function Footer() {
               </ul>
                <div className={`${styles.ddd} text-[#fff]`}>
               {/* <h4 className="text-[#fff] uppercase">social links</h4> */}
-              <ul className="flex items-center gap-5 mt-[30px]">
+              <ul className="ul-item items-center gap-5 mt-[30px]">
                 <li><Link href="/web-development" className="flex gap-3"><Image src="/images/icons/facebook.png" alt="" width={500} height={500} className="w-[35px] h-[35px]"/> facebook</Link></li>
                 <li><Link href="/web-development" className="flex gap-3"><Image src="/images/icons/instagram.png" alt="" width={500} height={500} className="w-[35px] h-[35px]"/> instagram</Link></li>
                 {/* <li><Link href="/web-development" className="flex gap-3"><Image src="/images/icons/youtube.png" alt="" width={500} height={500} className="w-[35px] h-[35px]"/> youtube</Link></li> */}

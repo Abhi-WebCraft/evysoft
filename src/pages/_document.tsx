@@ -29,7 +29,7 @@ export default function Document() {
       <body>
         <Main />
         {/* Tawk.to Live Chat */}
-        <script
+        {/* <script
           id="tawk-script"
           type="text/javascript"
           dangerouslySetInnerHTML={{
@@ -47,7 +47,7 @@ export default function Document() {
               })();
             `,
           }}
-        ></script>
+        ></script> */}
         <NextScript />
       </body>
     </Html>
