@@ -15,13 +15,13 @@ export default function Layout({children}) {
         <Header />
         {children}
           <WhatsAppChat
-        phoneNumber="8847540817"
-        accountName=""
-        statusMessage=" How Can We Power Your Digital Vision Today?"
-        chatMessage="Hi there! How can we help you today?"
-        avatar="/images/icons/evy.png"
-        serviceOptions="Custom Software Development, Web Application Development,Mobile App Development, Artificial Intelligence,Process Automation,IT Consulting & Strategy"
-      />
+          phoneNumber="8847540817"
+          accountName=""
+          statusMessage=" How Can We Power Your Digital Vision Today?"
+          chatMessage="Hi there! How can we help you today?"
+          avatar="/images/icons/evy.png"
+          serviceOptions="Custom Software Development, Web Application Development,Mobile App Development, Artificial Intelligence,Process Automation,IT Consulting & Strategy"
+        />
         <Footer />
        
     </>
