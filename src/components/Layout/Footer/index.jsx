@@ -41,9 +41,9 @@ export default function Footer() {
                <div className={`${styles.ddd} text-[#fff]`}>
               {/* <h4 className="text-[#fff] uppercase">social links</h4> */}
               <ul className="ul-item items-center gap-5 mt-[30px]">
-                <li><Link href="/web-development" className="flex gap-3"><Image src="/images/icons/facebook.png" alt="" width={500} height={500} className="w-[35px] h-[35px]"/> facebook</Link></li>
-                <li><Link href="/web-development" className="flex gap-3"><Image src="/images/icons/instagram.png" alt="" width={500} height={500} className="w-[35px] h-[35px]"/> instagram</Link></li>
-                {/* <li><Link href="/web-development" className="flex gap-3"><Image src="/images/icons/youtube.png" alt="" width={500} height={500} className="w-[35px] h-[35px]"/> youtube</Link></li> */}
+                <li><Link href="/web-development" className="flex gap-3"><Image src="/images/icons/facebook.png" alt="" width={500} height={500} className="w-[35px] h-[35px]"/> Facebook</Link></li>
+                <li><Link href="/web-development" className="flex gap-3"><Image src="/images/icons/instagram.png" alt="" width={500} height={500} className="w-[35px] h-[35px]"/> Instagram</Link></li>
+                <li><Link href="/web-development" className="flex gap-3"><Image src="/images/icons/linkedIn_PNG27.png" alt="" width={500} height={500} className="w-[35px] h-[35px]"/>Linkden</Link></li>
               </ul>
             </div>
             </div>

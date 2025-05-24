@@ -51,6 +51,7 @@ const Contactus = () => {
   };
 
   return (
+   <>
     <section className="section bg-gray-50 forbg">
       <Container>
         <div className="lg:w-[900px] mb-[30px]">
@@ -130,6 +131,7 @@ const Contactus = () => {
         </div>
       </Container>
     </section>
+   </>
   );
 };
 

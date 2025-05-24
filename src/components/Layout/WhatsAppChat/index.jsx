@@ -48,8 +48,8 @@ export default function WhatsAppChat({
     const formattedServices = selectedServices.map((s) => `- ${s}`).join('\n');
   
     const message = selectedServices.length > 0
-      ? `Hello *${accountName}*!\nI am interested in the following services:\n${formattedServices}`
-      : `Hello *${accountName}*!`;
+      ? `Hello ${accountName}\nI am interested in the following services:\n${formattedServices}`
+      : `Hello ${accountName}`;
   
     const encodedMessage = encodeURIComponent(message);
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
