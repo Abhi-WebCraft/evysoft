@@ -19,7 +19,7 @@ export default function Layout({children}) {
           accountName=""
           statusMessage=" How Can We Power Your Digital Vision Today?"
           chatMessage="Hi there! How can we help you today?"
-          avatar="/images/icons/evy.png"
+          avatar="/images/icons/unnamed.png"
           serviceOptions="Custom Software Development, Web Application Development,Mobile App Development, Artificial Intelligence,Process Automation,IT Consulting & Strategy"
         />
         <Footer />
