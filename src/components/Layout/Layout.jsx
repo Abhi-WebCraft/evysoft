@@ -15,7 +15,7 @@ export default function Layout({children}) {
         <Header />
         {children}
           <WhatsAppChat
-          phoneNumber="7341173250"
+          phoneNumber="918847540817"
           accountName=""
           statusMessage=" How Can We Power Your Digital Vision Today?"
           chatMessage="Hi there! How can we help you today?"
