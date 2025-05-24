@@ -101,7 +101,7 @@ export default function Home({ referrer }) {
       text: "Beautiful and user-friendly apps.",
       icon: "/icons/app.svg",
       link: "/services/app-design",
-      bgShape: "/shapes/bg2.png",
+      bgShape: "/shapes/bg2.png",     
     },
     {
       number: "02",
