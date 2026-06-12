@@ -1,44 +1,37 @@
-"use client";
-
 import Head from "next/head";
 import { usePathname } from "next/navigation";
 
-export default function PageHead({ PageMeta = {} }) {
-    const pathname = usePathname() || "/";
+export default function PageHead({ PageMeta }) {
+    const pathname = usePathname();
 
-    const baseUrl = "https://evysoft.com";
+    const baseUrl = "https://evysoft.com"; // 👈 apna domain
     const fullUrl = baseUrl + pathname;
-
-    const title = PageMeta.title || "EvySoft - Web Development Company";
-    const description = PageMeta.description || "EvySoft provides web development and software services.";
-    const image = PageMeta.ogimage || "https://evysoft.com/default.jpg";
 
     return (
         <Head>
-            {/* ✅ Basic SEO */}
-            <title>{title}</title>
-            <meta name="description" content={description} />
+            <title>{PageMeta.title}</title>
+
+            <meta name="description" content={PageMeta.description} />
             <meta name="keywords" content={PageMeta.keywords || "web development, software, evysoft"} />
             <meta name="robots" content="index, follow" />
 
-            {/* ✅ Favicon (IMPORTANT) */}
-            <link rel="icon" href="/favicon.ico" />
-
-            {/* ✅ Canonical */}
+            {/* ✅ FIXED */}
             <link rel="canonical" href={fullUrl} />
 
-            {/* ✅ Open Graph */}
-            <meta property="og:title" content={title} />
-            <meta property="og:description" content={description} />
+            {/* Open Graph */}
+            <meta property="og:title" content={PageMeta.title} />
+            <meta property="og:description" content={PageMeta.description} />
             <meta property="og:url" content={fullUrl} />
             <meta property="og:type" content="website" />
-            <meta property="og:image" content={image} />
 
-            {/* ✅ Twitter */}
+            {/* Image */}
+            <meta property="og:image" content={PageMeta.ogimage || "https://evysoft.com/default.jpg"} />
+
+            {/* Twitter */}
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:title" content={title} />
-            <meta name="twitter:description" content={description} />
-            <meta name="twitter:image" content={image} />
+            <meta name="twitter:title" content={PageMeta.title} />
+            <meta name="twitter:description" content={PageMeta.description} />
+            <meta name="twitter:image" content={PageMeta.ogimage || "https://evysoft.com/default.jpg"} />
         </Head>
     );
 }
