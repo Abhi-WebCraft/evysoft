@@ -16,7 +16,6 @@ export default function Home() {
     <PageHead PageMeta={PageMeta} />
     <Head>
         <meta name="robots" content="noindex" />
-        <link rel="icon" href="/favicon.ico" />
     </Head>
             <Layout>
             <Section>
