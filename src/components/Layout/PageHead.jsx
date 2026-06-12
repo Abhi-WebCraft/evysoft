@@ -3,40 +3,35 @@ import { usePathname } from "next/navigation";
 
 export default function PageHead({ PageMeta }) {
     const pathname = usePathname();
+
+    const baseUrl = "https://evysoft.com"; // 👈 apna domain
+    const fullUrl = baseUrl + pathname;
+
     return (
         <Head>
             <title>{PageMeta.title}</title>
-            <meta name="title" content={PageMeta.title} />
+
             <meta name="description" content={PageMeta.description} />
-            <meta name="keywords" content={PageMeta.keywords || "default, keywords, here"} />
-            <meta name="robots" content=" follow, index" />
-            <link rel="canonical" href={`${pathname}`} />
-            <meta property="og:locale" content="en_US" />
-            <meta property="og:type" content="website" />
+            <meta name="keywords" content={PageMeta.keywords || "web development, software, evysoft"} />
+            <meta name="robots" content="index, follow" />
+
+            {/* ✅ FIXED */}
+            <link rel="canonical" href={fullUrl} />
+
+            {/* Open Graph */}
             <meta property="og:title" content={PageMeta.title} />
             <meta property="og:description" content={PageMeta.description} />
-            <meta property="og:url" content={`${pathname}`} />
-            <meta property="og:site_name" content="" />
-            <meta property="article:publisher" content="" />
-            <meta property="article:author" content="" />
-            {PageMeta.ogimage && PageMeta.ogimage !== "/images/prof" ? (
-                <meta property="og:image" content={PageMeta.ogimage} />
-            ) : (
-                <meta property="og:image" content="/images/" />
-            )}
-            <meta property="og:image:width" content="1422" />
-            <meta property="og:image:height" content="800" />
-            <meta property="og:image:alt" content={PageMeta.title} />
-            <meta property="og:image:type" content="image/jpeg" />
+            <meta property="og:url" content={fullUrl} />
+            <meta property="og:type" content="website" />
+
+            {/* Image */}
+            <meta property="og:image" content={PageMeta.ogimage || "https://evysoft.com/default.jpg"} />
+
+            {/* Twitter */}
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content={PageMeta.title} />
             <meta name="twitter:description" content={PageMeta.description} />
-            <meta name="twitter:creator" content="@VedicVoices" />
-            {PageMeta.ogimage && PageMeta.ogimage !== "/images/prof" ? (
-                <meta name="twitter:image" content={PageMeta.ogimage} />
-            ) : (
-                <meta name="twitter:image" content="/images/" />
-            )}
+            <meta name="twitter:image" content={PageMeta.ogimage || "https://evysoft.com/default.jpg"} />
         </Head>
     );
 }

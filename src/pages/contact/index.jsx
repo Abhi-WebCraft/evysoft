@@ -45,7 +45,7 @@ export default function  Home({referrer }) {
                     <Image src="/images/icons/email.svg" alt='' width={50} height={50} className='w-20 p-3 bg-[#684df4] rounded-lg shadow-2xl' />
                     <div className=''>
                         <h3>Send An Email</h3>
-                        <p className='text-[#737887]'>evysoft13@gmail.com</p>
+                        <p className='text-[#737887]'>Info@evysoft.com</p>
                     </div>
                 </div>
               </div>
