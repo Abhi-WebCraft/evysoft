@@ -25,7 +25,7 @@ export default function PageHead({ PageMeta }) {
             <meta property="og:type" content="website" />
 
             {/* Image */}
-            <meta property="og:image" content={PageMeta.ogimage || "https://evysoft.com/default.jpg"} />
+            <meta property="og:image" content={PageMeta.ogimage || "https://evysoft.com/default.png"} />
 
             {/* Twitter */}
             <meta name="twitter:card" content="summary_large_image" />
