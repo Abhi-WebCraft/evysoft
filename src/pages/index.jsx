@@ -14,12 +14,11 @@ import BannerSection1 from '@/components/HomePage/BannerSection1/BannerSection/B
 import IndustriesWeServe from '@/components/common/IndustriesWeServe/IndustriesWeServe';
 export default function Home({ referrer }) {
   console.log(referrer)
-  const PageMeta =
-  {
-    title: "EvySoft | Smart & Scalable Software Solutions",
-    description: "EvySoft is a forward-thinking software company delivering tailored solutions for startups and businesses. Web apps, mobile apps, and digital transformation — all in one place.",
-    keywords: "EvySoft, software development, web development, mobile app development, custom software solutions, UI UX design, digital transformation, tech startup solutions, scalable applications, enterprise software, SaaS development, business automation, IT consulting, cloud solutions, next.js development"
-  }
+const PageMeta = {
+  title: "EvySoft | Web Development Company",
+  description:
+    "EvySoft provides Web Development, Mobile App Development and Custom Software Development services.",
+};
   const services = [
       {
         number: "01",
