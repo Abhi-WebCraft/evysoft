@@ -3,7 +3,7 @@ if (!process.env.WORDPRESS_API_URL) {
     Please provide a valid WordPress instance URL.
     Add to your environment variables WORDPRESS_API_URL.
   `);
-}
+} 
 
 const { protocol, hostname, port } = new URL(process.env.WORDPRESS_API_URL);
 
