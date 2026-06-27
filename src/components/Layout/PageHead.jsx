@@ -1,8 +1,7 @@
 import Head from "next/head";
 
 export default function PageHead({ PageMeta = {} }) {
-    const baseUrl = "https://evysoft.com";
-
+const baseUrl = "https://www.evysoft.com";  
     const title = PageMeta?.title || "EvySoft - Web Development Company";
     const description = PageMeta?.description || "EvySoft provides web development services";
     const image = PageMeta?.ogimage || baseUrl + "/default.jpg";
