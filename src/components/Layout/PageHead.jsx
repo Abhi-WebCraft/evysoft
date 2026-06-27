@@ -17,7 +17,7 @@ export default function PageHead({ PageMeta = {} }) {
             <meta name="robots" content="index, follow" />
 
             {/* ✅ Favicon */}
-            <link rel="icon" href="/favicon.ico" />
+            <link rel="icon" type="image/png" href="/favicon.png" />
 
             {/* ✅ Canonical (FIXED) */}
             <link rel="canonical" href={baseUrl} />
